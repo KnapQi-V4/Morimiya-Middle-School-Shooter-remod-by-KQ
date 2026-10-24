@@ -3,7 +3,7 @@
     "main": "index.html",
     "js-flags": "--expose-gc",
     "window": {
-        "title": "",
+        "title": "Morimiya Middle School Shooting",
         "toolbar": false,
         "width": 816,
         "height": 624,
