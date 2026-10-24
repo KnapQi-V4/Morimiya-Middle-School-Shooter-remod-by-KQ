@@ -1,28 +1,31 @@
 //=============================================================================
 // LanguageManager.js
-// Dual Language System (English / Bahasa Indonesia) & Cheat System
+// Dual Language System (English / Bahasa Indonesia) & Comprehensive Cheats
 //=============================================================================
 
 /*:
- * @plugindesc English & Indonesian Localization with Infinite SP and God Mode Cheats
- * @author Morityu Translation Project
- * @help
- * Provides language switching between English and Bahasa Indonesia in the Options menu.
- * Adds Infinite SP cheat toggle in Options and hotkey 9 / F8 in game.
+ * @plugindesc English & Indonesian Localization, Subtitle Cutoff Fix, and Cheats (Infinite SP, Ammo, Bombs, Health)
+ * @author Morityu Project
  */
 
 (function() {
     'use strict';
 
     // 1. ConfigManager Integration
-    ConfigManager.language = 'en'; // 'en' (default) or 'id'
+    ConfigManager.language = 'en'; // 'en' or 'id'
     ConfigManager.infiniteSp = false;
+    ConfigManager.infiniteAmmo = false;
+    ConfigManager.infiniteBombs = false;
+    ConfigManager.infiniteHealth = false;
 
     var _ConfigManager_makeData = ConfigManager.makeData;
     ConfigManager.makeData = function() {
         var config = _ConfigManager_makeData.call(this);
         config.language = this.language || 'en';
         config.infiniteSp = !!this.infiniteSp;
+        config.infiniteAmmo = !!this.infiniteAmmo;
+        config.infiniteBombs = !!this.infiniteBombs;
+        config.infiniteHealth = !!this.infiniteHealth;
         return config;
     };
 
@@ -31,6 +34,9 @@
         _ConfigManager_applyData.call(this, config);
         this.language = config.language || 'en';
         this.infiniteSp = !!config.infiniteSp;
+        this.infiniteAmmo = !!config.infiniteAmmo;
+        this.infiniteBombs = !!config.infiniteBombs;
+        this.infiniteHealth = !!config.infiniteHealth;
     };
 
     // 2. Translation Dictionary
@@ -844,168 +850,194 @@
   "Target cleared!": "Target terselesaikan!",
   "New Record!": "Rekor Baru!",
   "Practice finished.": "Latihan selesai.",
-  "that no matter how hard I struggle, my fate was already sealed:": "that no matter how hard I struggle, my fate was already sealed:",
-  "a tragic finale, never having glimpsed even": "a tragic finale, never having glimpsed even",
-  "the faintest sliver of hope or salvation.": "the faintest sliver of hope or salvation.",
-  "Even if that is God's will, I will never accept such a": "Even if that is God's will, I will never accept such a",
-  "fate!\\!": "fate!\\!",
-  "Why was I ever born?\\!": "Why was I ever born?\\!",
-  "Why were any of you born?": "Why were any of you born?",
-  "Neither God nor anyone else dictates the meaning of life.\\!": "Neither God nor anyone else dictates the meaning of life.\\!",
-  "I decide it, and only I.": "I decide it, and only I.",
-  "\"――During police interrogation, the girl confessed:": "\"――During police interrogation, the girl confessed:",
-  "\\\"I just wanted to kill someone. Anyone would do.\\\"\"": "\\\"I just wanted to kill someone. Anyone would do.\\\"\"",
-  "\"――In recent years, school shooting incidents have been on": "\"――In recent years, school shooting incidents have been on",
-  "the rise nationwide.\"": "the rise nationwide.\"",
-  "\"On December 15, 2014, a first-year high school student": "\"On December 15, 2014, a first-year high school student",
-  "at Yamazaki High threw explosive devices into multiple": "at Yamazaki High threw explosive devices into multiple",
-  "classrooms and brandished firearms to indiscriminately": "classrooms and brandished firearms to indiscriminately",
-  "And while my life fell completely apart,": "And while my life fell completely apart,",
-  "Here you can purchase and equip weapons and skills.": "Here you can purchase and equip weapons and skills.",
-  "While everyone took me for a": "While everyone took me for a",
-  "Skip the \\I[255] ending?": "Skip the \\I[255] ending?",
-  "...Why. \\!Why.\\!": "...Why. \\!Why.\\!",
-  "Everything went wrong.": "Everything went wrong.",
-  "I thought I would kill more.": "I thought I would kill more.",
-  "I was well prepared.\\!": "I was well prepared.\\!",
-  "I thought I would kill at least 10.\\!": "I thought I would kill at least 10.\\!",
-  "...But reality was harsher.": "...But reality was harsher.",
-  "...I thought that on this day, I would finally find it.\\!": "...I thought that on this day, I would finally find it.\\!",
-  "A reason to live. \\!A reason to keep suffering.": "A reason to live. \\!A reason to keep suffering.",
-  "But... what's the point.": "But... what's the point.",
+  "that no matter how hard I struggle, my fate was already sealed:": "bahwa sekeras apa pun aku berjuang, nasibku telah digariskan:",
+  "a tragic finale, never having glimpsed even": "sebuah akhir tragis, tanpa pernah melihat sedikit pun",
+  "the faintest sliver of hope or salvation.": "secercah harapan atau keselamatan.",
+  "Even if that is God's will, I will never accept such a": "Bahkan jika itu kehendak Tuhan, aku takkan pernah menerima nasib",
+  "fate!\\!": "seperti itu!\\!",
+  "Why was I ever born?\\!": "Mengapa aku dilahirkan?\\!",
+  "Why were any of you born?": "Mengapa kalian semua dilahirkan?",
+  "Neither God nor anyone else dictates the meaning of life.\\!": "Bukan Tuhan ataupun orang lain yang menentukan arti hidupku.\\!",
+  "I decide it, and only I.": "Akulah yang menentukannya, hanya aku.",
+  "\"――During police interrogation, the girl confessed:": "\"――Saat interogasi polisi, gadis itu mengaku:",
+  "\\\"I just wanted to kill someone. Anyone would do.\\\"\"": "\\\"Aku hanya ingin membunuh seseorang. Siapa pun boleh.\\\"\"",
+  "\"――In recent years, school shooting incidents have been on": "\"――Dalam beberapa tahun terakhir, insiden penembakan sekolah kian",
+  "the rise nationwide.\"": "meningkat di seluruh negeri.\"",
+  "\"On December 15, 2014, a first-year high school student": "\"Pada 15 Desember 2014, seorang siswa kelas satu SMA",
+  "at Yamazaki High threw explosive devices into multiple": "di SMA Yamazaki melempar bahan peledak ke beberapa",
+  "classrooms and brandished firearms to indiscriminately": "ruang kelas dan mengacungkan senjata api untuk membabi buta",
+  "And while my life fell completely apart,": "Dan sementara hidupku hancur lebur,",
+  "Here you can purchase and equip weapons and skills.": "Di sini kamu bisa membeli dan memasang senjata serta keahlian.",
+  "While everyone took me for a": "Sementara semua orang menganggapku sebagai",
+  "Skip the \\I[255] ending?": "Lewati ending \\I[255]?",
+  "...Why. \\!Why.\\!": "...Kenapa. \\!Kenapa.\\!",
+  "Everything went wrong.": "Segalanya kacau balau.",
+  "I thought I would kill more.": "Kupikir aku akan membunuh lebih banyak.",
+  "I was well prepared.\\!": "Aku sudah bersiap dengan matang.\\!",
+  "I thought I would kill at least 10.\\!": "Kupikir aku setidaknya bisa membunuh 10 orang.\\!",
+  "...But reality was harsher.": "...Namun kenyataan jauh lebih kejam.",
+  "...I thought that on this day, I would finally find it.\\!": "...Kupikir pada hari ini, aku akhirnya akan menemukannya.\\!",
+  "A reason to live. \\!A reason to keep suffering.": "Alasan untuk hidup. \\!Alasan untuk terus menanggung derita.",
+  "But... what's the point.": "Tapi... apa gunanya.",
   "\\C[4]Police\\C[0]": "\\C[4]Polisi\\C[0]",
   "\\{Police!\\. Hands in the air!": "\\{Police!\\. Angkat tangan!",
   "\\{Hands up or I'll shoot!": "\\{Angkat tangan or I'll shoot!",
   "\\{Hands up!": "\\{Angkat tangan!",
-  "Every minute, every second.": "Every minute, every second.",
-  "As long as I live, I will continue to suffer.": "As long as I live, I will continue to suffer.",
-  "...There is no reason, no point in remaining in this world.": "...There is no reason, no point in remaining in this world.",
-  "...I was destined to die in this damned school.\\!": "...I was destined to die in this damned school.\\!",
-  "Because I couldn't kill everyone.\\!": "Because I couldn't kill everyone.\\!",
-  "We were all born for this day.": "We were all born for this day.",
+  "Every minute, every second.": "Setiap menit, setiap detik.",
+  "As long as I live, I will continue to suffer.": "Selama aku hidup, aku akan terus menderita.",
+  "...There is no reason, no point in remaining in this world.": "...Tak ada alasan, tak ada gunanya tetap berada di dunia ini.",
+  "...I was destined to die in this damned school.\\!": "...Aku memang ditakdirkan mati di sekolah terkutuk ini.\\!",
+  "Because I couldn't kill everyone.\\!": "Karena aku tak mampu membunuh semua orang.\\!",
+  "We were all born for this day.": "Kita semua terlahir demi hari ini.",
   "\\{Police! \\.Hands in the air!": "\\{Police! \\.Angkat tangan!",
-  "Keep your hands up!": "Keep your hands up!",
-  "On your knees!\\!": "On your knees!\\!",
-  "Don't move!\\.": "Don't move!\\.",
-  "Hands behind your head!\\!": "Hands behind your head!\\!",
-  "Or I will shoot!": "Or I will shoot!",
-  "......On this day.\\!": "......On this day.\\!",
-  "I finally understood the true meaning of life.": "I finally understood the true meaning of life.",
-  "It felt like there was nothing but pain;\\!": "It felt like there was nothing but pain;\\!",
-  "it felt like I was destined to become just a digit in": "it felt like I was destined to become just a digit in",
-  "suicide statistics.": "suicide statistics.",
-  "Hearing every scream.\\|": "Hearing every scream.\\|",
-  "Watching every death.\\|": "Watching every death.\\|",
-  "The meaning became clearer and clearer.": "The meaning became clearer and clearer.",
-  "You were all born for this day,\\|": "You were all born for this day,\\|",
-  "and I was born for this day.": "and I was born for this day.",
-  "Welcome to the tutorial! \\|": "Welcome to the tutorial! \\|",
-  "Here you will learn how to \\C[6]play this game\\C[0].": "Here you will learn how to \\C[6]play this game\\C[0].",
-  "Movement uses the \\C[6]arrow keys\\C[0] or \\C[6]W, A, S, D\\C[0].\\!": "Movement uses the \\C[6]arrow keys\\C[0] or \\C[6]W, A, S, D\\C[0].\\!",
-  "\\C[6]Shift\\C[0] is run; running consumes stamina.": "\\C[6]Shift\\C[0] is run; running consumes stamina.",
-  "The \\C[6]green gauge\\C[0] displays your fatigue.\\.": "The \\C[6]green gauge\\C[0] displays your fatigue.\\.",
-  "If you completely exhaust yourself, you will not": "If you completely exhaust yourself, you will not",
-  "be able to run for a while.": "be able to run for a while.",
-  "Enemy attacks will also drain your stamina.\\!": "Enemy attacks will also drain your stamina.\\!",
-  "If you collapse in battle, you will be arrested, resulting": "If you collapse in battle, you will be arrested, resulting",
-  "in a \\C[6]Game Over\\C[0].": "in a \\C[6]Game Over\\C[0].",
-  "The number above your head shows your": "The number above your head shows your",
-  "\\C[6]hit rate\\C[0].": "\\C[6]hit rate\\C[0].",
-  "Right now it is at \\C[6]50%\\C[0].\\!": "Right now it is at \\C[6]50%\\C[0].\\!",
-  "Firing at this rate is possible.\\.": "Firing at this rate is possible.\\.",
-  "Press \\C[6]E\\C[0] to enter \\C[6]aiming mode\\C[0] and": "Press \\C[6]E\\C[0] to enter \\C[6]aiming mode\\C[0] and",
-  "increase your hit rate.": "increase your hit rate.",
-  "Try to hit the empty can in front of you.": "Try to hit the empty can in front of you.",
-  "Press \\C[6]E\\C[0] to \\C[6]aim\\C[0], then press": "Press \\C[6]E\\C[0] to \\C[6]aim\\C[0], then press",
-  "\\C[6]Space\\C[0] to fire.\\!": "\\C[6]Space\\C[0] to fire.\\!",
-  "If you run out of ammo, press \\C[6]R\\C[0] to": "If you run out of ammo, press \\C[6]R\\C[0] to",
-  "\\C[6]reload\\C[0].": "\\C[6]reload\\C[0].",
+  "Keep your hands up!": "Tetap angkat tanganmu!",
+  "On your knees!\\!": "Berlutut sekarang!\\!",
+  "Don't move!\\.": "Jangan bergerak!\\.",
+  "Hands behind your head!\\!": "Tangan di belakang kepala!\\!",
+  "Or I will shoot!": "Atau kutembak!",
+  "......On this day.\\!": "......Pada hari ini.\\!",
+  "I finally understood the true meaning of life.": "Aku akhirnya memahami arti hidup yang sesungguhnya.",
+  "It felt like there was nothing but pain;\\!": "Rasanya tak ada yang tersisa selain rasa sakit;\\!",
+  "it felt like I was destined to become just a digit in": "seakan aku ditakdirkan menjadi sekadar angka dalam",
+  "suicide statistics.": "statistik bunuh diri.",
+  "Hearing every scream.\\|": "Mendengar setiap jeritan.\\|",
+  "Watching every death.\\|": "Menyaksikan setiap kematian.\\|",
+  "The meaning became clearer and clearer.": "Maknanya menjadi semakin jelas dan nyata.",
+  "You were all born for this day,\\|": "Kalian semua terlahir demi hari ini,\\|",
+  "and I was born for this day.": "dan aku pun terlahir demi hari ini.",
+  "Welcome to the tutorial! \\|": "Selamat datang di tutorial! \\|",
+  "Here you will learn how to \\C[6]play this game\\C[0].": "Di sini kamu akan belajar cara \\C[6]memainkan game ini\\C[0].",
+  "Movement uses the \\C[6]arrow keys\\C[0] or \\C[6]W, A, S, D\\C[0].\\!": "Gerakan menggunakan \\C[6]tombol panah\\C[0] atau \\C[6]W, A, S, D\\C[0].\\!",
+  "\\C[6]Shift\\C[0] is run; running consumes stamina.": "\\C[6]Shift\\C[0] untuk lari; berlari menguras stamina.",
+  "The \\C[6]green gauge\\C[0] displays your fatigue.\\.": "\\C[6]Bilah hijau\\C[0] menampilkan tingkat kelelahanmu.\\.",
+  "If you completely exhaust yourself, you will not": "Jika staminamu habis total, kamu tidak akan",
+  "be able to run for a while.": "bisa berlari untuk sementara waktu.",
+  "Enemy attacks will also drain your stamina.\\!": "Serangan musuh juga akan menguras staminamu.\\!",
+  "If you collapse in battle, you will be arrested, resulting": "Jika kamu tumbang dalam pertempuran, kamu akan ditangkap,",
+  "in a \\C[6]Game Over\\C[0].": "mengakibatkan \\C[6]Game Over\\C[0].",
+  "The number above your head shows your": "Angka di atas kepalamu menunjukkan",
+  "\\C[6]hit rate\\C[0].": "\\C[6]tingkat akurasi tembakan\\C[0].",
+  "Right now it is at \\C[6]50%\\C[0].\\!": "Saat ini berada di angka \\C[6]50%\\C[0].\\!",
+  "Firing at this rate is possible.\\.": "Menembak dalam kondisi ini tetap memungkinkan.\\.",
+  "Press \\C[6]E\\C[0] to enter \\C[6]aiming mode\\C[0] and": "Tekan \\C[6]E\\C[0] untuk masuk \\C[6]mode membidik\\C[0] dan",
+  "increase your hit rate.": "meningkatkan akurasi tembakanmu.",
+  "Try to hit the empty can in front of you.": "Cobalah menembak kaleng kosong di depanmu.",
+  "Press \\C[6]E\\C[0] to \\C[6]aim\\C[0], then press": "Tekan \\C[6]E\\C[0] untuk \\C[6]membidik\\C[0], lalu tekan",
+  "\\C[6]Space\\C[0] to fire.\\!": "\\C[6]Spasi\\C[0] untuk menembak.\\!",
+  "If you run out of ammo, press \\C[6]R\\C[0] to": "Jika kehabisan peluru, tekan \\C[6]R\\C[0] untuk",
+  "\\C[6]reload\\C[0].": "\\C[6]mengisi ulang peluru (reload)\\C[0].",
   "Oh?\\.": "Oh?\\.",
-  "Looks like you hit it without aiming.": "Looks like you hit it without aiming.",
-  "You can fire even without entering \\C[6]aiming mode\\C[0].\\.": "You can fire even without entering \\C[6]aiming mode\\C[0].\\.",
-  "Whether you hit or miss is pure chance.": "Whether you hit or miss is pure chance.",
-  "When you want to attack a target,": "When you want to attack a target,",
-  "press \\C[6]E\\C[0] to enter \\C[6]aiming mode\\C[0]": "press \\C[6]E\\C[0] to enter \\C[6]aiming mode\\C[0]",
-  "and \\C[6]aim as accurately as possible\\C[0] before taking the shot.": "and \\C[6]aim as accurately as possible\\C[0] before taking the shot.",
-  "Direct hit!": "Direct hit!",
-  "Now you are equipped with": "Now you are equipped with",
-  "your \\I[120]\\C[2]primary weapon\\C[0].": "your \\I[120]\\C[2]primary weapon\\C[0].",
-  "In addition, you also have a \\I[121]\\C[1]handgun\\C[0]": "In addition, you also have a \\I[121]\\C[1]handgun\\C[0]",
-  "as a sidearm.": "as a sidearm.",
-  "You can switch between weapons at any": "You can switch between weapons at any",
-  "moment by pressing the \\C[6]Q\\C[0] key.\\!": "moment by pressing the \\C[6]Q\\C[0] key.\\!",
-  "Try drawing your \\I[121]\\C[1]handgun\\C[0].": "Try drawing your \\I[121]\\C[1]handgun\\C[0].",
-  "Remember, switching to your handgun is always": "Remember, switching to your handgun is always",
-  "faster than reloading.": "faster than reloading.",
-  "If enemies surround you and your mag is empty,\\.": "If enemies surround you and your mag is empty,\\.",
-  "—swap to another weapon.": "—swap to another weapon.",
-  "A single shot is not enough to eliminate a target.\\!": "A single shot is not enough to eliminate a target.\\!",
-  "That means you must hit them multiple times.": "That means you must hit them multiple times.",
-  "Try firing in the designated direction, hitting the": "Try firing in the designated direction, hitting the",
-  "target as many times as possible.": "target as many times as possible.",
-  "Recoil \\C[6]noticeably lowers your hit rate\\C[0].\\.": "Recoil \\C[6]noticeably lowers your hit rate\\C[0].\\.",
-  "During continuous fire, make sure it does not": "During continuous fire, make sure it does not",
-  "drop too low.": "drop too low.",
-  "Excellent!\\! Every single shot hit the mark!": "Excellent!\\! Every single shot hit the mark!",
-  "Not bad!\\.": "Not bad!\\.",
-  "Out of \\C[6]10 shots\\C[0], you hit \\C[6]\\V[27] times\\C[0]!": "Out of \\C[6]10 shots\\C[0], you hit \\C[6]\\V[27] times\\C[0]!",
-  "Unbelievable!\\!": "Unbelievable!\\!",
-  "You didn't hit a single shot!": "You didn't hit a single shot!",
-  "Good aiming is the key to success.\\!": "Good aiming is the key to success.\\!",
-  "If you fire blindly, your target will never go down.": "If you fire blindly, your target will never go down.",
-  "Before shooting, enter \\C[6]aiming mode\\C[0],\\.": "Before shooting, enter \\C[6]aiming mode\\C[0],\\.",
-  "\\C[6]aim carefully\\C[0], and only then pull the trigger.": "\\C[6]aim carefully\\C[0], and only then pull the trigger.",
-  "Well now!\\.": "Well now!\\.",
-  "Only \\C[6]\\V[27] shots\\C[0] out of \\C[6]10\\C[0] hit the target.": "Only \\C[6]\\V[27] shots\\C[0] out of \\C[6]10\\C[0] hit the target.",
-  "If you don't aim carefully,": "If you don't aim carefully,",
-  "you will never deal enough damage to the target.": "you will never deal enough damage to the target.",
-  "When you face a dense crowd,\\.": "When you face a dense crowd,\\.",
-  "\\I[126]\\C[6]pipe bombs\\C[0] come in very handy.": "\\I[126]\\C[6]pipe bombs\\C[0] come in very handy.",
-  "Hold down the \\C[6]G\\C[0] key to throw a bomb.\\!": "Hold down the \\C[6]G\\C[0] key to throw a bomb.\\!",
-  "The longer you hold it, the farther it travels.\\.": "The longer you hold it, the farther it travels.\\.",
-  "Tap it just once—and the bomb drops right at your feet.": "Tap it just once—and the bomb drops right at your feet.",
-  "Try throwing a training bomb.": "Try throwing a training bomb.",
-  "Shortly after landing, the bomb will detonate,": "Shortly after landing, the bomb will detonate,",
-  "dealing damage to everyone in range.": "dealing damage to everyone in range.",
-  "If you get caught in the blast yourself,\\.": "If you get caught in the blast yourself,\\.",
-  "you will suffer irreversible \\C[6]fatal damage\\C[0].\\.": "you will suffer irreversible \\C[6]fatal damage\\C[0].\\.",
-  "So after throwing, be sure to step well back.": "So after throwing, be sure to step well back.",
-  "Most problems can be resolved with guns and": "Most problems can be resolved with guns and",
-  "explosives.": "explosives.",
-  "...Yet sometimes, something simpler will do.": "...Yet sometimes, something simpler will do.",
-  "Press \\C[6]3\\C[0] to switch to your \\I[96]\\C[6]melee weapon\\C[0].\\!": "Press \\C[6]3\\C[0] to switch to your \\I[96]\\C[6]melee weapon\\C[0].\\!",
-  "Draw it and take a look.": "Draw it and take a look.",
-  "Just like with firearms,": "Just like with firearms,",
-  "press \\C[6]Space\\C[0] to strike with your": "press \\C[6]Space\\C[0] to strike with your",
-  "melee weapon.": "melee weapon.",
-  "Melee weapons have one significant": "Melee weapons have one significant",
-  "advantage.\\.": "advantage.\\.",
-  "They require no ammo and no reloading, so": "They require no ammo and no reloading, so",
-  "you can use them anytime.": "you can use them anytime.",
-  "They also do not rely on hit rate,": "They also do not rely on hit rate,",
-  "however, the more exhausted you become,": "however, the more exhausted you become,",
-  "the weaker your strikes will be.": "the weaker your strikes will be.",
-  "Keep in mind that attacking drains your": "Keep in mind that attacking drains your",
-  "stamina. This makes relying on melee weapons": "stamina. This makes relying on melee weapons",
-  "risky against targets capable of fighting": "risky against targets capable of fighting",
-  "back.": "back.",
-  "If you want to switch back to": "If you want to switch back to",
-  "firearms:\\!": "firearms:\\!",
-  "press \\C[6]1\\C[0] to select your primary weapon;\\.": "press \\C[6]1\\C[0] to select your primary weapon;\\.",
-  "press \\C[6]2\\C[0] to select your handgun.\\.": "press \\C[6]2\\C[0] to select your handgun.\\.",
-  "That concludes our combat overview.": "That concludes our combat overview.",
-  "When you are ready to proceed to the final": "When you are ready to proceed to the final",
-  "part of the tutorial,\\. put away your knife.": "part of the tutorial,\\. put away your knife.",
-  "Additionally, press \\C[6]V\\C[0] while holding a firearm": "Additionally, press \\C[6]V\\C[0] while holding a firearm",
-  "to perform a \\C[6]quick melee attack\\C[0].\\|": "to perform a \\C[6]quick melee attack\\C[0].\\|",
-  "Very useful for finishing off a wounded target.": "Very useful for finishing off a wounded target.",
-  "The mirror reflects a solitary figure who cares about no": "The mirror reflects a solitary figure who cares about no",
-  "one.\\! Her eyes reflect no light.": "one.\\! Her eyes reflect no light.",
-  "Usually I stay in my room without washing.\\.": "Usually I stay in my room without washing.\\.",
-  "But this morning, I took a long shower.\\.": "But this morning, I took a long shower.\\.",
-  "will be the star on center stage.": "will be the star on center stage.",
+  "Looks like you hit it without aiming.": "Tampaknya kamu mengenainya tanpa membidik.",
+  "You can fire even without entering \\C[6]aiming mode\\C[0].\\.": "Kamu bisa menembak bahkan tanpa masuk \\C[6]mode membidik\\C[0].\\.",
+  "Whether you hit or miss is pure chance.": "Kena atau meleset itu murni keberuntungan.",
+  "When you want to attack a target,": "Saat ingin menyerang target,",
+  "press \\C[6]E\\C[0] to enter \\C[6]aiming mode\\C[0]": "tekan \\C[6]E\\C[0] untuk masuk \\C[6]mode membidik\\C[0]",
+  "and \\C[6]aim as accurately as possible\\C[0] before taking the shot.": "dan \\C[6]bidik seakurat mungkin\\C[0] sebelum menembak.",
+  "Direct hit!": "Tepat sasaran!",
+  "Now you are equipped with": "Sekarang kamu dipersenjatai dengan",
+  "your \\I[120]\\C[2]primary weapon\\C[0].": "\\I[120]\\C[2]senjata utama\\C[0] milikmu.",
+  "In addition, you also have a \\I[121]\\C[1]handgun\\C[0]": "Selain itu, kamu juga memiliki \\I[121]\\C[1]pistol\\C[0]",
+  "as a sidearm.": "sebagai senjata sampingan.",
+  "You can switch between weapons at any": "Kamu bisa beralih senjata kapan saja",
+  "moment by pressing the \\C[6]Q\\C[0] key.\\!": "dengan menekan tombol \\C[6]Q\\C[0].\\!",
+  "Try drawing your \\I[121]\\C[1]handgun\\C[0].": "Cobalah menghunus \\I[121]\\C[1]pistol\\C[0] milikmu.",
+  "Remember, switching to your handgun is always": "Ingat, beralih ke pistol sampingan selalu",
+  "faster than reloading.": "lebih cepat daripada mengisi ulang peluru (reload).",
+  "If enemies surround you and your mag is empty,\\.": "Jika musuh mengepungmu dan magazenmu kosong,\\.",
+  "—swap to another weapon.": "—segera beralihlah ke senjata lain.",
+  "A single shot is not enough to eliminate a target.\\!": "Satu tembakan tak cukup untuk menghabisi target.\\!",
+  "That means you must hit them multiple times.": "Itu berarti kamu harus menembaknya berkali-kali.",
+  "Try firing in the designated direction, hitting the": "Cobalah menembak ke arah yang ditentukan, mengenai",
+  "target as many times as possible.": "target sebanyak mungkin tembakan.",
+  "Recoil \\C[6]noticeably lowers your hit rate\\C[0].\\.": "Hentakan \\C[6]menurunkan akurasi tembakanmu\\C[0].\\.",
+  "During continuous fire, make sure it does not": "Saat menembak beruntun, pastikan akurasi tidak",
+  "drop too low.": "turun terlalu rendah.",
+  "Excellent!\\! Every single shot hit the mark!": "Luar biasa!\\! Semua tembakan tepat sasaran!",
+  "Not bad!\\.": "Lumayan!\\.",
+  "Out of \\C[6]10 shots\\C[0], you hit \\C[6]\\V[27] times\\C[0]!": "Dari \\C[6]10 tembakan\\C[0], kamu mengenai target \\C[6]\\V[27] kali\\C[0]!",
+  "Unbelievable!\\!": "Mustahil!\\!",
+  "You didn't hit a single shot!": "Tak satu pun tembakanmu yang kena!",
+  "Good aiming is the key to success.\\!": "Membidik dengan baik adalah kunci keberhasilan.\\!",
+  "If you fire blindly, your target will never go down.": "Jika kamu menembak membabi buta, target takkan pernah tumbang.",
+  "Before shooting, enter \\C[6]aiming mode\\C[0],\\.": "Sebelum menembak, masuklah ke \\C[6]mode membidik\\C[0],\\.",
+  "\\C[6]aim carefully\\C[0], and only then pull the trigger.": "\\C[6]bidik dengan cermat\\C[0], baru tarik pelatuknya.",
+  "Well now!\\.": "Aduh!\\.",
+  "Only \\C[6]\\V[27] shots\\C[0] out of \\C[6]10\\C[0] hit the target.": "Hanya \\C[6]\\V[27] tembakan\\C[0] dari \\C[6]10\\C[0] yang mengenai sasaran.",
+  "If you don't aim carefully,": "Jika kamu tidak membidik dengan hati-hati,",
+  "you will never deal enough damage to the target.": "kamu takkan bisa memberi kerusakan yang cukup pada target.",
+  "When you face a dense crowd,\\.": "Saat kamu menghadapi kerumunan padat,\\.",
+  "\\I[126]\\C[6]pipe bombs\\C[0] come in very handy.": "\\I[126]\\C[6]bom pipa\\C[0] akan sangat berguna.",
+  "Hold down the \\C[6]G\\C[0] key to throw a bomb.\\!": "Tahan tombol \\C[6]G\\C[0] untuk melempar bom.\\!",
+  "The longer you hold it, the farther it travels.\\.": "Semakin lama ditahan, semakin jauh lemparannya.\\.",
+  "Tap it just once—and the bomb drops right at your feet.": "Ketuk sekali saja—dan bom akan jatuh tepat di kakimu.",
+  "Try throwing a training bomb.": "Cobalah melempar bom latihan.",
+  "Shortly after landing, the bomb will detonate,": "Sesaat setelah mendarat, bom akan meledak,",
+  "dealing damage to everyone in range.": "memberikan kerusakan pada siapa pun di jangkauannya.",
+  "If you get caught in the blast yourself,\\.": "Jika kamu sendiri terkena ledakannya,\\.",
+  "you will suffer irreversible \\C[6]fatal damage\\C[0].\\.": "kamu akan menderita \\C[6]kerusakan fatal\\C[0] permanen.\\.",
+  "So after throwing, be sure to step well back.": "Maka setelah melempar, pastikan untuk mundur jauh.",
+  "Most problems can be resolved with guns and": "Sebagian besar masalah bisa diselesaikan dengan senjata dan",
+  "explosives.": "bahan peledak.",
+  "...Yet sometimes, something simpler will do.": "...Namun terkadang, sesuatu yang lebih sederhana sudah cukup.",
+  "Press \\C[6]3\\C[0] to switch to your \\I[96]\\C[6]melee weapon\\C[0].\\!": "Tekan \\C[6]3\\C[0] untuk beralih ke \\I[96]\\C[6]senjata jarak dekat\\C[0].\\!",
+  "Draw it and take a look.": "Hunus dan lihatlah.",
+  "Just like with firearms,": "Sama seperti senjata api,",
+  "press \\C[6]Space\\C[0] to strike with your": "tekan \\C[6]Spasi\\C[0] untuk menyerang dengan",
+  "melee weapon.": "senjata jarak dekatmu.",
+  "Melee weapons have one significant": "Senjata jarak dekat memiliki satu keunggulan",
+  "advantage.\\.": "besar.\\.",
+  "They require no ammo and no reloading, so": "Senjata ini tidak butuh amunisi dan tanpa reload, jadi",
+  "you can use them anytime.": "kamu bisa memakainya kapan saja.",
+  "They also do not rely on hit rate,": "Serangannya juga tidak bergantung pada akurasi,",
+  "however, the more exhausted you become,": "namun semakin lelah dirimu,",
+  "the weaker your strikes will be.": "semakin lemah pula tebasan seranganmu.",
+  "Keep in mind that attacking drains your": "Ingatlah bahwa menyerang akan menguras",
+  "stamina. This makes relying on melee weapons": "staminamu. Ini membuat mengandalkan senjata tajam",
+  "risky against targets capable of fighting": "berisiko saat melawan target yang mampu",
+  "back.": "melawan balik.",
+  "If you want to switch back to": "Jika kamu ingin beralih kembali ke",
+  "firearms:\\!": "senjata api:\\!",
+  "press \\C[6]1\\C[0] to select your primary weapon;\\.": "tekan \\C[6]1\\C[0] untuk memilih senjata utama;\\.",
+  "press \\C[6]2\\C[0] to select your handgun.\\.": "tekan \\C[6]2\\C[0] untuk memilih pistol sampingan.\\.",
+  "That concludes our combat overview.": "Demikianlah ikhtisar pertempuran kita.",
+  "When you are ready to proceed to the final": "Saat kamu siap melanjutkan ke bagian akhir",
+  "part of the tutorial,\\. put away your knife.": "tutorial,\\. sarungkan pisaumu.",
+  "Additionally, press \\C[6]V\\C[0] while holding a firearm": "Selain itu, tekan \\C[6]V\\C[0] saat memegang senjata api",
+  "to perform a \\C[6]quick melee attack\\C[0].\\|": "untuk melakukan \\C[6]serangan jarak dekat cepat\\C[0].\\|",
+  "Very useful for finishing off a wounded target.": "Sangat berguna untuk menghabisi target yang terluka.",
+  "The mirror reflects a solitary figure who cares about no": "Cermin memantulkan sosok penyendiri yang tak peduli pada siapa",
+  "one.\\! Her eyes reflect no light.": "pun.\\! Matanya tak lagi memancarkan cahaya.",
+  "Usually I stay in my room without washing.\\.": "Biasanya aku berdiam di kamar tanpa mandi.\\.",
+  "But this morning, I took a long shower.\\.": "Namun pagi ini, aku mandi cukup lama.\\.",
+  "will be the star on center stage.": "akan menjadi bintang utama di panggung.",
   "Would you like to receive 9,999,999 SP?": "Apakah kamu ingin menerima 9.999.999 SP?",
-  "You are now the proud owner of 9,999,999 SP!!!": "Kamu sekarang memiliki 9.999.999 SP!!!"
+  "You are now the proud owner of 9,999,999 SP!!!": "Kamu sekarang memiliki 9.999.999 SP!!!",
+  "Locked": "Terkunci",
+  "Unlocked!": "Terbuka!",
+  "Secret Achievements": "Prestasi Rahasia",
+  "Achievements": "Prestasi",
+  "Achievement Unlocked": "Prestasi Terbuka",
+  "Reward: ": "Hadiah: ",
+  "\\Fs[21]Press E to enter \\C[6]aiming mode\\C[0].\n\nIn this mode, your hit rate will\n\\C[6]gradually increase up to 100%\\C[0],\nallowing you to strike targets much more accurately.\n\nHold Shift to move\nwhile remaining in aiming mode.": "\\Fs[21]Tekan E untuk masuk \\C[6]mode membidik\\C[0].\n\nDalam mode ini, akurasi tembakanmu akan\n\\C[6]meningkat bertahap hingga 100%\\C[0],\nmembuat tembakan jauh lebih akurat.\n\nTahan Shift untuk bergerak\nsambil tetap dalam mode membidik.",
+  "\\Fs[21]Running and enemy attacks consume your \\C[6]stamina\\C[0], \nas indicated by the green gauge above your\nhead.\n\nStamina recovers on its own, \nbut if completely depleted, running is disabled \nuntil it has fully recharged.\n\nIf you take damage while exhausted,\nyou will be arrested, resulting in a \\C[6]Game Over\\C[0].": "\\Fs[21]Berlari dan serangan musuh menguras \\C[6]stamina\\C[0],\nseperti yang ditunjukkan bilah hijau di atas\nkepalamu.\n\nStamina pulih dengan sendirinya,\ntetapi jika habis total, kamu tidak bisa berlari\nsampai terisi penuh kembali.\n\nJika terkena serangan saat kelelahan,\nkamu akan ditangkap dan \\C[6]Game Over\\C[0].",
+  "\\Fs[21]You carry two firearms: a \\C[2]primary weapon\\C[0] and a \\C[1]handgun\\C[0].\nPress Q to switch between them.\n\nSwapping weapons is faster than reloading and allows you to\nkeep shooting without leaving yourself vulnerable.": "\\Fs[21]Kamu membawa dua senjata api: \\C[2]senjata utama\\C[0] dan \\C[1]pistol\\C[0].\nTekan Q untuk beralih di antara keduanya.\n\nBerganti senjata lebih cepat daripada reload dan membuatmu\nbisa terus menembak tanpa celah bahaya.",
+  "\\Fs[21]Press 3 to draw your \\C[6]melee weapon\\C[0].\nWhile it cannot hit targets at range,\nit is invaluable for point-blank encounters.\n\nHowever, swinging melee weapons \\C[6]consumes stamina\\C[0].\nThe more exhausted you are, the weaker your strikes.": "\\Fs[21]Tekan 3 untuk menghunus \\C[6]senjata jarak dekat\\C[0].\nMeski tak bisa mengenai sasaran jauh,\nsenjata ini sangat ampuh dalam jarak dekat.\n\nNamun, mengayunkan senjata tajam \\C[6]menguras stamina\\C[0].\nSemakin kamu lelah, semakin lemah tebasanmu.",
+  "\\Fs[21]Hold G to throw a \\C[6]grenade\\C[0].\nThe longer you hold the key, the farther it travels.\n\nShortly after landing, the grenade will detonate,\ndealing heavy area damage.\n\n\\C[6]The explosion is also fatal to the player\\C[0],\nso be sure to step well back after throwing.": "\\Fs[21]Tahan G untuk melempar \\C[6]granat\\C[0].\nSemakin lama ditahan, semakin jauh lemparannya.\n\nSesaat setelah mendarat, granat akan meledak,\nmemberikan kerusakan area yang dahsyat.\n\n\\C[6]Ledakan ini juga fatal bagi pemain\\C[0],\njadi pastikan mundur menjauh setelah melempar.",
+  "\\Fs[21]\\C[6]Shotguns\\C[0] are high-accuracy weapons with\nimmense lethality.\nSpecial ammunition grants them a\n\\C[6]hit rate bonus (+25%)\\C[0].\n\nAt greater distances, damage drops sharply due to\npellet spread, so engage targets at close range.": "\\Fs[21]\\C[6]Shotgun\\C[0] adalah senjata berdaya hancur tinggi\nyang sangat mematikan.\nAmunisi khususnya memberikan bonus\n\\C[6]akurasi (+25%)\\C[0].\n\nPada jarak jauh, kerusakan turun drastis akibat\nsebaran peluru, jadi seranglah dari jarak dekat.",
+  "\\Fs[21]Depending on damage taken, targets become either\nwounded or severely wounded.\n\nWounded targets have reduced movement speed,\nand severely wounded ones cannot move at all.\n\nAt the end of the run, severely wounded targets\nhave a \\C[6]chance to succumb to wounds\\C[0], counting\nas kills.": "\\Fs[21]Tergantung luka yang diderita, target akan\nterluka ringan atau terluka parah.\n\nTarget terluka mengalami penurunan kecepatan gerak,\ndan yang terluka parah tidak bisa bergerak sama sekali.\n\nDi akhir serangan, target yang terluka parah\nmemiliki \\C[6]peluang mati akibat luka\\C[0], yang dihitung\nsebagai jumlah korban.",
+  "\\Fs[21]To arrest the player, teachers will arrive\nas \\C[6]reinforcements\\C[0].\n\nDepending on the situation, they can quickly surround\nyou. To prevent this,\n\\C[6]take decisive action promptly.\\C[0]\n\nTeachers' whistles hasten the arrival of reinforcements,\nso stay sharp and eliminate threats quickly.": "\\Fs[21]Untuk menangkap pemain, para guru akan tiba\nsebagai \\C[6]bantuan (bala bantuan)\\C[0].\n\nTergantung situasi, mereka bisa mengepungmu dengan cepat.\nUntuk mencegahnya,\n\\C[6]ambil tindakan tegas dengan cepat.\\C[0]\n\nPeluit guru mempercepat kedatangan bantuan,\njadi tetap waspada dan habisi ancaman segera.",
+  "\\Fs[21]Over time, the school will begin to empty out\nas students and teachers evacuate.\n\nAttacking the faculty room and eliminating\nall teachers will \\C[6]slightly delay their arrival\\C[0].": "\\Fs[21]Seiring waktu, sekolah akan mulai kosong karena\nsiswa dan guru mulai mengungsi.\n\nMenyerang ruang guru dan menghabisi\nsemua guru di sana akan \\C[6]sedikit menunda kedatangan bantuan\\C[0].",
+  "\\Fs[21]Teachers are not the only threat.\nStudents can also \\C[6]put up resistance\\C[0].\n\nCounterattack chance depends on student courage,\nincreasing when the player \\C[6]gets close, reloads, or\nturns their back\\C[0].\n\nMost counterattacks come from \\C[6]male students\\C[0],\nso prioritizing them is effective for preventing\nsudden takedowns.": "\\Fs[21]Bukan cuma guru yang berbahaya.\nPara siswa juga bisa \\C[6]melakukan perlawanan\\C[0].\n\nPeluang serangan balik bergantung pada keberanian siswa,\nmeningkat saat pemain \\C[6]mendekat, reload, atau\nmembalikkan badan\\C[0].\n\nSebagian besar perlawanan berasal dari \\C[6]siswa laki-laki\\C[0],\njadi utamakan mereka untuk mencegah serangan mendadak.",
+  "\\Fs[21]If attacked with melee weapons or firearms,\nyou suffer \\C[6]fatal damage\\C[0].\n\nThe red portion of your stamina bar displays fatal\ndamage, reducing your maximum stamina accordingly.\n\nIf the gauge fills completely with red, you die,\nresulting in a \\C[6]Game Over\\C[0].": "\\Fs[21]Jika diserang senjata tajam atau senjata api,\nkamu menderita \\C[6]kerusakan fatal\\C[0].\n\nBagian merah pada bilah staminamu menunjukkan kerusakan\nfatal, yang mengurangi batas maksimum stamina.\n\nJika bilah terisi penuh warna merah, kamu mati\ndan mengalami \\C[6]Game Over\\C[0].",
+  "\\Fs[21]\\C[6]Yumi Tojo\\C[0] is a knife-wielding character.\nThe skill \\C[4]'Hallway Tag!'\\C[0] allows enabling\n'Yumi Mode' in options and playing as her.\n\nYumi cannot use guns or explosives, but moves\nrapidly and recovers stamina quickly. She wields\nthe strongest melee weapon: 'Yumi's Knife'.\n\nAdditionally, when her stamina is full, pressing Q\nperforms a \\C[6]powerful lunge\\C[0] that \\C[6]instantly kills\nany unarmored target\\C[0].": "\\Fs[21]\\C[6]Yumi Tojo\\C[0] adalah karakter bersenjatakan pisau.\nKeahlian \\C[4]'Petak Umpet Koridor!'\\C[0] membuka\n'Mode Yumi' di pengaturan untuk bermain sebagai dirinya.\n\nYumi tak bisa memakai senjata api atau bahan peledak, tapi\nbergerak lincah dan memulihkan stamina sangat cepat. Dia memakai\nsenjata jarak dekat terkuat: 'Pisau Yumi'.\n\nSaat staminanya penuh, menekan Q melancarkan \\C[6]terjangan kuat\\C[0]\nyang \\C[6]langsung membunuh target tanpa pelindung\\C[0].",
+  "\\Fs[21]\\C[6]Hard Mode\\C[0] introduces various punishing\nmechanics and gameplay tweaks.\n\\C[6]This is an extremely difficult mode.\\C[0]\n\nIf you feel prepared, enable 'Hard Mode' in the\ngame settings.": "\\Fs[21]\\C[6]Mode Sulit\\C[0] menghadirkan berbagai mekanisme hukuman\ndan penyesuaian gameplay.\n\\C[6]Ini adalah mode yang luar biasa menantang.\\C[0]\n\nJika kamu merasa siap, aktifkan 'Mode Sulit' di\npengaturan game.",
+  "\\Fs[21]・Hit rate affects both damage and critical chance\n\n・Hit rate and stamina no longer refill when moving\n  between maps\n\n・Weapon recoil is increased;\n  firing on the move increases it even further\n\n・Student resistance rate and damage to player are increased;\n  patrol officers are added as new enemies\n\n・Limited magazine capacity; stray shots may hit corpses": "\\Fs[21]・Akurasi mempengaruhi kerusakan dan peluang kritikal\n\n・Akurasi dan stamina tak lagi terisi ulang saat berpindah peta\n\n・Hentakan senjata meningkat;\n  menembak sambil bergerak membuatnya semakin tinggi\n\n・Tingkat perlawanan siswa dan kerusakan pemain meningkat;\n  petugas patroli ditambahkan sebagai musuh baru\n\n・Kapasitas magazen terbatas; tembakan meleset bisa mengenai mayat",
+  "\\Fs[21]In Hard Mode, your magazine supply is limited.\n\nWhen reloading, remaining rounds in the magazine\nare retained.\n\nWhen reloading, you automatically load the\nmagazine with the most ammunition remaining.": "\\Fs[21]Di Mode Sulit, persediaan magazenmu terbatas.\n\nSaat reload, sisa peluru di magazen lama\ntetap tersimpan.\n\nSaat reload, kamu otomatis memasang magazen\ndengan sisa peluru terbanyak.",
+  "\\Fs[21]In Hard Mode, stray bullets can hit corpses, and\ndistinguishing the severely wounded from the dead is harder.\n\nIf multiple targets lie on your line of fire, living or\ndead, you automatically aim at the closest.\n\nPress F to \\C[6]switch targets\\C[0] and aim at another.": "\\Fs[21]Di Mode Sulit, peluru meleset bisa mengenai mayat, dan\nmembedakan yang luka parah dengan yang mati lebih sulit.\n\nJika ada beberapa sasaran di garis tembakmu, hidup atau mati,\nkamu otomatis membidik yang terdekat.\n\nTekan F untuk \\C[6]mengganti target\\C[0] dan membidik yang lain.",
+  "\\Fs[21]Certain targets wear \\C[6]protective gear\\C[0], such as\nballistic vests and shields.\n\nThey can absorb substantial ballistic damage and are\ncompletely immune to melee strikes.\n": "\\Fs[21]Target tertentu mengenakan \\C[6]pelindung tubuh\\C[0], seperti\nrompi anti-peluru dan perisai.\n\nPelindung ini menyerap kerusakan balistik dalam jumlah besar dan\nkebal total terhadap serangan senjata tajam.\n",
+  "Cheat: Infinite Ammo": "Cheat: Amunisi Tak Terbatas",
+  "Cheat: Infinite Bombs": "Cheat: Bom Tak Terbatas",
+  "Cheat: Infinite Health": "Cheat: Kebal / Darah Inf"
 };
 
     window.t = function(text) {
@@ -1013,24 +1045,34 @@
         if (ConfigManager.language === 'id') {
             var trimmed = text.trim();
             if (window.I18N_ID.hasOwnProperty(trimmed)) {
-                var translated = window.I18N_ID[trimmed];
                 var lead = text.match(/^\s*/)[0];
                 var trail = text.match(/\s*$/)[0];
-                return lead + translated + trail;
+                return lead + window.I18N_ID[trimmed] + trail;
             }
             if (window.I18N_ID.hasOwnProperty(text)) {
                 return window.I18N_ID[text];
+            }
+            // Handle escape code prefixes like \C[8]\Fs[20]Some text
+            var escMatch = text.match(/^((?:\\[A-Za-z]+(?:\[\d*\])?|\\[!.<>|^])+)([\s\S]*)$/);
+            if (escMatch) {
+                var prefix = escMatch[1];
+                var inner = escMatch[2];
+                var innerTrimmed = inner.trim();
+                if (window.I18N_ID.hasOwnProperty(innerTrimmed)) {
+                    var inLead = inner.match(/^\s*/)[0];
+                    var inTrail = inner.match(/\s*$/)[0];
+                    return prefix + inLead + window.I18N_ID[innerTrimmed] + inTrail;
+                }
             }
         }
         return text;
     };
 
-    // 3. Infinite SP Cheat
+    // 3. Cheats Implementation
+    // Infinite SP
     var _Game_Party_gold = Game_Party.prototype.gold;
     Game_Party.prototype.gold = function() {
-        if (ConfigManager.infiniteSp) {
-            return 9999999;
-        }
+        if (ConfigManager.infiniteSp) return 9999999;
         return _Game_Party_gold.call(this);
     };
 
@@ -1052,34 +1094,199 @@
         _Game_Party_gainGold.call(this, amount);
     };
 
-    // 4. Hotkeys for Cheats (Key 9 and F8)
+    // Hotkey Cheats (Key 9 and F8)
     Input.keyMapper[57] = 'cheatMode';  // 9
     Input.keyMapper[119] = 'cheatMode'; // F8
+
+    // Scene_Map Real-time Cheats & Hotkey Handler
+    var _Scene_Map_update = Scene_Map.prototype.update;
+    Scene_Map.prototype.update = function() {
+        _Scene_Map_update.call(this);
+
+        // Infinite SP
+        if (ConfigManager.infiniteSp) {
+            if ($gameParty) $gameParty._gold = 9999999;
+        }
+
+        // Infinite Bombs
+        if (ConfigManager.infiniteBombs) {
+            if ($gameVariables && $gameVariables._data) {
+                $gameVariables._data[41] = 99;
+            }
+        }
+
+        // Infinite Health / God Mode
+        if (ConfigManager.infiniteHealth) {
+            if ($gameVariables && $gameVariables._data) {
+                $gameVariables._data[62] = 0;   // 0 fatal damage
+                $gameVariables._data[4] = 100;  // 100 stamina
+            }
+            if ($gameSwitches) {
+                $gameSwitches.setValue(58, true);  // God Mode switch
+                $gameSwitches.setValue(34, false); // Block Death flag
+                $gameSwitches.setValue(47, false); // Block damage wait
+            }
+        }
+
+        // Infinite Ammo Magazine Refill
+        if (ConfigManager.infiniteAmmo) {
+            if ($gameVariables && $gameVariables._data) {
+                if (Array.isArray($gameVariables._data[50])) {
+                    for (var mi = 0; mi < $gameVariables._data[50].length; mi++) {
+                        $gameVariables._data[50][mi] = 99;
+                    }
+                }
+                if (Array.isArray($gameVariables._data[51])) {
+                    for (var mi = 0; mi < $gameVariables._data[51].length; mi++) {
+                        $gameVariables._data[51][mi] = 99;
+                    }
+                }
+            }
+        }
+
+        // Hotkey 9 / F8 triggers Master Cheat Toggle
+        if (Input.isTriggered('cheatMode')) {
+            var masterState = !(ConfigManager.infiniteHealth && ConfigManager.infiniteAmmo && ConfigManager.infiniteBombs && ConfigManager.infiniteSp);
+            ConfigManager.infiniteSp = masterState;
+            ConfigManager.infiniteAmmo = masterState;
+            ConfigManager.infiniteBombs = masterState;
+            ConfigManager.infiniteHealth = masterState;
+            ConfigManager.save();
+
+            if (masterState) {
+                if ($gameParty) $gameParty._gold = 9999999;
+                if ($gameVariables && $gameVariables._data) {
+                    $gameVariables._data[41] = 99;
+                    $gameVariables._data[62] = 0;
+                    $gameVariables._data[4] = 100;
+                }
+                if ($gameSwitches) {
+                    $gameSwitches.setValue(58, true);
+                    $gameSwitches.setValue(34, false);
+                }
+            } else {
+                if ($gameSwitches) {
+                    $gameSwitches.setValue(58, false);
+                }
+            }
+
+            SoundManager.playShop();
+            var isId = (ConfigManager.language === 'id');
+            var msg = masterState ? 
+                (isId ? "CHEAT: Semua Cheat AKTIF! (SP, Bom, Amunisi & Kebal)" : "CHEAT: All Cheats ON! (SP, Bombs, Ammo & God Mode)") : 
+                (isId ? "CHEAT: Semua Cheat NONAKTIF" : "CHEAT: All Cheats OFF");
+            if (this.createSpeakWindow) {
+                this.createSpeakWindow(msg);
+            }
+        }
+    };
+
+    // 4. Subtitle Cutoff Fix (Window_Speak)
+    if (typeof Window_Speak !== 'undefined') {
+        Window_Speak.prototype.initialize = function(text, windowId, targetId) {
+            text = window.t(text);
+            this.targetId = targetId;
+            this.windowId = windowId;
+            this.text = text;
+            this.wait = Math.max(70, Math.min(140, text.length * 3));
+
+            // Accurate width calculation using measurement bitmap
+            var dummyBitmap = new Bitmap(1, 1);
+            dummyBitmap.fontSize = 18;
+            var measured = Math.ceil(dummyBitmap.measureTextWidth(text));
+            var width = Math.min(Graphics.boxWidth - 16, Math.max(140, measured + 36));
+            var height = this.fittingHeight(1);
+
+            Window_Base.prototype.initialize.call(this, 0, 0, width, height);
+            this.opacity = 0;
+            this.contentsOpacity = 255;
+            this.dimmerOpacity = 255;
+
+            if (targetId) {
+                if ($gameMap && $gameMap._events && $gameMap._events[targetId]) {
+                    if ($gameMap._events[targetId]._speakWindow) {
+                        SceneManager._scene.removeChild(SceneManager._scene._speakWindow[$gameMap._events[targetId]._speakWindowId]);
+                    }
+                    $gameMap._events[targetId]._speakWindow = true;
+                    $gameMap._events[targetId]._speakWindowId = this.windowId;
+                }
+            } else {
+                if ($gamePlayer._speakWindow) {
+                    SceneManager._scene.removeChild(SceneManager._scene._speakWindow[$gamePlayer._speakWindowId]);
+                }
+                $gamePlayer._speakWindow = true;
+                $gamePlayer._speakWindowId = this.windowId;
+            }
+            this.showBackgroundDimmer();
+            AudioManager.playSe({"name":"Item1","volume":50,"pitch":150,"pan":0});
+            this.refresh();
+        };
+
+        Window_Speak.prototype.refresh = function() {
+            this.contents.clear();
+            var target = this.targetId == 0 ? $gamePlayer : ($gameMap && $gameMap._events ? $gameMap._events[this.targetId] : null);
+            var tx = target ? target._realX : ($gamePlayer ? $gamePlayer._realX : 0);
+            var ty = target ? target._realY : ($gamePlayer ? $gamePlayer._realY : 0);
+
+            var idealX = (($gamePlayer.scrolledX() - $gamePlayer._realX + tx) * 48) - (this.width / 2) + 24;
+            var idealY = (($gamePlayer.scrolledY() - $gamePlayer._realY + ty) * 48) - 90;
+
+            // Clamping inside screen margins prevents cutting off on left and right!
+            this.x = Math.max(8, Math.min(idealX, Graphics.boxWidth - this.width - 8));
+            this.y = Math.max(8, Math.min(idealY, Graphics.boxHeight - this.height - 8));
+
+            this.contents.fontSize = 18;
+            this.drawText(this.text, 0, 0, this.contentsWidth(), 'center');
+
+            if (this.wait > 0) {
+                this.wait -= 1;
+            } else {
+                if (this.contentsOpacity > 0) {
+                    this.contentsOpacity -= 2;
+                    this.dimmerOpacity -= 2;
+                    if (this._dimmerSprite) this._dimmerSprite.opacity = this.dimmerOpacity;
+                } else {
+                    this.hideBackgroundDimmer();
+                    this.close();
+                }
+            }
+        };
+    }
+
+    // Hook Scene_Map.prototype.createSpeakWindow as well
+    var _Scene_Map_createSpeakWindow = Scene_Map.prototype.createSpeakWindow;
+    if (_Scene_Map_createSpeakWindow) {
+        Scene_Map.prototype.createSpeakWindow = function(text, targetId) {
+            text = window.t(text);
+            _Scene_Map_createSpeakWindow.call(this, text, targetId);
+        };
+    }
 
     // 5. Options Window integration
     var _Window_Options_makeCommandList = Window_Options.prototype.makeCommandList;
     Window_Options.prototype.makeCommandList = function() {
-        this.addCommand(ConfigManager.language === 'id' ? "Bahasa" : "Language", 'language');
-        this.addCommand(ConfigManager.language === 'id' ? "Cheat: SP Tak Terbatas" : "Cheat: Infinite SP", 'infiniteSp');
+        var isId = (ConfigManager.language === 'id');
+        this.addCommand(isId ? "Bahasa" : "Language", 'language');
+        this.addCommand(isId ? "Cheat: SP Tak Terbatas" : "Cheat: Infinite SP", 'infiniteSp');
+        this.addCommand(isId ? "Cheat: Amunisi Tak Terbatas" : "Cheat: Infinite Ammo", 'infiniteAmmo');
+        this.addCommand(isId ? "Cheat: Bom Tak Terbatas" : "Cheat: Infinite Bombs", 'infiniteBombs');
+        this.addCommand(isId ? "Cheat: Kebal / Darah Inf" : "Cheat: Infinite Health", 'infiniteHealth');
         _Window_Options_makeCommandList.call(this);
     };
 
     var _Window_Options_statusText = Window_Options.prototype.statusText;
     Window_Options.prototype.statusText = function(index) {
         var symbol = this.commandSymbol(index);
+        var isId = (ConfigManager.language === 'id');
         if (symbol === 'language') {
-            return ConfigManager.language === 'id' ? 'Indonesia' : 'English';
+            return isId ? 'Indonesia' : 'English';
         }
-        if (symbol === 'infiniteSp') {
+        if (symbol === 'infiniteSp' || symbol === 'infiniteAmmo' || symbol === 'infiniteBombs' || symbol === 'infiniteHealth') {
             var val = this.getConfigValue(symbol);
-            if (ConfigManager.language === 'id') {
-                return val ? 'AKTIF' : 'NONAKTIF';
-            } else {
-                return val ? 'ON' : 'OFF';
-            }
+            return val ? (isId ? 'AKTIF' : 'ON') : (isId ? 'NONAKTIF' : 'OFF');
         }
         var text = _Window_Options_statusText.call(this, index);
-        if (ConfigManager.language === 'id') {
+        if (isId) {
             if (text === 'ON') return 'AKTIF';
             if (text === 'OFF') return 'NONAKTIF';
         }
@@ -1096,12 +1303,12 @@
             this.refresh();
             return;
         }
-        if (symbol === 'infiniteSp') {
+        if (symbol === 'infiniteSp' || symbol === 'infiniteAmmo' || symbol === 'infiniteBombs' || symbol === 'infiniteHealth') {
             var val = !this.getConfigValue(symbol);
             this.setConfigValue(symbol, val);
             SoundManager.playCursor();
             ConfigManager.save();
-            if (val && $gameParty) {
+            if (val && symbol === 'infiniteSp' && $gameParty) {
                 $gameParty._gold = 9999999;
             }
             this.redrawItem(this.index());
@@ -1113,7 +1320,7 @@
     var _Window_Options_cursorRight = Window_Options.prototype.cursorRight;
     Window_Options.prototype.cursorRight = function(wrap) {
         var symbol = this.commandSymbol(this.index());
-        if (symbol === 'language' || symbol === 'infiniteSp') {
+        if (symbol === 'language' || symbol === 'infiniteSp' || symbol === 'infiniteAmmo' || symbol === 'infiniteBombs' || symbol === 'infiniteHealth') {
             this.processOk();
             return;
         }
@@ -1123,20 +1330,28 @@
     var _Window_Options_cursorLeft = Window_Options.prototype.cursorLeft;
     Window_Options.prototype.cursorLeft = function(wrap) {
         var symbol = this.commandSymbol(this.index());
-        if (symbol === 'language' || symbol === 'infiniteSp') {
+        if (symbol === 'language' || symbol === 'infiniteSp' || symbol === 'infiniteAmmo' || symbol === 'infiniteBombs' || symbol === 'infiniteHealth') {
             this.processOk();
             return;
         }
         _Window_Options_cursorLeft.call(this, wrap);
     };
 
-    // 6. Live Text Translation Hooks
+    // 6. Live Text Translation Hooks (drawText, drawTextEx, Game_Message, Choices, etc.)
     var _Window_Base_drawText = Window_Base.prototype.drawText;
     Window_Base.prototype.drawText = function(text, x, y, maxWidth, align) {
         if (typeof text === 'string') {
             text = window.t(text);
         }
         _Window_Base_drawText.call(this, text, x, y, maxWidth, align);
+    };
+
+    var _Window_Base_drawTextEx = Window_Base.prototype.drawTextEx;
+    Window_Base.prototype.drawTextEx = function(text, x, y) {
+        if (typeof text === 'string') {
+            text = window.t(text);
+        }
+        return _Window_Base_drawTextEx.call(this, text, x, y);
     };
 
     var _Game_Message_add = Game_Message.prototype.add;
@@ -1181,14 +1396,5 @@
             _Window_Base_drawItemName.call(this, item, x, y, width);
         }
     };
-
-    // Hook Window_Speak for speech bubbles
-    var _Scene_Map_createSpeakWindow = Scene_Map.prototype.createSpeakWindow;
-    if (_Scene_Map_createSpeakWindow) {
-        Scene_Map.prototype.createSpeakWindow = function(text, targetId) {
-            text = window.t(text);
-            _Scene_Map_createSpeakWindow.call(this, text, targetId);
-        };
-    }
 
 })();

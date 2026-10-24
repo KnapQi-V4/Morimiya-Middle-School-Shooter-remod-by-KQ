@@ -2623,7 +2623,7 @@
 				$gamePlayer.requestAnimation(2);
 
 				//ダメージウェイト、チートモードでない時はダメージを受ける
-				if (!$gameSwitches.value(46) && !$gameSwitches.value(58)) {
+				if (!$gameSwitches.value(46) && !$gameSwitches.value(58) && (typeof ConfigManager === "undefined" || !ConfigManager.infiniteHealth)) {
 					if (this._characterName == "principal") { //校長エンドフラグ
 						$gameVariables._data[43] = 4;
 					}else{ //警察官エンドフラグ
@@ -3280,7 +3280,7 @@
 	Game_Event.prototype.attackPlayer = function() {
 
 		//入室直後の攻撃保護、ダメージウェイト、優美のスキル発動中、増援直後の攻撃保護、チートモード
-		if ($gameSwitches.value(42) || $gameSwitches.value(46) || $gameSwitches.value(49) || $gameSwitches.value(56) || $gameSwitches.value(58)) {
+		if ($gameSwitches.value(42) || $gameSwitches.value(46) || $gameSwitches.value(49) || $gameSwitches.value(56) || $gameSwitches.value(58) || (typeof ConfigManager !== "undefined" && ConfigManager.infiniteHealth)) {
 			return;
 		}
 
@@ -4637,7 +4637,7 @@
 
 		}
 
-		if($gameVariables._data[41] > 0 && 
+		if (($gameVariables._data[41] > 0 || (typeof ConfigManager !== "undefined" && ConfigManager.infiniteBombs)) && 
 		   !$gameSwitches.value(3) && 
 		   !$gameSwitches.value(10) && 
 		   !$gameSwitches.value(12) && 
@@ -5401,7 +5401,7 @@
 		if (!burstMode) {
 			if (!this.canShootOrReload()) {
 				return;
-			}else if (Input.isTriggered('shoot') && magazine <= 0) {
+			}else if (Input.isTriggered('shoot') && magazine <= 0 && (typeof ConfigManager === "undefined" || !ConfigManager.infiniteAmmo)) {
 				AudioManager.playSe({"name":"empty","volume":100,"pitch":100,"pan":0});
 				return;
 			}
@@ -5431,7 +5431,7 @@
 		if (!execute) return;
 
 		//マガジン弾数を一発減らし、発砲回数を記録
-		magazine -= 1;
+		if (typeof ConfigManager === "undefined" || !ConfigManager.infiniteAmmo) magazine -= 1;
 		$gameVariables._data[26]++;
 		$gameSystem.weaponRecord(weaponId, 1, 2);
 		
