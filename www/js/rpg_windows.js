@@ -2711,7 +2711,7 @@ Window_Options.prototype.isVolumeSymbol = function(symbol) {
 };
 
 Window_Options.prototype.booleanStatusText = function(value) {
-    return value ? 'ВКЛ' : 'ВЫКЛ';
+    return value ? 'ON' : 'OFF';
 };
 
 Window_Options.prototype.volumeStatusText = function(value) {
@@ -3634,16 +3634,8 @@ Window_NameInput.prototype.windowHeight = function() {
 };
 
 Window_NameInput.prototype.table = function() {
-    if ($gameSystem.isJapanese()) {
-        return [Window_NameInput.JAPAN1,
-                Window_NameInput.JAPAN2,
-                Window_NameInput.JAPAN3];
-    } else if ($gameSystem.isRussian()) {
-        return [Window_NameInput.RUSSIA];
-    } else {
-        return [Window_NameInput.LATIN1,
-                Window_NameInput.LATIN2];
-    }
+    return [Window_NameInput.LATIN1,
+            Window_NameInput.LATIN2];
 };
 
 Window_NameInput.prototype.maxCols = function() {

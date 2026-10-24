@@ -76,7 +76,7 @@
 		this.addChild(version);
 		version.bitmap = new Bitmap(Graphics.boxWidth, 100);
 		version.bitmap.fontSize = 20;
-		version.bitmap.drawText("Версия 1.2b_EN за авторством Erikku@eric806359, фанатский перевод kitsunyasha", 0, 0, version.width, version.height, "left");
+		version.bitmap.drawText("Version 1.2b by Erikku @eric806359 | English Translation", 0, 0, version.width, version.height, "left");
 		version.x = 5;
 		version.y = 555;
 	}
@@ -84,7 +84,7 @@
 	//エラーメッセージ
 	Graphics._makeErrorHtml = function(name, message) {
 		return ('<font color="yellow"><b>' + name + "<br>" + message + '</b></font><br>' +
-				'<font color="white">' + "Извините, произошла непредвиденная ошибка." + '</font><br>');
+				'<font color="white">' + "Sorry, an unexpected error occurred." + '</font><br>');
 	};
 	
 	//操作の追加
@@ -190,456 +190,456 @@
 
 	//被弾汎用
 	speakTexts.getShot = [
-		"Боже мой!!!",
-		"У-а-а!!!",
-		"Ай-ай!",
-		"А-а-а!",
-		"Ой!",
-		"А-А!",
-		"Ай!"
+		"Oh my god!!!",
+		"Waaah!!!",
+		"Ouch!",
+		"Aaaah!",
+		"Oof!",
+		"Aaah!",
+		"Ow!"
 	];
 	//負傷汎用
 	speakTexts.injured = [
-		"м-м-м...",
-		"м-м-м-м...",
-		"ай...",
-		"ай-ай...",
-		"ах...ох...",
-		"*Вдох*",
-		"*Выдох*",
-		"ах...а-а-ах...",
-		"а-ах...",
-		"ой..."
+		"Mmh...",
+		"Mmmh...",
+		"Ow...",
+		"Ouch...",
+		"Ah... oh...",
+		"*Gasp*",
+		"*Wheeze*",
+		"Ah... aaah...",
+		"A-aah...",
+		"Ooh..."
 	];
 
 	//女子生徒
 	speakTexts.femaleStudent = {};
 	speakTexts.femaleStudent.shout = [
-		"Помогите!",
-		"Прошу! Не надо!",
-		"Не убивай!",
-		"Нет! Кто-нибудь, помогите!",
-		"За что!",
-		"А-А-А! Господи Боже!",
-		"Не-е-ет!",
-		"Нет!",
-		"У-и-и-и!",
-		"Не-е-е-е-ет!!!",
-		"Не подходи!",
-		"Уходи отсюда!"
+		"Help me!",
+		"Please! Don't!",
+		"Don't kill me!",
+		"No! Somebody help!",
+		"Why?!",
+		"Aaaah! Dear God!",
+		"Noooo!",
+		"No!",
+		"Eeeek!",
+		"Noooooo!!!",
+		"Stay away!",
+		"Get out of here!"
 	];
 	speakTexts.femaleStudent.reactToGun = [
-		"Не стреляй!"
+		"Don't shoot!"
 	];
 	speakTexts.femaleStudent.injured = [
-		"Ой... больно-то как...",
-		"*Хнык*",
-		"Я не хочу умирать...",
-		"Ну...почему...",
-		"За что... за что...",
-		"Больно... больно...",
-		"Кровь... продолжает течь...",
-		"Кто-нибудь... на помощь...",
-		"Мама... мамочка...",
-		"Папочка, спаси...",
-		"Я ничего не сделала...",
-		"Боже... помоги..."
+		"Ow... it hurts so much...",
+		"*Sob*",
+		"I don't want to die...",
+		"Why... why me...",
+		"Why... why this...",
+		"It hurts... it hurts...",
+		"Blood... it won't stop...",
+		"Somebody... help me...",
+		"Mom... Mommy...",
+		"Daddy, save me...",
+		"I didn't do anything...",
+		"God... please help..."
 	];
 	
 	//男子生徒
 	speakTexts.maleStudent = {};
 	speakTexts.maleStudent.shout = [
-		"На помощь!!!",
-		"Прошу! Не надо!",
-		"Кто-нибудь, сюда!",
-		"Хватит!",
-		"Остановись!",
-		"Прекрати!",
-		"Не глупи!",
-		"Что за чёрт!",
-		"Ты на приколе?",
-		"Это не смешно!",
-		"Кто ж тебя заставил?",
-		"За что? Тварь!",
-		"Не-ет!",
-		"Твою мать!",
-		"А-а-а!!!",
-		"Скажи, что это пранк!",
-		"Кто-нибудь, полицию!",
-		"Бегите!",
-		"Прочь отсюда, люди!",
-		"Ты прикалываешься?",
-		"Держись подальше!",
-		"Что происходит?",
-		"Серьёзно?!"
+		"Help me!!!",
+		"Please! Don't!",
+		"Somebody, over here!",
+		"Stop it!",
+		"Stop!",
+		"Cut it out!",
+		"Don't be stupid!",
+		"What the hell?!",
+		"Are you kidding me?!",
+		"This isn't funny!",
+		"Who made you do this?!",
+		"Why?! You monster!",
+		"Nooo!",
+		"Dammit!",
+		"Aaaah!!!",
+		"Tell me this is a prank!",
+		"Somebody call the cops!",
+		"Run!",
+		"Get out of here, everyone!",
+		"Are you insane?!",
+		"Stay back!",
+		"What is going on?!",
+		"Seriously?!"
 	];
 	speakTexts.maleStudent.reactToGun = [
-		"Не стреляй!",
-		"Не надо стрелять!"
+		"Don't shoot!",
+		"Don't shoot!"
 	];
 	speakTexts.maleStudent.fight = [
-		"Пиздец!",
-		"Зря ты это затеяла!",
-		"Я для тебя что, шутка?",
-		"На, тварь!",
-		"Я не боюсь тебя!",
-		"Рано радоваться!",
-		"Забываешься!",
-		"Бегите! Сейчас же!",
-		"У-о-у!",
-		"А-а-а-а-а!",
-		"Блять!",
-		"Да пошла ты!",
-		"Как тебе такое, мразь?"
+		"Holy shit!",
+		"You picked the wrong fight!",
+		"You think I'm a joke?!",
+		"Take this, bitch!",
+		"I'm not afraid of you!",
+		"Don't get cocky!",
+		"Know your place!",
+		"Run! Right now!",
+		"Whoa!",
+		"Aaaaargh!",
+		"Fuck!",
+		"Go to hell!",
+		"How do you like that, scum?!"
 	];
 	speakTexts.maleStudent.injured = [
-		"Ой... ай...",
-		"Я не хочу умирать...",
-		"Этого не может быть...",
-		"Нет... за что...",
-		"Не смешно...",
-		"Что я тебе вообще... сделал...",
-		"Поч....Почему..."
+		"Ow... ngh...",
+		"I don't want to die...",
+		"This can't be happening...",
+		"No... why...",
+		"Not funny...",
+		"What did I ever... do to you...",
+		"Wh... Why..."
 	];
 
 	//男性教師
 	speakTexts.teacher = {};
 	speakTexts.teacher.shout = [
-		"Ни с места!",
-		"Всё кончено!",
-		"Ты чего творишь?",
-		"Убегайте, живо!"
+		"Freeze!",
+		"It's over!",
+		"What do you think you're doing?!",
+		"Run away, quick!"
 	];
     speakTexts.teacher.reactToGun = [
-		"Бросай оружие!",
-		"Брось! Сейчас же!",
-		"Пушку на пол!",
-		"Опусти оружие!",
-		"Прекрати огонь!",
-		"Хватит стрелять!"
+		"Drop the weapon!",
+		"Drop it! Right now!",
+		"Gun on the ground!",
+		"Lower your weapon!",
+		"Cease fire!",
+		"Stop shooting!"
 	];
 	speakTexts.teacher.reactToKnife = [
-		"Бросай оружие!",
-		"Бросай сейчас же!",
-		"Оружие на пол!",
-		"Опусти оружие!"
+		"Drop the weapon!",
+		"Drop it right now!",
+		"Weapon on the floor!",
+		"Lower your weapon!"
 	];
 	speakTexts.teacher.injured = [
-		"Остановись...",
-		"Хватит... стоп...",
-		"Прошу... хватит...",
-		"Прошу... остановись...",
-		"Не... надо...",
-		"Не делай... этого...",
-		"Что подумают твои родители...",
-		"Почему... ты это делаешь..."
+		"Stop...",
+		"Enough... stop...",
+		"Please... enough...",
+		"Please... stop...",
+		"Don't... please...",
+		"Don't do... this...",
+		"What would your parents think...",
+		"Why... are you doing this..."
 	];
 	speakTexts.teacher.injuredByGun = [
-		"Бросай...оружие...",
-		"Брось...пушку...",
-		"Не надо... стрелять...",
-		"Стой... не стреляй...",
-		"Прошу... пощади..."
+		"Drop... the weapon...",
+		"Drop... the gun...",
+		"Don't... shoot...",
+		"Wait... don't shoot...",
+		"Please... have mercy..."
 	];
 	speakTexts.teacher.injuredByKnife = [
-		"Бросай... оружие...",
-		"Брось... оружие..."
+		"Drop... your weapon...",
+		"Drop... your weapon..."
 	];
 
 	//女性教師
 	speakTexts.femaleTeacher = {};
 	speakTexts.femaleTeacher.shout = [
-		"Стрелок обнаружен!",
-		"Пришлите помощь!",
-		"Я нашла стрелка!",
-		"Здесь стрелок!",
-		"У меня стрелок!",
-		"У меня здесь стрелок!"
+		"Shooter spotted!",
+		"Send help!",
+		"I found the shooter!",
+		"Shooter is here!",
+		"I have the shooter!",
+		"Shooter right here!"
 	];
 	speakTexts.femaleTeacher.injured = [
-		"Нет...",
-		"Это не может быть правдой..",
-		"Скорую... звоните в скорую...",
-		"Кровь... течёт...",
-		"Я не хочу умирать...",
-		"Кто-нибудь... помогите...",
-		"Умоляю... хватит...",
-		"Прошу... не убивай...",
-		"За что... За что..."
+		"No...",
+		"This can't be real...",
+		"Ambulance... call an ambulance...",
+		"Blood... it's bleeding...",
+		"I don't want to die...",
+		"Somebody... help me...",
+		"I beg you... stop...",
+		"Please... don't kill me...",
+		"Why... why..."
 	];
 
 	//男性警官
 	speakTexts.maleOfficer = {};
 	speakTexts.maleOfficer.reactToGun = [
-		"Бросай оружие!",
-		"Бросай пушку!",
-		"Оружие на пол!",
-		"Оружие на пол, живо!",
-		"Полиция! Брось оружие!",
-		"Полиция! Кидай на пол!"
+		"Drop the weapon!",
+		"Drop the gun!",
+		"Weapon on the floor!",
+		"Weapon on the ground, now!",
+		"Police! Drop your weapon!",
+		"Police! On the floor!"
 	];
 	speakTexts.maleOfficer.reactToKnife = [
-		"Бросай оружие!",
-		"Оружие на пол!",
-		"Сейчас же брось оружие!",
-		"Бросай оружие сейчас же!",
-		"Полиция! Оружие на пол!",
-		"Полиция! Оружие на пол, живо!"
+		"Drop the weapon!",
+		"Weapon on the floor!",
+		"Drop your weapon right now!",
+		"Drop your weapon this instant!",
+		"Police! Drop the weapon!",
+		"Police! Weapon on the floor, now!"
 	];
 	speakTexts.maleOfficer.injured = [
-		"Экстренный... вызов... Запад 1... штабу...",
-		"Офицер ранен... Повторяю...",
-		"А-ах... блять...",
-		"По...стой...",
-		"Стой... не надо...",
-		"Бросай... сейчас...",
-		"Бросай... оружие...",
-		"Оружие... на... пол...",
+		"Emergency... West 1... to dispatch...",
+		"Officer down... Repeat...",
+		"Aaargh... fuck...",
+		"Wa... wait...",
+		"Wait... don't...",
+		"Drop it... now...",
+		"Drop... your weapon...",
+		"Weapon... on... the ground...",
 	];
 
 	//女性警官
 	speakTexts.femaleOfficer = {};
 	speakTexts.femaleOfficer.reactToGun = [
-		"Ради бога, бросай оружие!",
-		"Ради всего святого, брось оружие!",
-		"Бросай оружие по-хорошему!",
-		"Прошу тебя, брось оружие!"
+		"For God's sake, drop your weapon!",
+		"For heaven's sake, drop your weapon!",
+		"Drop the weapon peacefully!",
+		"I'm begging you, drop the gun!"
 	];
 	speakTexts.femaleOfficer.reactToKnife = [
-		"Прошу, брось его!",
-		"Ради бога, бросай оружие!",
-		"Давай, бросай сейчас!",
-		"Ну же, бросай его!"
+		"Please, drop it!",
+		"For God's sake, drop your weapon!",
+		"Come on, drop it now!",
+		"Come on, drop it!"
 	];
 	speakTexts.femaleOfficer.injured = [
-		"Брось... оружие...",
-		"Бросай... прошу...",
-		"Ну... почему ты так...",
-		"Прошу... хватит..."
+		"Drop... your weapon...",
+		"Drop it... please...",
+		"Why... why like this...",
+		"Please... enough..."
 	];
 	
 	//プレイヤー
 	speakTexts.shooter = {};
 	speakTexts.shooter.shout = [
-		"Сдохните!",
-		"Умрите!",
-		"Я убью вас!",
-		"Горите в аду!",
-		"Сдохни!",
-		"Сдохни! Сдохни! Сдохни!",
-		"Я всех убью!",
-		"Я ВАС ВСЕХ ГРОХНУ!",
-		"Сдохните по-быстрому!",
-		"Чтоб вы сдохли!",
-		"Кто следующий?",
-		"Так вам и надо!",
-		"Ты ведь по-другому не замолкнешь!",
-		"Наконец-то заткнулся!",
-		"Пленных не беру!",
-		"Небесная кара!",
-		"Школе пиздец!",
-		"Что школу, что вас, я терпеть не могу!",
-		"Вы — рак!",
-		"Сгиньте!",
-		"Вы все заслуживаете смерти!",
-		"Вы все должны страдать!",
-		"Никто не вечен, а?",
-		"Познайте мою боль!",
-		"Никаких больше пряток!",
-		"Думаете, я сдамся, как червь?!",
-		"Думаете, я буду молчать?",
-		"Вот горе, что ещё не подохла сама!",
-		"Вкусите мой гнев!",
-		"Вкусите мою боль!",
-		"Больно? Я так всю жизнь живу!",
-		"Познайте мой гнев!",
-		"Бегите-бегите, раз хотите жить!",
-		"Всему настанет конец!",
-		"Вот и всё!",
-		"Вот и конец!",
-		"Теперь поняли!?",
-		"Теперь вы знаете!",
-		"Теперь-то меня заметили!",
-		"Вот вам жизнь!",
-		"Вот что значит жить!",
-		"А теперь, вы все сдохните!",
-		"Вы во всём виноваты!",
-		"Жизнь прекрасна, да?",
-		"Я уничтожу всю школу!",
-		"Вы такого не предвидели?",
-		"Это в ваши планы не входило?", //"If you want to hate someone,\nthen hate the person who gave birth to me!"
-		"Теперь ваши семьи тоже кого-то лишатся!",
-		"Гори оно всё алым пламенем!",
-		"Притворялись слепыми, а?!",
-		"Зажмурься и представь, что этого нет!",
-		"Сегодня вам вернулось зрение!",
-		"На, гнида!",
-		"Жри мои пули!",
-		"Умри в агонии!",
-		"Мучительная смерть для вас!",
-		"Теперь не я одна страдаю!",
-		"Наконец-то я не одинока!",
-		"Смерть — тоже часть жизни!",
-		"Нет жизни — нет проблем!",
-		"Нет жизни — нет боли!",
-		"Думаете, я сдохну в одиночестве?",
-		"Я умру и потяну вас всех за собой!",
-		"Гробовая тишина!"
+		"Die!",
+		"Perish!",
+		"I'll kill you!",
+		"Burn in hell!",
+		"Drop dead!",
+		"Die! Die! Die!",
+		"I'll kill everyone!",
+		"I'LL SLAUGHTER YOU ALL!",
+		"Die quickly!",
+		"Rot in hell!",
+		"Who's next?!",
+		"Serves you right!",
+		"You wouldn't shut up otherwise!",
+		"Finally shut up!",
+		"No prisoners!",
+		"Divine retribution!",
+		"This school is finished!",
+		"I despise this school and every one of you!",
+		"You are a cancer!",
+		"Begone!",
+		"You all deserve to die!",
+		"You all must suffer!",
+		"Nobody lives forever, huh?!",
+		"Feel my pain!",
+		"No more hiding!",
+		"Think I'll crawl away like a worm?!",
+		"Think I'll stay silent?!",
+		"Too bad I haven't died yet!",
+		"Taste my fury!",
+		"Taste my pain!",
+		"Hurts? I've lived with this my whole life!",
+		"Know my wrath!",
+		"Run, run if you want to live!",
+		"Everything comes to an end!",
+		"That's it!",
+		"This is the end!",
+		"Get it now?!",
+		"Now you know!",
+		"Now you notice me!",
+		"Here's your life!",
+		"That's what living means!",
+		"Now, every single one of you will die!",
+		"You're all to blame!",
+		"Life is wonderful, isn't it?!",
+		"I will annihilate this entire school!",
+		"Didn't see this coming?!",
+		"Wasn't this in your plans?!", //"If you want to hate someone,\nthen hate the person who gave birth to me!"
+		"Now your families will lose someone too!",
+		"Burn it all to ashes!",
+		"Pretended to be blind, huh?!",
+		"Close your eyes and pretend it's not real!",
+		"Today your eyesight returns!",
+		"Take this, scum!",
+		"Eat my lead!",
+		"Die in agony!",
+		"An agonizing death for you!",
+		"I'm not the only one suffering now!",
+		"Finally, I'm not alone!",
+		"Death is part of life too!",
+		"No life, no problems!",
+		"No life, no pain!",
+		"Think I'll die alone?!",
+		"I'll die and drag you all down with me!",
+		"Dead silence!"
 	];
 	speakTexts.shooter.useGun = [
-		"Дети быстрые, а пули быстрее!",
-		"Пуля в печень — тоже часть жизни!",
-		"Я бы не стала убивать друзей!"
+		"Kids are fast, but bullets are faster!",
+		"A bullet in the gut is part of life too!",
+		"I wouldn't kill friends... if I had any!"
 	];
 	speakTexts.shooter.useBomb = [
-		"Разлетайтесь!",
-		"В клочья!",
-		"На мелкие куски!",
-		"Слышали грохот?"
+		"Blow apart!",
+		"To shreds!",
+		"Into tiny pieces!",
+		"Hear that bang?!"
 	];
 	speakTexts.shooter.killedYandere = [
-		"Ты всегда с ножом??!",
-		"Даже не думай подходить!",
-		"Прочь от меня!"
+		"You always carry a knife??!",
+		"Don't even think of coming close!",
+		"Get away from me!"
 	];
 	speakTexts.shooter.killedEnemy = [
-		"Вы пришли сюда умереть!",
-		"И по вашему это меня остановит?",
-		"Думаете, сможете побороться?",
-		"Ты у нас тут типа герой?"
+		"You came here to die!",
+		"You thought that would stop me?!",
+		"Think you can fight back?!",
+		"You think you're some kind of hero?!"
 	];
 
 	//東城
 	speakTexts.yuumi = {};
 	speakTexts.yuumi.shout = [
-		"Кто не спрятался, я не виновата!",
-		"Я — призрак!",
-		"Нашла!",
-		"Это ещё не всё!",
-		"Действую наверняка!",
-		"Поймаю ещё парочку!",
-		"Тык! Тык! Тык!",
-		"Мри! Мри! Мри!",
-		"Чик! Чик! Чик!",
-		"Убегай, а не то поймаю!",
-		"Убегай, а не то зарежу!",
-		"Ну чего такой медленный?",
-		"Беги со всех ног!",
-		"В объятия дьявола!",
-		"Мрите! Люди!",
-		"Гори в аду, гори в аду!",
-		"А-ха-ха!",
-		"А-ха-ха-ха!",
-		"А-ха-ха-ха-ха!"
+		"Ready or not, here I come!",
+		"I'm a ghost!",
+		"Found you!",
+		"That's not all!",
+		"Making sure you're dead!",
+		"Gonna catch a few more!",
+		"Stab! Stab! Stab!",
+		"Die! Die! Die!",
+		"Slash! Slash! Slash!",
+		"Run or I'll catch you!",
+		"Run or I'll gut you!",
+		"Why so slow?!",
+		"Run for your life!",
+		"Into the devil's embrace!",
+		"Die, humans!",
+		"Burn in hell, burn in hell!",
+		"A-ha-ha!",
+		"A-ha-ha-ha!",
+		"A-ha-ha-ha-ha!"
 	];
 	speakTexts.yuumi.killedYandere = [
-		"Победа! Победа-победа-победа!",
-		"Мой нож круче!",
-		"Приглашаешь на дуэль?",
-		"Призрак — я, не ты!",
-		"Клин клином вышибают!",
-		"Ха-ха! Вот же псих!",
-		"А-ха-ха! Тебе что, жить надоело?",
-		"Ты вообще откуда нож взяла?",
-		"Думаешь, твой нож лучше моего?",
-		"Умри, умри, умри, умри, умри!",
-		"Убью, убью, убью, убью, убью!",
-		"Ах! Уже подохла!",
-		"Идёшь на меня с этой игрушкой?"
+		"Victory! Victory, victory, victory!",
+		"My knife is better!",
+		"Challenging me to a duel?",
+		"I'm the ghost, not you!",
+		"Fight fire with fire!",
+		"Haha! What a psycho!",
+		"Ahaha! Tired of living?!",
+		"Where did you even get that knife?",
+		"Think your knife beats mine?!",
+		"Die, die, die, die, die!",
+		"Kill, kill, kill, kill, kill!",
+		"Ah! Dead already!",
+		"Coming at me with that toy?"
 	];
 
 	//ヤンデレ
 	speakTexts.yandere = {};
 	speakTexts.yandere.shout = [
-		"Я защищу сенпая",
-		"Я защищу сенпая",
-		"Я должна защитить сенпая",
-		"Я должна защитить сенпая",
-		"Не защити я сенпая",
-		"Не подходи к сенпаю!",
-		"Не подходи к сенпаю!",
-		"Я убью любого, кто подойдёт к сенпаю!"
+		"I will protect Senpai",
+		"I will protect Senpai",
+		"I must protect Senpai",
+		"I must protect Senpai",
+		"If I don't protect Senpai...",
+		"Stay away from Senpai!",
+		"Stay away from Senpai!",
+		"I'll kill anyone who gets near Senpai!"
 	];
 	speakTexts.yandere.injured = [
-		"Вот же... сучка...",
-		"Нужно... защитить сенпая!",
-		"Должна прикончить уродку!",
-		"Сенпай... сенпай...",
-		"Сенпай... беги...",
-		"Убью тебя... Сейчас убью тебя!",
-		"Я должна... должна защитить сенпая...",
-		"Если ты навредишь сенпаю... я просто...!",
-		"Я защищу его... защищу сенпая...!",
-		"Эта... сучка...",
-		"Убью...!"
+		"You... bitch...",
+		"Must... protect Senpai!",
+		"Must butcher this freak!",
+		"Senpai... Senpai...",
+		"Senpai... run...",
+		"I'll kill you... I'll kill you right now!",
+		"I have to... have to protect Senpai...",
+		"If you hurt Senpai... I'll...!",
+		"I'll protect him... protect Senpai...!",
+		"That... bitch...",
+		"I'll kill you...!"
 	];
 
 	//校長先生
 	speakTexts.principal = {};
 	speakTexts.principal.shout = [
-		"Сопля!",
-		"Я тебя угандошу!",
-		"Сейчас угандошу!",
-		"Жри свинец!",
-		"Не шути так!",
-		"Я размозжу тебе бошку!",
-		"Ты думала, я убежал?",
-		"Ты думала, я прятался?",
-		"Никаких больше догонялок!"
+		"Little brat!",
+		"I'm gonna slaughter you!",
+		"I'll waste you right now!",
+		"Eat lead!",
+		"Don't mess with me!",
+		"I'll blow your head off!",
+		"Thought I ran away?!",
+		"Thought I was hiding?!",
+		"No more tag!"
 	];
 	speakTexts.principal.reactToGun = [
-		"Ау, бросай оружие!",
-		"Брось оружие или я брошу тебя!",
-		"Бросай оружие или пристрелю!"
+		"Hey, drop the gun!",
+		"Drop the gun before I drop you!",
+		"Drop the weapon or get shot!"
 	];
 	speakTexts.principal.injured = [
-		"Ёб твою ж...!",
-		"Твою ж мать...!"
+		"God dammit...!",
+		"Motherfucker...!"
 	];
 
 	//校内放送
 	var announcement = [];
-	announcement.push("Начинается подготовка к общему сбору. Просим всех учащихся следовать указаниям преподавателей и ожидать в классе.");
-	announcement.push("Начинается общий сбор. Просим всех учащихся следовать указаниям преподавателей и начинать движение. Повторяем: начинается общий сбор. Просим всех учащихся следовать указаниям преподавателей и начинать движение.");
-	announcement.push("Внимание! Тревога! На территорию школы проникло вооружённое лицо! На территорию школы проникло вооружённое лицо! В целях безопасности всех учеников и сотрудников, немедленно покиньте школу! Это не учение!");
+	announcement.push("Preparations for the general assembly are beginning. All students, please follow your teachers' instructions and wait in your classrooms.");
+	announcement.push("The general assembly is now beginning. All students, please follow your teachers' instructions and proceed to the auditorium. Repeating: the general assembly is now beginning. Please follow your teachers' instructions.");
+	announcement.push("Attention! Emergency! An armed intruder has entered the school grounds! An armed intruder has entered the school grounds! For the safety of all students and staff, evacuate the school immediately! This is not a drill!");
 
 	//ゲームマニュアル選択欄
 	var tips = [
-		"Управление",
-		"Прицеливание",
-		"Усталость",
-		"Смена оружия",
-		"Холодное оружие",
-		"Гранаты",
-		"Ружьё",
-		"Раненые", //Injured and Severely Injured
-		"Подкрепления",
-		"Учительская",
-		"Сопротивление", //The Resistance of Students
-		"Фатальный урон",
-		"Юми Тодзё",
-		"Сложный режим",
-		"Главные отличия",
-		"Оставшиеся патроны",
-		"Задевание трупов",
-		"Бронеэкипировка"
+		"Controls",
+		"Aiming",
+		"Stamina",
+		"Weapon Swapping",
+		"Melee Weapons",
+		"Grenades",
+		"Shotguns",
+		"Injured Targets", //Injured and Severely Injured
+		"Reinforcements",
+		"Faculty Room",
+		"Student Resistance", //The Resistance of Students
+		"Fatal Damage",
+		"Yumi Tojo",
+		"Hard Mode",
+		"Key Differences",
+		"Ammo Retention",
+		"Hitting Corpses",
+		"Body Armor"
 	];
 	//操作方法テキスト
 	var tipsKeyTexts = [
-		"Движение", 		//WASD
-		"Бег", 		//Shift
-		"Стрельба", 		//Space
-		"Назад", 		//X
-		"Основное оружие", 		//1
-		"Пистолет", 		//2
-		"Холодное", 	//3
-		"Смена оружия", 	//Q
-		"Прицел", 		//E
-		"Перезарядка", 	//R
-		"Смена цели", 	//F
-		"Граната", 		//G
-		"Режим огня", 	//C Change Fire Modes
-		"Атака вблизи", 	//V
+		"Movement", 		//WASD
+		"Run / Dash", 		//Shift
+		"Shoot", 		//Space
+		"Back / Cancel", 		//X
+		"Primary Weapon", 		//1
+		"Handgun", 		//2
+		"Melee", 	//3
+		"Weapon Swapping", 	//Q
+		"Aim", 		//E
+		"Reloading", 	//R
+		"Switch Target", 	//F
+		"Grenade", 		//G
+		"Fire Mode", 	//C Change Fire Modes
+		"Quick Melee", 	//V
 	];
 
 	// \\Fs[n] = fontSize
@@ -649,66 +649,66 @@
 	//ゲームマニュアル
 	var tipsTexts = ["", ""];
 	tipsTexts[2] = "\\Fs[21]" +
-	"Нажмите E, чтобы войти в \\C[6]режим прицеливания\\C[0].\n\nВ этом режиме вероятность попадания\n\\C[6]будет постепенно подниматься до 100%\\C[0],\nпозволяя поразить цель более точно.\n\n"+
-	"Удерживайте Shift, чтобы двигаться,\nнаходясь в режиме прицеливания."
+	"Press E to enter \\C[6]aiming mode\\C[0].\n\nIn this mode, your hit rate will\n\\C[6]gradually increase up to 100%\\C[0],\nallowing you to strike targets much more accurately.\n\n"+
+	"Hold Shift to move\nwhile remaining in aiming mode.";
 	tipsTexts[3] = "\\Fs[21]" +
-	"Бег и атаки врагов отнимают у игрока \\C[6]силы\\C[0], \nо чём свидетельствует зелёная шкала над его\nголовой.\n\n"+
-	"Силы восстанавливаются сами, \nно если потратить их все, бег станет \nнедоступным до полного восстановления.\n\n"+
-	"Если обессиленный игрок получит урон,\nего арестуют, что приведёт к \\C[6]проигрышу\\C[0]."
+	"Running and enemy attacks consume your \\C[6]stamina\\C[0], \nas indicated by the green gauge above your\nhead.\n\n"+
+	"Stamina recovers on its own, \nbut if completely depleted, running is disabled \nuntil it has fully recharged.\n\n"+
+	"If you take damage while exhausted,\nyou will be arrested, resulting in a \\C[6]Game Over\\C[0].";
 	tipsTexts[4] = "\\Fs[21]" +
-	"У игрока есть два оружия: \\C[2]основное\\C[0] и \\C[1]пистолет\\C[0].\nНажимайте Q, чтобы переключаться между ними.\n\n"+
-	"Смена оружия быстрее перезарядки и позволяет\n" +
-	"продолжить стрельбу, не подставив себя под удар.";
+	"You carry two firearms: a \\C[2]primary weapon\\C[0] and a \\C[1]handgun\\C[0].\nPress Q to switch between them.\n\n"+
+	"Swapping weapons is faster than reloading and allows you to\n" +
+	"keep shooting without leaving yourself vulnerable.";
 	tipsTexts[5] = "\\Fs[21]" +
-	"Нажмите 3, чтобы достать \\C[6]холодное оружие\\C[0].\n" +
-	"Оно не способно поразить цель на расстоянии,\nно может пригодиться при встречах в упор.\n\n" +
-	"В то же время удары холодным оружием \\C[6]тратят силы\\C[0].\nЧем больше усталость, тем слабее удары.";
+	"Press 3 to draw your \\C[6]melee weapon\\C[0].\n" +
+	"While it cannot hit targets at range,\nit is invaluable for point-blank encounters.\n\n" +
+	"However, swinging melee weapons \\C[6]consumes stamina\\C[0].\nThe more exhausted you are, the weaker your strikes.";
 	tipsTexts[6] = "\\Fs[21]" +
-	"Нажмите G, чтобы бросить \\C[6]гранату\\C[0].\nЧем дольше вы держите, тем дальше она полетит.\n\n"+
-	"Через какое-то время после приземления граната\nвзорвётся. Покуда на пути ударной волны нет\nпреград, все цели в \\C[6]летальном радиусе\\C[0] умрут,\nа цели в \\C[6]радиусе ранения\\C[0] будут ранены.\n\n" +
-	"\\C[6]Взрыв также фатален и для игрока\\C[0],\nтак что старайтесь в него не попадать.";
+	"Hold G to throw a \\C[6]grenade\\C[0].\nThe longer you hold the key, the farther it travels.\n\n"+
+	"Shortly after landing, the grenade will detonate,\ndealing heavy area damage.\n\n" +
+	"\\C[6]The explosion is also fatal to the player\\C[0],\nso be sure to step well back after throwing.";
 	tipsTexts[7] = "\\Fs[21]" +
-	"\\C[6]Ружьё\\C[0] — это оружие с высокой вероятностью\nпопадания и значительной летальностью.\nБлагодаря особым патронам у него есть\n\\C[6]бонус к вероятности попадания (+25%)\\C[0].\n\n"+
-	"В то же время чем дальше ваша цель, тем сильнее\nснизится урон вследствие разброса дроби, так что\nстреляйте на как можно меньшем расстоянии."
+	"\\C[6]Shotguns\\C[0] are high-accuracy weapons with\nimmense lethality.\nSpecial ammunition grants them a\n\\C[6]hit rate bonus (+25%)\\C[0].\n\n"+
+	"At greater distances, damage drops sharply due to\npellet spread, so engage targets at close range.";
 	tipsTexts[8] = "\\Fs[21]" +
-	"В зависимости от полученного урона цель может\nбыть ранена либо тяжело ранена.\n\n" +
-	"Скорость передвижения раненых целей снижена,\nтяжело раненые не могут двигаться вообще.\n\n" +
-	"В конце игры тяжело раненые могут \\C[6]с некоторым\nшансом погибнуть\\C[0], то есть засчитаться как\nмёртвые.";
+	"Depending on damage taken, targets become either\nwounded or severely wounded.\n\n" +
+	"Wounded targets have reduced movement speed,\nand severely wounded ones cannot move at all.\n\n" +
+	"At the end of the run, severely wounded targets\nhave a \\C[6]chance to succumb to wounds\\C[0], counting\nas kills.";
 	tipsTexts[9] = "\\Fs[21]" +
-	"Для того, чтобы арестовать игрока, учителя придут\nв качестве \\C[6]подкрепления\\C[0].\n\n" +
-	"В зависимости от ситуации они могут моментально\nокружить вас. Чтобы этого не произошло,\nнеобходимо \\C[6]вовремя предпринять меры.\\C[0]\n\n" +
-	"Свист учителей ускоряет прибытие подкрепления,\nтак что не зевайте и всегда давайте отпор\nкак можно быстрее.";
+	"To arrest the player, teachers will arrive\nas \\C[6]reinforcements\\C[0].\n\n" +
+	"Depending on the situation, they can quickly surround\nyou. To prevent this,\n\\C[6]take decisive action promptly.\\C[0]\n\n" +
+	"Teachers' whistles hasten the arrival of reinforcements,\nso stay sharp and eliminate threats quickly.";
 	tipsTexts[10] = "\\Fs[21]" +
-	"С течением времени школа будет начинать пустеть;\nвсё из-за того, что ученики и преподаватели\nпроводят эвакуацию.\n\n" +
-	"Атака на учительскую с последующим устранением\nвсех учителей \\C[6]немного отложит её начало\\C[0]."
+	"Over time, the school will begin to empty out\nas students and teachers evacuate.\n\n" +
+	"Attacking the faculty room and eliminating\nall teachers will \\C[6]slightly delay their arrival\\C[0].";
 	tipsTexts[11] = "\\Fs[21]" +
-	"Учителя — не единственная проблема.\nШкольники также могут \\C[6]оказать сопротивление\\C[0].\n\n"+
-	"В первую очередь шанс контратаки зависит от\nсмелости учащегося, но ещё он возрастает, когда\nигрок \\C[6]подходит вплотную, перезаряжается или\nповорачивается спиной\\C[0].\n\n"+
-	"Большая часть контратак принадлежит \\C[6]мужской\nчасти\\C[0], так что, во избежание внезапных проблем,\nимеет смысл ставить в приоритет устранение именно\nпарней.";
+	"Teachers are not the only threat.\nStudents can also \\C[6]put up resistance\\C[0].\n\n"+
+	"Counterattack chance depends on student courage,\nincreasing when the player \\C[6]gets close, reloads, or\nturns their back\\C[0].\n\n"+
+	"Most counterattacks come from \\C[6]male students\\C[0],\nso prioritizing them is effective for preventing\nsudden takedowns.";
 	tipsTexts[12] = "\\Fs[21]" +
-	"Если игрока атакуют холодным либо огнестрельным\nоружием, он получает \\C[6]фатальный урон\\C[0].\n\n" +
-	"Красная часть на шкале усталости отображает\nполученный вами фатальный урон, понижая в\nсоответствие с ней максимальную силу.\n\n" +
-	"Если вся шкала заполнится красным, игрок умрёт,\nчто приведёт к \\C[6]проигрышу\\C[0].";
+	"If attacked with melee weapons or firearms,\nyou suffer \\C[6]fatal damage\\C[0].\n\n" +
+	"The red portion of your stamina bar displays fatal\ndamage, reducing your maximum stamina accordingly.\n\n" +
+	"If the gauge fills completely with red, you die,\nresulting in a \\C[6]Game Over\\C[0].";
 	tipsTexts[13] = "\\Fs[21]" +
-	"\\C[6]Юми Тодзё\\C[0] — персонаж, использующий нож.\nУмение \\C[4]«Салки! В коридоре»\\C[0] позволяет включить в\nнастройках игры «Режим Юми» и использовать её как\nиграбельного персонажа.\n\n" +
-	"Юми не может использовать огнестрел и взрывчатку,\nно зато она быстро бегает и легко восстанавливает\nсилы. Ей также дано сильнейшее оружие ближнего\nбоя: «Нож Юми».\n\n" +
-	"Вдобавок к этому, когда её энергия на\nмаксимуме, нажатие Q приводит к \\C[6]мощному выпаду\\C[0],\n\\C[6]убивающему любую цель без брони\\C[6].";
+	"\\C[6]Yumi Tojo\\C[0] is a knife-wielding character.\nThe skill \\C[4]'Hallway Tag!'\\C[0] allows enabling\n'Yumi Mode' in options and playing as her.\n\n" +
+	"Yumi cannot use guns or explosives, but moves\nrapidly and recovers stamina quickly. She wields\nthe strongest melee weapon: 'Yumi\'s Knife'.\n\n" +
+	"Additionally, when her stamina is full, pressing Q\nperforms a \\C[6]powerful lunge\\C[0] that \\C[6]instantly kills\nany unarmored target\\C[0].";
 	tipsTexts[14] = "\\Fs[21]" +
-	"\\C[6]Сложный режим\\C[0] превносит в игру различные\nусложняющие механики и изменения.\n\\C[6]Это очень трудный режим.\\C[0]\n\n" +
-	"Если вам кажется, что вы готовы, включите\n«Сложный режим» в настройках игры.";
+	"\\C[6]Hard Mode\\C[0] introduces various punishing\nmechanics and gameplay tweaks.\n\\C[6]This is an extremely difficult mode.\\C[0]\n\n" +
+	"If you feel prepared, enable 'Hard Mode' in the\ngame settings.";
 	tipsTexts[15] = "\\Fs[21]" +
-	"・Вероятность попадания влияет на урон и на\n  шанс критического попадания\n\n・Вероятность попадания и силы больше не\n  восстанавливаются при переходе между картами\n\n" +
-	"・Отдача при стрельбе увеличена\n  Стрельба на ходу увеличивает её ещё больше\n\n"+
-	"・Шанс сопротивления от учеников увеличен\n  Урон по игроку увеличен\n  Добавлены новые враги — патрульные\n\n・У оружия ограниченный запас патронов\n\n・Возможно случайное попадание по трупу";
+	"・Hit rate affects both damage and critical chance\n\n・Hit rate and stamina no longer refill when moving\n  between maps\n\n" +
+	"・Weapon recoil is increased;\n  firing on the move increases it even further\n\n"+
+	"・Student resistance rate and damage to player are increased;\n  patrol officers are added as new enemies\n\n・Limited magazine capacity; stray shots may hit corpses";
 	tipsTexts[16] = "\\Fs[21]" +
-	"В сложном режиме количество магазинов с патронами\nограничено.\n\nПосле перезарядки все оставшиеся в магазине\nпатроны сохраняются.\n\n" +
-	"При перезарядке игрок автоматически выбирает\nмагазин с наибольшим числом патронов из\nоставшихся.";
+	"In Hard Mode, your magazine supply is limited.\n\nWhen reloading, remaining rounds in the magazine\nare retained.\n\n" +
+	"When reloading, you automatically load the\nmagazine with the most ammunition remaining.";
 	tipsTexts[17] = "\\Fs[21]" +
-	"В сложном режиме существует вероятность случайно\nпопасть по трупу. При этом отличить тяжело\nраненого от мёртвого стало труднее.\n\n" +
-	"Если на линии огня стоит несколько целей, неважно\nживых или мёртвых, игрок автоматически целится в\nсамую ближайшую.\n\nНажмите F, чтобы \\C[6]сменить цель\\C[0], прицелившись в\nкакую-то другую.";
+	"In Hard Mode, stray bullets can hit corpses, and\ndistinguishing the severely wounded from the dead is harder.\n\n" +
+	"If multiple targets lie on your line of fire, living or\ndead, you automatically aim at the closest.\n\nPress F to \\C[6]switch targets\\C[0] and aim at another.";
 	tipsTexts[18] = "\\Fs[21]" +
-	"Некоторые цели носят \\C[6]защитную экипировку\\C[0], такую\nкак бронежилеты и баллистические щиты.\n\n" +
-	"Они способны выдержать внушительный урон от\nогнестрельного оружия и полностью неуязвимы в\nближнем бою."
+	"Certain targets wear \\C[6]protective gear\\C[0], such as\nballistic vests and shields.\n\n" +
+	"They can absorb substantial ballistic damage and are\ncompletely immune to melee strikes.\n";
 
 	//実績
 	var achievementTexts = []; 
@@ -728,20 +728,20 @@
 	
 	//テンプレート
 	AddAchievementTexts(
-		"実績名",
-		"条件",
-		"文章",
-		"報酬タイプ", // 1 = SP 2 = 銃 3 = スキル
-		"報酬",
-		"報酬ID",
+		"Achievement Name",
+		"Requirement",
+		"Text",
+		"Reward Type", // 1 = SP 2 = 銃 3 = スキル
+		"Reward",
+		"Reward ID",
 		1, //難易度
 		0, //実績並び順
 	);
 
 	AddAchievementTexts(
-		"Но в глубине души...", //But my true voice is...
-		"Убейте школьного сторожа",
-		"Ты говоришь мне сдохнуть в одиночестве, да?", //\"Someone died\",right?
+		"Deep Down Inside...", //But my true voice is...
+		"Eliminate the school security guard",
+		"'You told me to die alone, didn't you?'", //\"Someone died\",right?
 		1,
 		1000,
 		0,
@@ -750,9 +750,9 @@
 	);
 
 	AddAchievementTexts(
-		"Старайся лучше.",
-		"Позвольте себя арестовать",
-		"Что учёба, что убийства — ничего мне не даётся.",
+		"Try Harder",
+		"Get arrested",
+		"Whether studying or killing—I'm hopeless at everything.",
 		1,
 		1000,
 		0,
@@ -761,9 +761,9 @@
 	);
 
 	AddAchievementTexts(
-		"Во имя этого дня",
-		"Завершите атаку",
-		"Ты сегодня умер, а я сегодня восстала.",
+		"For This Day",
+		"Complete the assault",
+		"You died today, and today I was reborn.",
 		1,
 		5000,
 		0,
@@ -772,20 +772,20 @@
 	);
 
 	AddAchievementTexts(
-		"Образцовая ученица",
-		"Практика в стрельбе менее чем за 12 сек.",
-		"Ради твоего убийства я выложусь на полную.",
+		"Model Student",
+		"Clear Target Practice in under 12 seconds",
+		"I'll give it my all just to kill you.",
 		3,
-		"умение",
+		"skill",
 		15,
 		2,
 		4
 	);
 
 	AddAchievementTexts(
-		"Оружейная культура? Пф-ф.",
-		"Атакуйте школу за Юми Тодзё",
-		"Если нет автомата, то чем нож хуже?",
+		"Gun Culture? Pfft.",
+		"Attack the school as Yumi Tojo",
+		"Who needs an assault rifle when you have a knife?",
 		1,
 		5000,
 		0,
@@ -794,9 +794,9 @@
 	);
 
 	AddAchievementTexts(
-		"Время похимичить!",
-		"Освойте умение «Волк-одиночка»",
-		"Я думала, что химия не для меня ———— ровно до того момента,\nпока не сотворила бомбу из жидкости для снятия лака.",
+		"Time to Cook!",
+		"Master the skill 'Lone Wolf'",
+		"I thought chemistry wasn't for me————right until I made a bomb from nail polish remover.",
 		1,
 		1000,
 		0,
@@ -805,9 +805,9 @@
 	);
 
 	AddAchievementTexts(
-		"Я — единственный Бог",
-		"Подорвитесь на своей же гранате",
-		"Нет тут ни рая, ни ада, ни Бога.\nВсё, чего мне даёт саморазрушение — та же пустота, что и моя\nжизнь.",
+		"I Am God",
+		"Blow yourself up with your own grenade",
+		"There is no heaven, no hell, and no God here.\nAll self-destruction gives me is the same emptiness as my life.",
 		1,
 		1000,
 		0,
@@ -816,9 +816,9 @@
 	);
 
 	AddAchievementTexts(
-		"Нездоровая любовь спасла сенпая!", //Protecting Senpai with morbid love
-		"Позвольте яндере убить вас",
-		"Ради спасения своей любви она отправится хоть на край света.\n(Ну, или победит массового убийцу одним лишь ножом).",
+		"Morbid Love Saved Senpai!", //Protecting Senpai with morbid love
+		"Get killed by the Yandere",
+		"She'll go to the ends of the earth to protect her love.\n(Or take down a mass shooter with nothing but a knife).",
 		1,
 		1000,
 		0,
@@ -827,9 +827,9 @@
 	);
 
 	AddAchievementTexts(
-		"Ненависть",
-		"Убейте яндере",
-		"Я не могу ни любить, ни быть любимой.\nЗато могу ненавидеть и быть ненавидимой.",
+		"Hatred",
+		"Eliminate the Yandere",
+		"I can neither love nor be loved.\nBut I can hate and be hated.",
 		1,
 		5000,
 		0,
@@ -838,9 +838,9 @@
 	);
 
 	AddAchievementTexts(
-		"Пуф!",
-		"Убейте яндере за Юми Тодзё",
-		"Ой-ёй! Ты меня всю забрызгала!\nТеперь я тоже стану психом! А-ха-ха-ха!",
+		"Splat!",
+		"Eliminate the Yandere as Yumi Tojo",
+		"Uh-oh! You got blood all over me!\nNow I'm a psycho too! Ahaha!",
 		1,
 		10000,
 		0,
@@ -849,9 +849,9 @@
 	);
 
 	AddAchievementTexts(
-		"Чудовище за партой",
-		"Убейте всех учителей в учительской",
-		"У меня нет любимого предмета. Но будь тут, к примеру,\nстрельба по учителям, я бы давно стала отличницей.",
+		"Classroom Monster",
+		"Eliminate all teachers in the faculty room",
+		"I don't have a favorite subject. But if there were a class in\nshooting teachers, I'd have graduated at the top.",
 		1,
 		5000,
 		0,
@@ -860,9 +860,9 @@
 	);
 
 	AddAchievementTexts(
-		"Дети быстрые...", //Try to outrun the bullet
-		"Сделайте более 10 убийств в спортзале",
-		"Но звуковая пуля быстрее.",
+		"Kids Are Fast...", //Try to outrun the bullet
+		"Score more than 10 kills in the gymnasium",
+		"Kids are fast, but a bullet is faster.",
 		1,
 		5000,
 		0,
@@ -871,9 +871,9 @@
 	);
 
 	AddAchievementTexts(
-		"Причина жить",
-		"Сделайте более 10 убийств в библиотеке",
-		"Я хочу видеть больше страданий.",
+		"Reason to Live",
+		"Score more than 10 kills in the library",
+		"I want to witness more agony.",
 		1,
 		5000,
 		0,
@@ -882,9 +882,9 @@
 	);
 
 	AddAchievementTexts(
-		"Звонок на обед",
-		"Сделайте более 10 убийств в столовой",
-		"Сейчас я расскажу всем о тщетности своего бытия.",
+		"Lunch Bell",
+		"Score more than 10 kills in the cafeteria",
+		"Now I'll show everyone the futility of their existence.",
 		1,
 		5000,
 		0,
@@ -893,9 +893,9 @@
 	);
 
 	AddAchievementTexts(
-		"Два поросёнка",
-		"Позвольте офицерам полиции убить вас",
-		"Поросята взяли пушки и убили злого волка.\nВот и сказочке конец.",
+		"The Two Little Pigs",
+		"Get killed by police officers",
+		"The little pigs grabbed guns and shot the big bad wolf.\nAnd that is the end of the story.",
 		1,
 		1000,
 		0,
@@ -904,9 +904,9 @@
 	);
 
 	AddAchievementTexts(
-		"Мусор выброшен!", //All the cops
-		"Убейте офицеров полиции",
-		"Не думаю, что копы твари,\nдумаю, они ничтожные твари.", //I don't think all police officers are just plain assholes,\nthey are incompetent and useless assholes.
+		"Trash Disposed!", //All the cops
+		"Eliminate the police officers",
+		"I don't think all cops are just plain assholes;\nthey are incompetent and useless assholes.", //I don't think all police officers are just plain assholes,\nthey are incompetent and useless assholes.
 		1,
 		10000,
 		0,
@@ -915,9 +915,9 @@
 	);
 
 	AddAchievementTexts(
-		"Препод-убийца",
-		"Позвольте директору убить вас",
-		"Единственный, кто остановит плохого ученика с оружием —\nэто хороший преподаватель с оружием.", //The only person who can stop a student with guns,\nis a teacher who also has a gun.
+		"Killer Faculty",
+		"Get killed by the principal",
+		"The only person who can stop a bad student with a gun\nis a good teacher with a gun.", //The only person who can stop a student with guns,\nis a teacher who also has a gun.
 		1,
 		1000,
 		0,
@@ -926,9 +926,9 @@
 	);
 
 	AddAchievementTexts(
-		"От всей чёрствой и мёртвой души", //From my dead hands
-		"Убейте директора",
-		"Его любовь к школе столь же слаба и ничтожна, сколько и речи\nна утренней линейке.",
+		"From My Dead Hands", //From my dead hands
+		"Eliminate the principal",
+		"His love for this school was just as frail and hollow as\nhis morning assembly speeches.",
 		1,
 		10000,
 		0,
@@ -937,53 +937,53 @@
 	);
 
 	AddAchievementTexts(
-		"Мировой рекорд",
-		"Сделайте 70 убийств в обычном режиме за раз",
-		"Была бы там я, убила бы больше.\nЯ свято верила в это. И оказалась права.",
+		"World Record",
+		"Score 70 kills in Normal Mode in a single run",
+		"If I were there, I'd have killed more.\nI truly believed that. And I was right.",
 		2,
-		"оружие",
+		"weapon",
 		9, //BM15 Mod
 		3,
 		19
 	);
 
 	AddAchievementTexts(
-		"В разнос",
-		"Сделайте 60 убийств с ружья за раз",
-		"Куда бы я ни пошла: улица, школа, работа...\nЯ ощущаю лишь животную ярость.\nЯрость, что будет со мной всегда.",
+		"Rampage",
+		"Score 60 shotgun kills in a single run",
+		"Wherever I go: the streets, school, work...\nAll I feel is primal rage.\nA rage that will stay with me forever.",
 		2,
-		"оружие",
+		"weapon",
 		25, //S12 Mod
 		3,
 		20
 	);
 
 	AddAchievementTexts(
-		"Круглая отличница",
-		"Сделайте 30 убийств в сложном режиме за раз",
-		"Сдал тест на максимальный балл? Неплохо.\nА как насчёт убить невинных штук тридцать?",
+		"Straight-A Student",
+		"Score 30 kills in Hard Mode in a single run",
+		"Aced the test with top marks? Cute.\nHow about slaughtering thirty innocent souls?",
 		2,
-		"оружие",
+		"weapon",
 		16, //CZ11
 		3,
 		21
 	);
 	
 	AddAchievementTexts(
-		"Проще простого",
-		"Сделайте 60 убийств в сложном режиме за раз",
-		"Стоило мне взять в руки ствол, как вдруг жизнь стала проще.",
+		"A Walk in the Park",
+		"Score 60 kills in Hard Mode in a single run",
+		"The moment I held a gun, life suddenly became so simple.",
 		2,
-		"оружие",
+		"weapon",
 		24, //AS3M
 		4,
 		22
 	);
 
 	AddAchievementTexts(
-		"Серийный подрывник", //unabomber
-		"Сделайте 50 убийств гранатами за всё время",
-		"Не для Бога и не для революции, а просто для себя.",
+		"Serial Bomber", //unabomber
+		"Accumulate 50 grenade kills across all runs",
+		"Not for God, not for revolution—just for myself.",
 		1,
 		5000,
 		0,
@@ -992,9 +992,9 @@
 	);
 
 	AddAchievementTexts(
-		"Имей сто друзей",
-		"Сделайте 100 убийств за всё время",
-		"Впрочем, это гораздо проще, чем реально завести сто друзей.",
+		"A Hundred Friends",
+		"Accumulate 100 total kills across all runs",
+		"Turns out this is way easier than actually making a hundred friends.",
 		1,
 		5000,
 		0,
@@ -1003,11 +1003,11 @@
 	);
 	
 	AddAchievementTexts(
-		"Я средь тысяч ветров",
-		"Сделайте 1000 убийств за всё время",
-		"Даже моя смерть — не повод для радости.\nКогда тот, кто ненавидит всех, прознает о моём существовании,\nтогда то я и воскресну.",
+		"A Thousand Winds",
+		"Accumulate 1,000 total kills across all runs",
+		"Even my death is no cause for celebration.\nWhen someone who hates everyone learns of my existence,\nthat is when I shall be resurrected.",
 		2,
-		"оружие",
+		"weapon",
 		29, //A180 Mod
 		4,
 		25
@@ -1015,20 +1015,20 @@
 
 	//チュートリアル目標
 	var tutorialTextA = [
-		"Задача 1/6: Выстрелите в банку",
-		"Задача 2/6: Достаньте пистолет",
-		"Задача 3/6: Попадите в цель 10 раз",
-		"Задача 4/6: Бросьте бомбу 3 раза",
-		"Задача 5/6: Достаньте холодное оружие",
-		"Задача 6/6: Уберите холодное оружие"
+		"Task 1/6: Shoot the can",
+		"Task 2/6: Draw your handgun",
+		"Task 3/6: Hit the target 10 times",
+		"Task 4/6: Throw 3 bombs",
+		"Task 5/6: Draw your melee weapon",
+		"Task 6/6: Sheathe your melee weapon"
 	];
 	var tutorialTextB = [
-		"Нажмите E, чтобы прицелиться  Нажмите Пробел, чтобы выстрелить",
-		"Нажмите Q, чтобы переключиться на пистолет",
-		"Нажмите E, чтобы прицелиться  Нажмите Пробел, чтобы выстрелить",
-		"Нажмите G, чтобы отрегулировать дальность броска",
-		"Нажмите 3, чтобы переключиться на холодное оружие",
-		"Нажмите 1 или 2, чтобы переключиться на огнестрел"
+		"Press E to aim  Press Space to shoot",
+		"Press Q to switch to handgun",
+		"Press E to aim  Press Space to shoot",
+		"Hold G to adjust throw distance",
+		"Press 3 to switch to melee weapon",
+		"Press 1 or 2 to switch back to firearms"
 	];
 
 	//現在のマップの脱出座標を返す
@@ -5791,16 +5791,16 @@
 			var fireMode = "";
 			switch (fireModeIndex) {
 				case 1:
-					fireMode = " П";
+					fireMode = " P";
 					break;
 				case 2:
-					fireMode = " О";
+					fireMode = " S";
 					break;
 				case 3:
-					fireMode = " О";
+					fireMode = " S";
 					break;
 				case 4:
-					fireMode = " А";
+					fireMode = " A";
 					break;
 			}
 			this.contents.fontSize = 20;
@@ -6130,7 +6130,7 @@
 		}
 
 		if ($gameSwitches.value(3)){
-			this.drawText("Перезарядка", 0, 0, width, 'center');
+			this.drawText("Reloading", 0, 0, width, 'center');
 		}else{
 			var x = 0;
 			//ADS中のアイコン表示
@@ -7424,16 +7424,16 @@
 				adj = 4;
 
 				//性能テキスト
-				this.drawText("Урон", 150, y2 + adj); 
-				this.drawText("Отдача", 150, (y2 * 3) + adj);
-				this.drawText("ТемпСтрельбы", 150, (y2 * 5) + adj); 
-				this.drawText("Вместимость", 150, (y2 * 7) + adj);
+				this.drawText("Damage", 150, y2 + adj); 
+				this.drawText("Recoil", 150, (y2 * 3) + adj);
+				this.drawText("Fire Rate", 150, (y2 * 5) + adj); 
+				this.drawText("Capacity", 150, (y2 * 7) + adj);
 
 				if ($gameSwitches.value(40)){
 					if (this.item.meta["isPump"] == "0"){
-						this.drawText("Магазины", 150, (y2 * 9) + adj);
+						this.drawText("Magazines", 150, (y2 * 9) + adj);
 					}else{
-						this.drawText("Патроны", 150, (y2 * 9) + adj);
+						this.drawText("Ammo", 150, (y2 * 9) + adj);
 					}
 				}
 
@@ -7453,9 +7453,9 @@
 				var x = (this.windowWidth() / 4) - 4;
 				adj = 27;
 				
-				this.drawText("Использ.", x, ((y2 * 12) + 10)); 
-				this.drawText("Выстрелов", x, ((y2 * 12) + 10) + adj); 
-				this.drawText("Убийств", x, ((y2 * 12) + 10) + (adj * 2));
+				this.drawText("Equipped", x, ((y2 * 12) + 10)); 
+				this.drawText("Shots", x, ((y2 * 12) + 10) + adj); 
+				this.drawText("Kills", x, ((y2 * 12) + 10) + (adj * 2));
 				this.drawText($gameSystem._data.gunRecord[this.item.id].useCount, 0, ((y2 * 12) + 10), 200, 'right'); 
 				this.drawText($gameSystem._data.gunRecord[this.item.id].shotCount, 0,  ((y2 * 12) + 10) + adj, 200, 'right'); 
 				this.drawText($gameSystem._data.gunRecord[this.item.id].killCount, 0, ((y2 * 12) + 10) + (adj * 2), 200, 'right');
@@ -7487,11 +7487,11 @@
 
 				adj = 4;
 
-				this.drawText("ЛеталРадиус", 150, y2 + adj); 
-				this.drawText("РадиусПораж", 150, (y2 * 3) + adj);
-				this.drawText("Урон", 150, (y2 * 5) + adj); 
-				this.drawText("Таймер", 150, (y2 * 7) + adj);
-				this.drawText("Количество", 150, (y2 * 9) + adj);
+				this.drawText("Lethal Radius", 150, y2 + adj); 
+				this.drawText("Blast Radius", 150, (y2 * 3) + adj);
+				this.drawText("Damage", 150, (y2 * 5) + adj); 
+				this.drawText("Timer", 150, (y2 * 7) + adj);
+				this.drawText("Quantity", 150, (y2 * 9) + adj);
 
 				this.resetTextColor();
 
@@ -7500,7 +7500,7 @@
 				this.drawText(this.item.meta.deadlyRadius, 0, ((y2 * 2) - adj) + 12, this.windowWidth() - 40, 'right'); //致死範囲値
 				this.drawText(Number(this.item.meta.damageRadius), 0,  ((y2 * 4) - adj) + 12, this.windowWidth() - 40, 'right'); //負傷範囲値
 				this.drawText(this.item.meta.damage, 0,  ((y2 * 6) - adj) + 12, this.windowWidth() - 40, 'right'); //ダメージ
-				this.drawText(this.item.meta.timer + " с.", 0,  ((y2 * 8) - adj) + 12, this.windowWidth() - 40, 'right'); //起爆時間
+				this.drawText(this.item.meta.timer + " s", 0,  ((y2 * 8) - adj) + 12, this.windowWidth() - 40, 'right'); //起爆時間
 				var skill = $gameActors.actor(1).hasSkill(17) ? 2 : 1;
 				this.drawText(this.item.meta.number * skill, 0,  ((y2 * 10) - adj) + 12, this.windowWidth() - 40, 'right');
 
@@ -7508,9 +7508,9 @@
 				adj = 27;
 
 				if (!$gameSystem._data.bombRecord[this.item.id]) $gameSystem.weaponRecordInitialize(this.item.id, 3);
-				this.drawText("Использ.", x, ((y2 * 12) + 10)); 
-				this.drawText("Бросков", x, ((y2 * 12) + 10) + adj); 
-				this.drawText("Убийств", x, ((y2 * 12) + 10) + (adj * 2));
+				this.drawText("Equipped", x, ((y2 * 12) + 10)); 
+				this.drawText("Throws", x, ((y2 * 12) + 10) + adj); 
+				this.drawText("Kills", x, ((y2 * 12) + 10) + (adj * 2));
 				this.drawText($gameSystem._data.bombRecord[this.item.id].useCount, 0, ((y2 * 12) + 10), 200, 'right'); 
 				this.drawText($gameSystem._data.bombRecord[this.item.id].shotCount, 0,  ((y2 * 12) + 10) + adj, 200, 'right'); 
 				this.drawText($gameSystem._data.bombRecord[this.item.id].killCount, 0, ((y2 * 12) + 10) + (adj * 2), 200, 'right');
@@ -7546,9 +7546,9 @@
 
 				adj = 4;
 
-				this.drawText("Урон", 150, y2 + adj); 
-				this.drawText("Тяжесть", 150, (y2 * 3) + adj);
-				this.drawText("ТемпУдаров", 150, (y2 * 5) + adj); 
+				this.drawText("Damage", 150, y2 + adj); 
+				this.drawText("Weight", 150, (y2 * 3) + adj);
+				this.drawText("Swing Rate", 150, (y2 * 5) + adj); 
 
 				this.resetTextColor();
 
@@ -7562,9 +7562,9 @@
 				var x = (this.windowWidth() / 4) - 4;
 				adj = 27;
 
-				this.drawText("Использ.", x, ((y2 * 12) + 10)); 
-				this.drawText("Нападений", x, ((y2 * 12) + 10) + adj); 
-				this.drawText("Убийств", x, ((y2 * 12) + 10) + (adj * 2));
+				this.drawText("Equipped", x, ((y2 * 12) + 10)); 
+				this.drawText("Attacks", x, ((y2 * 12) + 10) + adj); 
+				this.drawText("Kills", x, ((y2 * 12) + 10) + (adj * 2));
 				this.drawText($gameSystem._data.meleeRecord[this.item.id].useCount, 0, ((y2 * 12) + 10), 200, 'right'); 
 				this.drawText($gameSystem._data.meleeRecord[this.item.id].shotCount, 0,  ((y2 * 12) + 10) + adj, 200, 'right'); 
 				this.drawText($gameSystem._data.meleeRecord[this.item.id].killCount, 0, ((y2 * 12) + 10) + (adj * 2), 200, 'right');
@@ -7578,25 +7578,25 @@
 		var translate = "";
 		if (type == "speed") {
 			switch (item.meta.speed) { 
-				case "最遅": translate = "ОченьНизкий"; break;
-				case "遅": translate = "Низкий"; break;
-				case "普通": translate = "Средний"; break;
-				case "速": translate = "Высокий"; break;
-				case "最速": translate = "ОченьВысокий";
+				case "最遅": translate = "Very Low"; break;
+				case "遅": translate = "Low"; break;
+				case "普通": translate = "Medium"; break;
+				case "速": translate = "High"; break;
+				case "最速": translate = "Very High";
 			}
 		}else if (type == "recoil") {
 			switch (item.meta.recoil) {
-				case "最小": translate = "ОченьНизкая"; break;
-				case "小": translate = "Низкая"; break;
-				case "中": translate = "Средняя"; break;
-				case "大": translate = "Высокая"; break;
-				case "特大": translate = "ОченьВысокая";
+				case "最小": translate = "Very Low"; break;
+				case "小": translate = "Low"; break;
+				case "中": translate = "Medium"; break;
+				case "大": translate = "High"; break;
+				case "特大": translate = "Very High";
 			}
 		}else if (type == "stamina") {
 			switch (item.meta.stamina) {
-				case "小": translate = "Низкая"; break;
-				case "中": translate = "Средняя"; break;
-				case "大": translate = "Высокая"; break;
+				case "小": translate = "Low"; break;
+				case "中": translate = "Medium"; break;
+				case "大": translate = "High"; break;
 			}
 		}
 		return translate;
@@ -7651,10 +7651,10 @@
 			this.changeTextColor(this.systemColor());
 			this.changePaintOpacity(this.isEnabled(index));
 			switch (index) {
-				case 0: this.drawText("Основное", rect.x, rect.y); break;
-				case 1: this.drawText("Пистолет", rect.x, rect.y); break;
-				case 2: this.drawText("Гранаты", rect.x, rect.y); break;
-				case 3: this.drawText("Холодное", rect.x, rect.y); break;
+				case 0: this.drawText("Primary", rect.x, rect.y); break;
+				case 1: this.drawText("Handgun", rect.x, rect.y); break;
+				case 2: this.drawText("Grenades", rect.x, rect.y); break;
+				case 3: this.drawText("Melee", rect.x, rect.y); break;
 			}
 			//JP x + 110, EN x + 170
 			this.drawItemName(this._actor.equips()[index], rect.x + 170, rect.y);
@@ -7734,7 +7734,7 @@
 	    this.contents.clear();
 		this.changeTextColor(this.textColor(16));
 		this.contents.fontSize = 26;
-		this.drawText("В хранилище", 0, 0, this.width - 36, 'center');
+		this.drawText("In Storage", 0, 0, this.width - 36, 'center');
 		this.contents.fontSize = 28;
 		this.resetTextColor();
 	};
@@ -7912,21 +7912,21 @@
 		this.scoreSprite(388, 266 + (28 * 3), 70, 40, 26, $gameVariables._data[31], "right");
 
 		if ($gameVariables._data[76].yandere.status == 4) {
-			this.scoreSprite(272, 382, 200  + (28 * y), 40, 22, "Яндере убита!", "left");
-			this.scoreSprite(253, 382, 300  + (28 * y), 40, 22, "+5000 ОУ", "right");
+			this.scoreSprite(272, 382, 200  + (28 * y), 40, 22, "Yandere eliminated!", "left");
+			this.scoreSprite(253, 382, 300  + (28 * y), 40, 22, "+5000 SP", "right");
 			y += 1;
 		}
 		if ($gameVariables._data[76].principal.status == 4) {
-			this.scoreSprite(272, 382 + (28 * y), 200, 40, 22, "Директор убит!", "left");
-			this.scoreSprite(253, 382 + (28 * y), 300, 40, 22, "+5000 ОУ", "right");
+			this.scoreSprite(272, 382 + (28 * y), 200, 40, 22, "Principal eliminated!", "left");
+			this.scoreSprite(253, 382 + (28 * y), 300, 40, 22, "+5000 SP", "right");
 			y += 1;
 		}
 		if ($gameVariables._data[76].maleOfficer.status == 4 || $gameVariables._data[76].femaleOfficer.status == 4) {
-			this.scoreSprite(272, 382 + (28 * y), 200, 40, 22, "Офицер убит!", "left");
+			this.scoreSprite(272, 382 + (28 * y), 200, 40, 22, "Officer eliminated!", "left");
 			if ($gameVariables._data[76].maleOfficer.status == 4 && $gameVariables._data[76].femaleOfficer.status == 4) {
-				var sp = "+10000 ОУ";
+				var sp = "+10000 SP";
 			}else{
-				var sp = "+5000 ОУ";
+				var sp = "+5000 SP";
 			}
 			this.scoreSprite(253, 382 + (28 * y), 300, 40, 22, sp, "right");
 			y += 1;
@@ -8016,7 +8016,7 @@
 		this.drawText($gameVariables._data[33], 658, 328 + (33 * 1), 110, "right");
 		this.drawText($gameVariables._data[34], 658, 328 + (33 * 2), 110, "right");
 		if (!$gameVariables._data[24]) $gameVariables._data[24] = 0;
-		this.drawText($gameVariables._data[24] + "с.", 658, 436, 110, "right");
+		this.drawText($gameVariables._data[24] + "s", 658, 436, 110, "right");
 		this.drawText($gameSystem.achievementProgress() + "%", 658, 436 + 33, 110, "right");
 
 	};
@@ -8193,7 +8193,7 @@
 		rect.width -= this.textPadding();
 		this.changePaintOpacity(this.isEnabled(item));
 		this.drawItemName(item, rect.x, rect.y, rect.width - priceWidth);
-		this.drawText(this.price(item) + " ОУ", rect.x + rect.width - priceWidth, rect.y, priceWidth, 'right');
+		this.drawText(this.price(item) + " SP", rect.x + rect.width - priceWidth, rect.y, priceWidth, 'right');
 		this.changePaintOpacity(true);
 	};
 	Window_ShopNumber.prototype.windowWidth = function() {
@@ -8269,16 +8269,16 @@
 		
 					adj = 4;
 
-					this.drawText("Урон", 150, y2 + adj); 
-					this.drawText("Отдача", 150, (y2 * 3) + adj);
-					this.drawText("ТемпСтрельбы", 150, (y2 * 5) + adj); 
-					this.drawText("Вместимость", 150, (y2 * 7) + adj);
+					this.drawText("Damage", 150, y2 + adj); 
+					this.drawText("Recoil", 150, (y2 * 3) + adj);
+					this.drawText("Fire Rate", 150, (y2 * 5) + adj); 
+					this.drawText("Capacity", 150, (y2 * 7) + adj);
 
 					if ($gameSwitches.value(40)){
 						if (this._item.meta["isPump"] == "0"){
-							this.drawText("Магазины", 150, (y2 * 9) + adj);
+							this.drawText("Magazines", 150, (y2 * 9) + adj);
 						}else{
-							this.drawText("Патроны", 150, (y2 * 9) + adj);
+							this.drawText("Ammo", 150, (y2 * 9) + adj);
 						}
 					}
 
@@ -8323,9 +8323,9 @@
 
 					adj = 4;
 
-					this.drawText("Урон", 150, y2 + adj); 
-					this.drawText("Тяжесть", 150, (y2 * 3) + adj);
-					this.drawText("ТемпУдаров", 150, (y2 * 5) + adj); 
+					this.drawText("Damage", 150, y2 + adj); 
+					this.drawText("Weight", 150, (y2 * 3) + adj);
+					this.drawText("Swing Rate", 150, (y2 * 5) + adj); 
 
 					this.resetTextColor();
 	
@@ -8632,10 +8632,10 @@
 		if (typeof $gameSwitches._data[1] !== "undefined") this.addOptions();
 	};
 	Window_Options.prototype.addOptions = function() {
-		this.addCommand("Сложный режим", 40);
-		if($gameActors.actor(1).hasSkill(16)) this.addCommand("Режим Юми", 29);
-		if($gameSwitches._data[14]) this.addCommand("Пропуск вступ. сцены", 44);
-		if($gameSwitches._data[43]) this.addCommand("Пропуск концовок", 45);
+		this.addCommand("Hard Mode", 40);
+		if($gameActors.actor(1).hasSkill(16)) this.addCommand("Yumi Mode", 29);
+		if($gameSwitches._data[14]) this.addCommand("Skip Intro Scene", 44);
+		if($gameSwitches._data[43]) this.addCommand("Skip Endings", 45);
 	};
 	//ボリューム調整量変更
 	Window_Options.prototype.volumeOffset = function() {
@@ -8768,8 +8768,8 @@
 		if (rect.width >= 420) {
 
 			this.contents.fontSize = 22;
-			this.drawText("Рекорд по убийствам" + " " + kill1 + " " + "人" + " " + "Сложный режим" + " " + kill2 + " " + "人", rect.x, rect.y - 5 + (lineHeight * 1), rect.width, 'right');
-			this.drawText("Всего убийств" + " " + kill3 + " " + "人", rect.x, rect.y - 5 + (lineHeight * 2), rect.width, 'right');
+			this.drawText("Kill Record" + " " + kill1 + " " + "" + " " + "Hard Mode" + " " + kill2 + " " + "", rect.x, rect.y - 5 + (lineHeight * 1), rect.width, 'right');
+			this.drawText("Total Kills" + " " + kill3 + " " + "", rect.x, rect.y - 5 + (lineHeight * 2), rect.width, 'right');
 			this.contents.fontSize = this.standardFontSize();
 
 		}
@@ -8786,7 +8786,7 @@
 	Window_SavefileList.prototype.drawFileId = function(id, x, y) {
 		this.changeTextColor(this.textColor(16));
 		if (id == 1) {
-			this.drawText("Автосохранение", x, y, 180);
+			this.drawText("Autosave", x, y, 180);
 		}else{
 			this.drawText(TextManager.file + ' ' + (id - 1), x, y, 180);
 		}
@@ -9101,12 +9101,12 @@
 		this.drawIcon(12, 2, 2);
 		this.contents.fontSize = 34; 
 		this.contents.textColor = this.textColor(0);
-		this.drawText("Достижения", 46, 0, this.contentsWidth(), 'left');
+		this.drawText("Achievements", 46, 0, this.contentsWidth(), 'left');
 		var achieved = $gameSystem._data.achievement.filter(element => element);
 		var total = achievementTexts.length - 1;
 		this.contents.fontSize = 26;
 		this.contents.textColor = this.textColor(0);
-		this.drawText("Получено" + " " + achieved.length + "/" + total, 0, 0, this.contentsWidth(), 'right');
+		this.drawText("Unlocked" + " " + achieved.length + "/" + total, 0, 0, this.contentsWidth(), 'right');
 	};
 	//実績ウィンドウ
 	function Window_Achievement() {
@@ -9181,7 +9181,7 @@
 		this.contents.fontSize = this.standardFontSize();
 		if (this.isSecret(item.order)) { //シークレット化
 			this.contents.textColor = this.textColor(7);
-			this.drawText("Секретные достижения", x, y, width);
+			this.drawText("Secret Achievements", x, y, width);
 			this.resetTextColor();
 			return;
 		}
@@ -9191,7 +9191,7 @@
 			this.drawText(item.name, x + 46, y, width);
 		}else{ //未達成
 			this.contents.textColor = this.textColor(7);
-			this.drawText("Не получено", x, y, width);
+			this.drawText("Locked", x, y, width);
 			this.resetTextColor();
 		}
 	};
@@ -9242,17 +9242,17 @@
 		var color = $gameSystem._data.achievement[index] ? 0 : 7;
 		this.contents.textColor = this.textColor(color);
 		if ($gameSystem._data.achievement[index]) { //達成済み
-			this.drawText("Получено!", x - 4, y + 4 + this.fittingHeight(0), width, 'right');
+			this.drawText("Unlocked!", x - 4, y + 4 + this.fittingHeight(0), width, 'right');
 		}else{ //未達成
 			var text = "";
 			var reward = 0;
 			if (achievementTexts[index].rewardType == 1) { //SP
-				reward = achievementTexts[index].reward + " ОУ";
+				reward = achievementTexts[index].reward + " SP";
 			}else{ //武器もしくはスキル
 				reward = achievementTexts[index].reward;
 			}
 			this.contents.fontSize = 20;
-			text = "Награда: " + reward;
+			text = "Reward: " + reward;
 			this.drawText(text, x - 4, y + 4 + this.fittingHeight(0), width, 'right');
 			this.contents.fontSize = 22;
 			
@@ -9349,7 +9349,7 @@
 			this.drawIcon(12, 2, 2);
 			this.drawText(achievement.name, this.standardPadding() + 36, 0, width, 'left');
 			this.contents.fontSize = 16; this.changeTextColor(this.textColor(16));
-			this.drawText("Получено достижение", this.standardPadding(), 32, width, 'left');
+			this.drawText("Achievement Unlocked", this.standardPadding(), 32, width, 'left');
 			this.contents.fontSize = 28;
 		}
 	};
