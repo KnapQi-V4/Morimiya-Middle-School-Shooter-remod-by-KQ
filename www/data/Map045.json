@@ -1,1 +1,6785 @@
-{"autoplayBgm": true, "autoplayBgs": false, "battleback1Name": "", "battleback2Name": "", "bgm": {"name": "Test02", "pan": 0, "pitch": 100, "volume": 60}, "bgs": {"name": "terror_clock", "pan": 0, "pitch": 80, "volume": 10}, "disableDashing": false, "displayName": "", "encounterList": [], "encounterStep": 30, "height": 12, "note": "<fgName:!Room_fg>\n<stepSE:0>", "parallaxLoopX": false, "parallaxLoopY": false, "parallaxName": "!Room", "parallaxShow": true, "parallaxSx": 0, "parallaxSy": 0, "scrollType": 0, "specifyBattleback": false, "tilesetId": 6, "width": 17, "data": [1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 0, 0, 0, 0, 0, 0, 0, 0, 1544, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1544, 1544, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "events": [null, {"id": 1, "name": "EV001", "note": "", "pages": [{"conditions": {"actorId": 1, "actorValid": false, "itemId": 1, "itemValid": false, "selfSwitchCh": "A", "selfSwitchValid": false, "switch1Id": 1, "switch1Valid": false, "switch2Id": 1, "switch2Valid": false, "variableId": 1, "variableValid": false, "variableValue": 0}, "directionFix": false, "image": {"characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0}, "list": [{"code": 122, "indent": 0, "parameters": [46, 46, 0, 0, 0]}, {"code": 250, "indent": 0, "parameters": [{"name": "Move1", "pan": 0, "pitch": 100, "volume": 90}]}, {"code": 201, "indent": 0, "parameters": [0, 49, 31, 15, 0, 0]}, {"code": 0, "indent": 0, "parameters": []}], "moveFrequency": 3, "moveRoute": {"list": [{"code": 0, "parameters": []}], "repeat": true, "skippable": false, "wait": false}, "moveSpeed": 3, "moveType": 0, "priorityType": 0, "stepAnime": false, "through": false, "trigger": 1, "walkAnime": true}], "x": 8, "y": 9}, {"id": 2, "name": "EV002", "note": "", "pages": [{"conditions": {"actorId": 1, "actorValid": false, "itemId": 1, "itemValid": false, "selfSwitchCh": "A", "selfSwitchValid": false, "switch1Id": 1, "switch1Valid": false, "switch2Id": 1, "switch2Valid": false, "variableId": 1, "variableValid": false, "variableValue": 0}, "directionFix": false, "image": {"characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0}, "list": [{"code": 111, "indent": 0, "parameters": [4, 1, 3, 19]}, {"code": 101, "indent": 1, "parameters": ["", 0, 0, 2]}, {"code": 401, "indent": 1, "parameters": ["Nothing is simpler than making a bomb at home.\\!"]}, {"code": 401, "indent": 1, "parameters": ["You search for the recipe on the internet,"]}, {"code": 401, "indent": 1, "parameters": ["follow the steps one by one, and the bomb is done."]}, {"code": 101, "indent": 1, "parameters": ["", 0, 0, 2]}, {"code": 401, "indent": 1, "parameters": ["Strictly speaking, however, when you have firearms,"]}, {"code": 401, "indent": 1, "parameters": ["there's no reason to stop at basic firepower."]}, {"code": 101, "indent": 1, "parameters": ["", 0, 0, 2]}, {"code": 401, "indent": 1, "parameters": ["So I started looking into creating something far more"]}, {"code": 401, "indent": 1, "parameters": ["destructive. \\!Researching past bombing incidents, I"]}, {"code": 401, "indent": 1, "parameters": ["wanted explosives that could rival the effectiveness"]}, {"code": 401, "indent": 1, "parameters": ["of any firearm."]}, {"code": 101, "indent": 1, "parameters": ["", 0, 0, 2]}, {"code": 401, "indent": 1, "parameters": ["Even after getting into chemical explosive synthesis,"]}, {"code": 401, "indent": 1, "parameters": ["I had no intention of stopping there."]}, {"code": 101, "indent": 1, "parameters": ["", 0, 0, 2]}, {"code": 401, "indent": 1, "parameters": ["To be honest, I didn't really enjoy using nail polish"]}, {"code": 401, "indent": 1, "parameters": ["remover and cleaning detergent to craft bombs."]}, {"code": 101, "indent": 1, "parameters": ["", 0, 0, 2]}, {"code": 401, "indent": 1, "parameters": ["After several experiments, I produced three types of bombs.\\!"]}, {"code": 401, "indent": 1, "parameters": ["Will their destructive power justify my efforts?\\!"]}, {"code": 401, "indent": 1, "parameters": ["I can hardly wait to find out."]}, {"code": 0, "indent": 1, "parameters": []}, {"code": 411, "indent": 0, "parameters": []}, {"code": 101, "indent": 1, "parameters": ["", 0, 0, 2]}, {"code": 401, "indent": 1, "parameters": ["I crafted several homemade pipe bombs.\\!"]}, {"code": 401, "indent": 1, "parameters": ["Though guns are enough for what I need,\\!"]}, {"code": 401, "indent": 1, "parameters": ["leaving without bringing a few would be a waste."]}, {"code": 101, "indent": 1, "parameters": ["", 0, 0, 2]}, {"code": 401, "indent": 1, "parameters": ["I gathered all the necessary instructions from the"]}, {"code": 401, "indent": 1, "parameters": ["internet. \\!At the same time, numerous articles and"]}, {"code": 401, "indent": 1, "parameters": ["documentaries about terrorists proved useful."]}, {"code": 101, "indent": 1, "parameters": ["", 0, 0, 2]}, {"code": 401, "indent": 1, "parameters": ["I cannot fathom killing others in the name of religion.\\!"]}, {"code": 401, "indent": 1, "parameters": ["God? Paradise? Souls?"]}, {"code": 101, "indent": 1, "parameters": ["", 0, 0, 2]}, {"code": 401, "indent": 1, "parameters": ["What is the point of any of that."]}, {"code": 0, "indent": 1, "parameters": []}, {"code": 412, "indent": 0, "parameters": []}, {"code": 0, "indent": 0, "parameters": []}], "moveFrequency": 3, "moveRoute": {"list": [{"code": 0, "parameters": []}], "repeat": true, "skippable": false, "wait": false}, "moveSpeed": 3, "moveType": 0, "priorityType": 1, "stepAnime": false, "through": false, "trigger": 0, "walkAnime": true}], "x": 5, "y": 7}, {"id": 3, "name": "EV003", "note": "", "pages": [{"conditions": {"actorId": 1, "actorValid": false, "itemId": 1, "itemValid": false, "selfSwitchCh": "A", "selfSwitchValid": false, "switch1Id": 1, "switch1Valid": false, "switch2Id": 1, "switch2Valid": false, "variableId": 1, "variableValid": false, "variableValue": 0}, "directionFix": false, "image": {"characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0}, "list": [{"code": 101, "indent": 0, "parameters": ["", 0, 0, 2]}, {"code": 401, "indent": 0, "parameters": ["The school can be seen from here.\\!"]}, {"code": 401, "indent": 0, "parameters": ["The school I despise so deeply."]}, {"code": 101, "indent": 0, "parameters": ["", 0, 0, 2]}, {"code": 401, "indent": 0, "parameters": ["It's tragic: while my life crumbled away,"]}, {"code": 401, "indent": 0, "parameters": ["this view remained utterly unchanged."]}, {"code": 101, "indent": 0, "parameters": ["", 0, 0, 2]}, {"code": 401, "indent": 0, "parameters": ["Every school bell heralded the crowd of students,"]}, {"code": 401, "indent": 0, "parameters": ["laughing loudly at my misery."]}, {"code": 101, "indent": 0, "parameters": ["", 0, 0, 2]}, {"code": 401, "indent": 0, "parameters": ["...Yet sooner or later, everything comes to an end.\\!"]}, {"code": 401, "indent": 0, "parameters": ["Starting today, we will become true friends.\\!"]}, {"code": 401, "indent": 0, "parameters": ["And suffer together as one."]}, {"code": 0, "indent": 0, "parameters": []}], "moveFrequency": 3, "moveRoute": {"list": [{"code": 0, "parameters": []}], "repeat": true, "skippable": false, "wait": false}, "moveSpeed": 3, "moveType": 0, "priorityType": 1, "stepAnime": false, "through": false, "trigger": 0, "walkAnime": true}], "x": 8, "y": 4}, {"id": 4, "name": "EV004", "note": "", "pages": [{"conditions": {"actorId": 1, "actorValid": false, "itemId": 1, "itemValid": false, "selfSwitchCh": "A", "selfSwitchValid": false, "switch1Id": 1, "switch1Valid": false, "switch2Id": 1, "switch2Valid": false, "variableId": 1, "variableValid": false, "variableValue": 0}, "directionFix": false, "image": {"characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0}, "list": [{"code": 231, "indent": 0, "parameters": [1, "Rouka", 0, 0, 0, 0, 100, 100, 0, 0]}, {"code": 101, "indent": 0, "parameters": ["", 0, 0, 2]}, {"code": 401, "indent": 0, "parameters": ["Over the past few months, I read endlessly about"]}, {"code": 401, "indent": 0, "parameters": ["terrorist attacks and mass murder incidents."]}, {"code": 232, "indent": 0, "parameters": [1, 0, 0, 0, 0, 0, 100, 100, 255, 0, 30, false]}, {"code": 101, "indent": 0, "parameters": ["", 0, 0, 2]}, {"code": 401, "indent": 0, "parameters": ["Among them all, what captivated me most was"]}, {"code": 401, "indent": 0, "parameters": ["the mass murder where 20 students lost their lives"]}, {"code": 401, "indent": 0, "parameters": ["right in the school hallway.\\!"]}, {"code": 401, "indent": 0, "parameters": ["The perpetrator was Yumi Tojo."]}, {"code": 101, "indent": 0, "parameters": ["", 0, 0, 2]}, {"code": 401, "indent": 0, "parameters": ["I still remember the public outcry. Back then, I was"]}, {"code": 401, "indent": 0, "parameters": ["only in elementary school."]}, {"code": 401, "indent": 0, "parameters": ["Everyone gasped that \"something horrifying occurred\","]}, {"code": 401, "indent": 0, "parameters": ["sparking a massive sensation across the city."]}, {"code": 101, "indent": 0, "parameters": ["", 0, 0, 2]}, {"code": 401, "indent": 0, "parameters": ["Now, in the present, I find myself plotting a mass"]}, {"code": 401, "indent": 0, "parameters": ["shooting of my own, perhaps even taking"]}, {"code": 401, "indent": 0, "parameters": ["inspiration from that very incident.\\!"]}, {"code": 232, "indent": 0, "parameters": [1, 0, 0, 0, 0, 0, 100, 100, 0, 0, 30, false]}, {"code": 101, "indent": 0, "parameters": ["", 0, 0, 2]}, {"code": 401, "indent": 0, "parameters": ["Obnoxious classmates, meddlesome teachers.\\!"]}, {"code": 401, "indent": 0, "parameters": ["I wonder what it will feel like to kill them."]}, {"code": 101, "indent": 0, "parameters": ["", 0, 0, 2]}, {"code": 401, "indent": 0, "parameters": ["For the first time in my short life,"]}, {"code": 401, "indent": 0, "parameters": ["I look forward to tomorrow with excitement."]}, {"code": 101, "indent": 0, "parameters": ["", 0, 0, 2]}, {"code": 401, "indent": 0, "parameters": ["I genuinely cannot wait to wipe them all out."]}, {"code": 235, "indent": 0, "parameters": [1]}, {"code": 0, "indent": 0, "parameters": []}], "moveFrequency": 3, "moveRoute": {"list": [{"code": 0, "parameters": []}], "repeat": true, "skippable": false, "wait": false}, "moveSpeed": 3, "moveType": 0, "priorityType": 1, "stepAnime": false, "through": false, "trigger": 0, "walkAnime": true}], "x": 10, "y": 4}, {"id": 5, "name": "EV005", "note": "", "pages": [{"conditions": {"actorId": 1, "actorValid": false, "itemId": 1, "itemValid": false, "selfSwitchCh": "A", "selfSwitchValid": false, "switch1Id": 1, "switch1Valid": false, "switch2Id": 1, "switch2Valid": false, "variableId": 1, "variableValid": false, "variableValue": 0}, "directionFix": false, "image": {"characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0}, "list": [{"code": 117, "indent": 0, "parameters": [28]}, {"code": 250, "indent": 0, "parameters": [{"name": "Computer", "volume": 90, "pitch": 100, "pan": 0}]}, {"code": 101, "indent": 0, "parameters": ["", 0, 0, 2]}, {"code": 401, "indent": 0, "parameters": ["\\C[6]Computer\\C[0]"]}, {"code": 401, "indent": 0, "parameters": ["Here you can adjust settings and view"]}, {"code": 401, "indent": 0, "parameters": ["various game information."]}, {"code": 102, "indent": 0, "parameters": [["\\I[29] Game Manual", "\\I[30] Records", "\\I[12] Achievements", "\\I[31] Settings", "Do nothing"], 4, 0, 2, 0]}, {"code": 402, "indent": 0, "parameters": [0, "\\I[29] Game Manual"]}, {"code": 355, "indent": 1, "parameters": ["SceneManager.push(Scene_Tips);"]}, {"code": 0, "indent": 1, "parameters": []}, {"code": 402, "indent": 0, "parameters": [1, "\\I[30] Records"]}, {"code": 231, "indent": 1, "parameters": [1, "total_score", 0, 0, 0, 0, 100, 100, 255, 0]}, {"code": 355, "indent": 1, "parameters": ["Scene_Map.prototype.totalScore();"]}, {"code": 101, "indent": 1, "parameters": ["", 0, 2, 2]}, {"code": 401, "indent": 1, "parameters": [""]}, {"code": 201, "indent": 1, "parameters": [0, 45, 9, 5, 8, 2]}, {"code": 0, "indent": 1, "parameters": []}, {"code": 402, "indent": 0, "parameters": [2, "\\I[12] Achievements"]}, {"code": 355, "indent": 1, "parameters": ["SceneManager.push(Scene_Achievement);"]}, {"code": 0, "indent": 1, "parameters": []}, {"code": 402, "indent": 0, "parameters": [3, "\\I[31] Settings"]}, {"code": 355, "indent": 1, "parameters": ["SceneManager.push(Scene_Options);"]}, {"code": 0, "indent": 1, "parameters": []}, {"code": 402, "indent": 0, "parameters": [4, "Do nothing"]}, {"code": 0, "indent": 1, "parameters": []}, {"code": 404, "indent": 0, "parameters": []}, {"code": 246, "indent": 0, "parameters": [1]}, {"code": 117, "indent": 0, "parameters": [29]}, {"code": 235, "indent": 0, "parameters": [1]}, {"code": 0, "indent": 0, "parameters": []}], "moveFrequency": 3, "moveRoute": {"list": [{"code": 0, "parameters": []}], "repeat": true, "skippable": false, "wait": false}, "moveSpeed": 3, "moveType": 0, "priorityType": 1, "stepAnime": false, "through": false, "trigger": 0, "walkAnime": true}], "x": 9, "y": 4}, null, {"id": 7, "name": "EV007", "note": "", "pages": [{"conditions": {"actorId": 1, "actorValid": false, "itemId": 1, "itemValid": false, "selfSwitchCh": "A", "selfSwitchValid": false, "switch1Id": 1, "switch1Valid": false, "switch2Id": 1, "switch2Valid": false, "variableId": 1, "variableValid": false, "variableValue": 0}, "directionFix": false, "image": {"characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0}, "list": [{"code": 117, "indent": 0, "parameters": [28]}, {"code": 250, "indent": 0, "parameters": [{"name": "Equip2", "volume": 90, "pitch": 100, "pan": 0}]}, {"code": 101, "indent": 0, "parameters": ["", 0, 0, 2]}, {"code": 401, "indent": 0, "parameters": ["\\C[6]Bed\\C[0]"]}, {"code": 401, "indent": 0, "parameters": ["You can save your game here."]}, {"code": 102, "indent": 0, "parameters": [["\\I[245] Save Game", "Do nothing"], 1, 0, 2, 0]}, {"code": 402, "indent": 0, "parameters": [0, "\\I[245] Save Game"]}, {"code": 352, "indent": 1, "parameters": []}, {"code": 0, "indent": 1, "parameters": []}, {"code": 402, "indent": 0, "parameters": [1, "Do nothing"]}, {"code": 0, "indent": 1, "parameters": []}, {"code": 404, "indent": 0, "parameters": []}, {"code": 117, "indent": 0, "parameters": [29]}, {"code": 0, "indent": 0, "parameters": []}], "moveFrequency": 3, "moveRoute": {"list": [{"code": 0, "parameters": []}], "repeat": true, "skippable": false, "wait": false}, "moveSpeed": 3, "moveType": 0, "priorityType": 1, "stepAnime": false, "through": false, "trigger": 0, "walkAnime": true}], "x": 11, "y": 5}, {"id": 8, "name": "EV008", "note": "", "pages": [{"conditions": {"actorId": 1, "actorValid": false, "itemId": 1, "itemValid": false, "selfSwitchCh": "A", "selfSwitchValid": false, "switch1Id": 1, "switch1Valid": false, "switch2Id": 1, "switch2Valid": false, "variableId": 1, "variableValid": false, "variableValue": 0}, "directionFix": false, "image": {"characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0}, "list": [{"code": 111, "indent": 0, "parameters": [4, 1, 3, 19]}, {"code": 101, "indent": 1, "parameters": ["", 0, 0, 2]}, {"code": 401, "indent": 1, "parameters": ["Nothing is simpler than making a bomb at home.\\!"]}, {"code": 401, "indent": 1, "parameters": ["You search for the recipe on the internet,"]}, {"code": 401, "indent": 1, "parameters": ["follow the steps one by one, and the bomb is done."]}, {"code": 101, "indent": 1, "parameters": ["", 0, 0, 2]}, {"code": 401, "indent": 1, "parameters": ["Strictly speaking, however, when you have firearms,"]}, {"code": 401, "indent": 1, "parameters": ["there's no reason to stop at basic firepower."]}, {"code": 101, "indent": 1, "parameters": ["", 0, 0, 2]}, {"code": 401, "indent": 1, "parameters": ["So I started looking into creating something far more"]}, {"code": 401, "indent": 1, "parameters": ["destructive. \\!Researching past bombing incidents, I"]}, {"code": 401, "indent": 1, "parameters": ["wanted explosives that could rival the effectiveness"]}, {"code": 401, "indent": 1, "parameters": ["of any firearm."]}, {"code": 101, "indent": 1, "parameters": ["", 0, 0, 2]}, {"code": 401, "indent": 1, "parameters": ["Even after getting into chemical explosive synthesis,"]}, {"code": 401, "indent": 1, "parameters": ["I had no intention of stopping there."]}, {"code": 101, "indent": 1, "parameters": ["", 0, 0, 2]}, {"code": 401, "indent": 1, "parameters": ["To be honest, I didn't really enjoy using nail polish"]}, {"code": 401, "indent": 1, "parameters": ["remover and cleaning detergent to craft bombs."]}, {"code": 101, "indent": 1, "parameters": ["", 0, 0, 2]}, {"code": 401, "indent": 1, "parameters": ["After several experiments, I produced three types of bombs.\\!"]}, {"code": 401, "indent": 1, "parameters": ["Will their destructive power justify my efforts?\\!"]}, {"code": 401, "indent": 1, "parameters": ["I can hardly wait to find out."]}, {"code": 0, "indent": 1, "parameters": []}, {"code": 411, "indent": 0, "parameters": []}, {"code": 101, "indent": 1, "parameters": ["", 0, 0, 2]}, {"code": 401, "indent": 1, "parameters": ["I crafted several homemade pipe bombs.\\!"]}, {"code": 401, "indent": 1, "parameters": ["Though guns are enough for what I need,\\!"]}, {"code": 401, "indent": 1, "parameters": ["leaving without bringing a few would be a waste."]}, {"code": 101, "indent": 1, "parameters": ["", 0, 0, 2]}, {"code": 401, "indent": 1, "parameters": ["I gathered all the necessary instructions from the"]}, {"code": 401, "indent": 1, "parameters": ["internet. \\!At the same time, numerous articles and"]}, {"code": 401, "indent": 1, "parameters": ["documentaries about terrorists proved useful."]}, {"code": 101, "indent": 1, "parameters": ["", 0, 0, 2]}, {"code": 401, "indent": 1, "parameters": ["I cannot fathom killing others in the name of religion.\\!"]}, {"code": 401, "indent": 1, "parameters": ["God? Paradise? Souls?"]}, {"code": 101, "indent": 1, "parameters": ["", 0, 0, 2]}, {"code": 401, "indent": 1, "parameters": ["What is the point of any of that."]}, {"code": 0, "indent": 1, "parameters": []}, {"code": 412, "indent": 0, "parameters": []}, {"code": 0, "indent": 0, "parameters": []}], "moveFrequency": 3, "moveRoute": {"list": [{"code": 0, "parameters": []}], "repeat": true, "skippable": false, "wait": false}, "moveSpeed": 3, "moveType": 0, "priorityType": 1, "stepAnime": false, "through": false, "trigger": 0, "walkAnime": true}], "x": 6, "y": 7}, null, {"id": 10, "name": "EV010", "note": "", "pages": [{"conditions": {"actorId": 1, "actorValid": false, "itemId": 1, "itemValid": false, "selfSwitchCh": "A", "selfSwitchValid": false, "switch1Id": 1, "switch1Valid": false, "switch2Id": 1, "switch2Valid": false, "variableId": 1, "variableValid": false, "variableValue": 0}, "directionFix": false, "image": {"characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0}, "list": [{"code": 111, "indent": 0, "parameters": [6, -1, 8]}, {"code": 231, "indent": 1, "parameters": [1, "Locker", 0, 0, 0, 0, 100, 100, 0, 0]}, {"code": 232, "indent": 1, "parameters": [1, 0, 0, 0, 0, 0, 100, 100, 255, 0, 30, false]}, {"code": 117, "indent": 1, "parameters": [28]}, {"code": 101, "indent": 1, "parameters": ["", 0, 0, 2]}, {"code": 401, "indent": 1, "parameters": ["\\C[6]Gun Locker\\C[0]"]}, {"code": 401, "indent": 1, "parameters": ["Here you can purchase and equip weapons and skills. "]}, {"code": 102, "indent": 1, "parameters": [["\\I[120] Buy Weapons", "\\I[120] Equip Weapons", "\\I[77] Buy Skills", "\\I[77] View Skills", "Do nothing"], 4, 0, 2, 0]}, {"code": 402, "indent": 1, "parameters": [0, "\\I[120] Buy Weapons"]}, {"code": 232, "indent": 2, "parameters": [1, 0, 0, 0, 0, 0, 100, 100, 0, 0, 10, false]}, {"code": 250, "indent": 2, "parameters": [{"name": "Open3", "volume": 90, "pitch": 100, "pan": 0}]}, {"code": 355, "indent": 2, "parameters": ["SceneManager._scene._mapStatusWindow.drawFace(\"guns1\", -1, 0, 30, 144, 144);"]}, {"code": 655, "indent": 2, "parameters": ["SceneManager._scene._mapStatusWindow.drawFace(\"guns2\", -1, 0, 30, 144, 144);"]}, {"code": 655, "indent": 2, "parameters": ["SceneManager._scene._mapStatusWindow.drawFace(\"guns3\", -1, 0, 30, 144, 144);"]}, {"code": 655, "indent": 2, "parameters": ["SceneManager._scene._mapStatusWindow.drawFace(\"guns4\", -1, 0, 30, 144, 144);"]}, {"code": 655, "indent": 2, "parameters": ["SceneManager._scene._mapStatusWindow.drawFace(\"bomb\", -1, 0, 30, 144, 144);"]}, {"code": 655, "indent": 2, "parameters": ["SceneManager._scene._mapStatusWindow.drawFace(\"knife\", -1, 0, 30, 144, 144);"]}, {"code": 655, "indent": 2, "parameters": ["SceneManager._scene._mapStatusWindow.refresh();"]}, {"code": 230, "indent": 2, "parameters": [10]}, {"code": 111, "indent": 2, "parameters": [4, 1, 3, 21]}, {"code": 302, "indent": 3, "parameters": [2, 9, 0, 0, true]}, {"code": 605, "indent": 3, "parameters": [2, 10, 0, 0]}, {"code": 605, "indent": 3, "parameters": [1, 2, 0, 0]}, {"code": 605, "indent": 3, "parameters": [1, 28, 0, 0]}, {"code": 605, "indent": 3, "parameters": [1, 19, 0, 0]}, {"code": 605, "indent": 3, "parameters": [1, 7, 0, 0]}, {"code": 605, "indent": 3, "parameters": [1, 27, 0, 0]}, {"code": 605, "indent": 3, "parameters": [2, 11, 0, 0]}, {"code": 605, "indent": 3, "parameters": [1, 26, 0, 0]}, {"code": 605, "indent": 3, "parameters": [1, 15, 0, 0]}, {"code": 605, "indent": 3, "parameters": [1, 31, 0, 0]}, {"code": 605, "indent": 3, "parameters": [1, 10, 0, 0]}, {"code": 605, "indent": 3, "parameters": [1, 30, 0, 0]}, {"code": 605, "indent": 3, "parameters": [2, 12, 0, 0]}, {"code": 605, "indent": 3, "parameters": [2, 13, 0, 0]}, {"code": 605, "indent": 3, "parameters": [1, 22, 0, 0]}, {"code": 605, "indent": 3, "parameters": [1, 4, 0, 0]}, {"code": 605, "indent": 3, "parameters": [1, 20, 0, 0]}, {"code": 605, "indent": 3, "parameters": [1, 17, 0, 0]}, {"code": 605, "indent": 3, "parameters": [1, 8, 0, 0]}, {"code": 605, "indent": 3, "parameters": [1, 12, 0, 0]}, {"code": 605, "indent": 3, "parameters": [1, 11, 0, 0]}, {"code": 605, "indent": 3, "parameters": [1, 5, 0, 0]}, {"code": 605, "indent": 3, "parameters": [1, 3, 0, 0]}, {"code": 605, "indent": 3, "parameters": [1, 21, 0, 0]}, {"code": 605, "indent": 3, "parameters": [1, 32, 1, 50000]}, {"code": 605, "indent": 3, "parameters": [1, 23, 0, 0]}, {"code": 0, "indent": 3, "parameters": []}, {"code": 411, "indent": 2, "parameters": []}, {"code": 302, "indent": 3, "parameters": [2, 9, 0, 0, true]}, {"code": 605, "indent": 3, "parameters": [2, 10, 0, 0]}, {"code": 605, "indent": 3, "parameters": [1, 2, 0, 0]}, {"code": 605, "indent": 3, "parameters": [1, 28, 0, 0]}, {"code": 605, "indent": 3, "parameters": [1, 19, 0, 0]}, {"code": 605, "indent": 3, "parameters": [1, 7, 0, 0]}, {"code": 605, "indent": 3, "parameters": [1, 27, 0, 0]}, {"code": 605, "indent": 3, "parameters": [2, 11, 0, 0]}, {"code": 605, "indent": 3, "parameters": [1, 26, 0, 0]}, {"code": 605, "indent": 3, "parameters": [1, 15, 0, 0]}, {"code": 605, "indent": 3, "parameters": [1, 31, 0, 0]}, {"code": 605, "indent": 3, "parameters": [1, 10, 0, 0]}, {"code": 605, "indent": 3, "parameters": [1, 30, 0, 0]}, {"code": 605, "indent": 3, "parameters": [2, 12, 0, 0]}, {"code": 605, "indent": 3, "parameters": [2, 13, 0, 0]}, {"code": 605, "indent": 3, "parameters": [1, 22, 0, 0]}, {"code": 605, "indent": 3, "parameters": [1, 4, 0, 0]}, {"code": 605, "indent": 3, "parameters": [1, 17, 0, 0]}, {"code": 605, "indent": 3, "parameters": [1, 8, 0, 0]}, {"code": 605, "indent": 3, "parameters": [1, 12, 0, 0]}, {"code": 605, "indent": 3, "parameters": [1, 11, 0, 0]}, {"code": 605, "indent": 3, "parameters": [1, 5, 0, 0]}, {"code": 605, "indent": 3, "parameters": [1, 32, 1, 50000]}, {"code": 605, "indent": 3, "parameters": [1, 23, 0, 0]}, {"code": 0, "indent": 3, "parameters": []}, {"code": 412, "indent": 2, "parameters": []}, {"code": 0, "indent": 2, "parameters": []}, {"code": 402, "indent": 1, "parameters": [1, "\\I[120] Equip Weapons"]}, {"code": 232, "indent": 2, "parameters": [1, 0, 0, 0, 0, 0, 100, 100, 0, 0, 10, false]}, {"code": 250, "indent": 2, "parameters": [{"name": "Open3", "volume": 90, "pitch": 100, "pan": 0}]}, {"code": 355, "indent": 2, "parameters": ["SceneManager._scene._mapStatusWindow.drawFace(\"guns1\", -1, 0, 30, 144, 144);"]}, {"code": 655, "indent": 2, "parameters": ["SceneManager._scene._mapStatusWindow.drawFace(\"guns2\", -1, 0, 30, 144, 144);"]}, {"code": 655, "indent": 2, "parameters": ["SceneManager._scene._mapStatusWindow.drawFace(\"guns3\", -1, 0, 30, 144, 144);"]}, {"code": 655, "indent": 2, "parameters": ["SceneManager._scene._mapStatusWindow.drawFace(\"guns4\", -1, 0, 30, 144, 144);"]}, {"code": 655, "indent": 2, "parameters": ["SceneManager._scene._mapStatusWindow.drawFace(\"bomb\", -1, 0, 30, 144, 144);"]}, {"code": 655, "indent": 2, "parameters": ["SceneManager._scene._mapStatusWindow.drawFace(\"knife\", -1, 0, 30, 144, 144);"]}, {"code": 655, "indent": 2, "parameters": ["SceneManager._scene._mapStatusWindow.refresh();"]}, {"code": 230, "indent": 2, "parameters": [10]}, {"code": 355, "indent": 2, "parameters": ["SceneManager.push(Scene_Equip);"]}, {"code": 0, "indent": 2, "parameters": []}, {"code": 402, "indent": 1, "parameters": [2, "\\I[77] Buy Skills"]}, {"code": 232, "indent": 2, "parameters": [1, 0, 0, 0, 0, 0, 100, 100, 0, 0, 10, false]}, {"code": 121, "indent": 2, "parameters": [17, 17, 0]}, {"code": 302, "indent": 2, "parameters": [0, 6, 0, 0, true]}, {"code": 605, "indent": 2, "parameters": [0, 7, 0, 0]}, {"code": 605, "indent": 2, "parameters": [0, 10, 0, 0]}, {"code": 605, "indent": 2, "parameters": [0, 11, 0, 0]}, {"code": 605, "indent": 2, "parameters": [0, 3, 0, 0]}, {"code": 605, "indent": 2, "parameters": [0, 12, 0, 0]}, {"code": 605, "indent": 2, "parameters": [0, 19, 0, 0]}, {"code": 605, "indent": 2, "parameters": [0, 4, 0, 0]}, {"code": 605, "indent": 2, "parameters": [0, 2, 0, 0]}, {"code": 605, "indent": 2, "parameters": [0, 15, 0, 0]}, {"code": 605, "indent": 2, "parameters": [0, 17, 0, 0]}, {"code": 605, "indent": 2, "parameters": [0, 14, 1, 50000]}, {"code": 121, "indent": 2, "parameters": [17, 17, 1]}, {"code": 0, "indent": 2, "parameters": []}, {"code": 402, "indent": 1, "parameters": [3, "\\I[77] View Skills"]}, {"code": 232, "indent": 2, "parameters": [1, 0, 0, 0, 0, 0, 100, 100, 0, 0, 10, false]}, {"code": 355, "indent": 2, "parameters": ["SceneManager.push(Scene_Skill);"]}, {"code": 0, "indent": 2, "parameters": []}, {"code": 402, "indent": 1, "parameters": [4, "Do nothing"]}, {"code": 0, "indent": 2, "parameters": []}, {"code": 404, "indent": 1, "parameters": []}, {"code": 235, "indent": 1, "parameters": [1]}, {"code": 111, "indent": 1, "parameters": [4, 1, 3, 16]}, {"code": 111, "indent": 2, "parameters": [0, 33, 1]}, {"code": 128, "indent": 3, "parameters": [14, 0, 0, 1, false]}, {"code": 231, "indent": 3, "parameters": [1, "Tips_yuumi", 0, 0, 0, 0, 100, 100, 0, 0]}, {"code": 232, "indent": 3, "parameters": [1, 0, 0, 0, 0, 0, 100, 100, 255, 0, 60, true]}, {"code": 101, "indent": 3, "parameters": ["", 0, 2, 1]}, {"code": 401, "indent": 3, "parameters": [""]}, {"code": 235, "indent": 3, "parameters": [1]}, {"code": 121, "indent": 3, "parameters": [33, 33, 0]}, {"code": 0, "indent": 3, "parameters": []}, {"code": 412, "indent": 2, "parameters": []}, {"code": 0, "indent": 2, "parameters": []}, {"code": 412, "indent": 1, "parameters": []}, {"code": 111, "indent": 1, "parameters": [1, 36, 0, 1, 0]}, {"code": 231, "indent": 2, "parameters": [1, "Tips_shotgun", 0, 0, 0, 0, 100, 100, 0, 0]}, {"code": 232, "indent": 2, "parameters": [1, 0, 0, 0, 0, 0, 100, 100, 255, 0, 60, true]}, {"code": 101, "indent": 2, "parameters": ["", 0, 2, 1]}, {"code": 401, "indent": 2, "parameters": [""]}, {"code": 122, "indent": 2, "parameters": [36, 36, 0, 0, 2]}, {"code": 235, "indent": 2, "parameters": [1]}, {"code": 0, "indent": 2, "parameters": []}, {"code": 412, "indent": 1, "parameters": []}, {"code": 250, "indent": 1, "parameters": [{"name": "Close2", "volume": 90, "pitch": 100, "pan": 0}]}, {"code": 117, "indent": 1, "parameters": [29]}, {"code": 0, "indent": 1, "parameters": []}, {"code": 412, "indent": 0, "parameters": []}, {"code": 0, "indent": 0, "parameters": []}], "moveFrequency": 3, "moveRoute": {"list": [{"code": 0, "parameters": []}], "repeat": true, "skippable": false, "wait": false}, "moveSpeed": 3, "moveType": 0, "priorityType": 1, "stepAnime": false, "through": false, "trigger": 0, "walkAnime": true}], "x": 5, "y": 5}, {"id": 11, "name": "EV011", "note": "", "pages": [{"conditions": {"actorId": 1, "actorValid": false, "itemId": 1, "itemValid": false, "selfSwitchCh": "A", "selfSwitchValid": false, "switch1Id": 1, "switch1Valid": false, "switch2Id": 1, "switch2Valid": false, "variableId": 1, "variableValid": false, "variableValue": 0}, "directionFix": false, "image": {"characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0}, "list": [{"code": 122, "indent": 0, "parameters": [46, 46, 1, 0, 1]}, {"code": 111, "indent": 0, "parameters": [1, 46, 0, 10, 1]}, {"code": 101, "indent": 1, "parameters": ["", 0, 0, 1]}, {"code": 401, "indent": 1, "parameters": ["\\C[6]Cheat Code\\C[0]"]}, {"code": 401, "indent": 1, "parameters": ["Would you like to receive 1,000,000 SP?"]}, {"code": 102, "indent": 1, "parameters": [["Yes", "No"], 1, 0, 1, 0]}, {"code": 402, "indent": 1, "parameters": [0, "Yes"]}, {"code": 111, "indent": 2, "parameters": [0, 37, 1]}, {"code": 250, "indent": 3, "parameters": [{"name": "Coin", "volume": 90, "pitch": 100, "pan": 0}]}, {"code": 101, "indent": 3, "parameters": ["", 0, 0, 1]}, {"code": 401, "indent": 3, "parameters": ["You are now the proud owner of 1,000,000 SP!!!"]}, {"code": 125, "indent": 3, "parameters": [0, 0, 1000000]}, {"code": 121, "indent": 3, "parameters": [37, 37, 0]}, {"code": 0, "indent": 3, "parameters": []}, {"code": 412, "indent": 2, "parameters": []}, {"code": 0, "indent": 2, "parameters": []}, {"code": 402, "indent": 1, "parameters": [1, "No"]}, {"code": 0, "indent": 2, "parameters": []}, {"code": 404, "indent": 1, "parameters": []}, {"code": 0, "indent": 1, "parameters": []}, {"code": 412, "indent": 0, "parameters": []}, {"code": 0, "indent": 0, "parameters": []}], "moveFrequency": 3, "moveRoute": {"list": [{"code": 0, "parameters": []}], "repeat": true, "skippable": false, "wait": false}, "moveSpeed": 3, "moveType": 0, "priorityType": 1, "stepAnime": false, "through": false, "trigger": 0, "walkAnime": true}, {"conditions": {"actorId": 1, "actorValid": false, "itemId": 1, "itemValid": false, "selfSwitchCh": "A", "selfSwitchValid": false, "switch1Id": 37, "switch1Valid": true, "switch2Id": 1, "switch2Valid": false, "variableId": 1, "variableValid": false, "variableValue": 0}, "directionFix": false, "image": {"characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0}, "list": [{"code": 0, "indent": 0, "parameters": []}], "moveFrequency": 3, "moveRoute": {"list": [{"code": 0, "parameters": []}], "repeat": true, "skippable": false, "wait": false}, "moveSpeed": 3, "moveType": 0, "priorityType": 0, "stepAnime": false, "through": false, "trigger": 0, "walkAnime": true}], "x": 4, "y": 6}, {"id": 12, "name": "EV012", "note": "", "pages": [{"conditions": {"actorId": 1, "actorValid": false, "itemId": 1, "itemValid": false, "selfSwitchCh": "A", "selfSwitchValid": false, "switch1Id": 1, "switch1Valid": false, "switch2Id": 1, "switch2Valid": false, "variableId": 1, "variableValid": false, "variableValue": 0}, "directionFix": false, "image": {"tileId": 0, "characterName": "!$Flashing02", "direction": 2, "pattern": 1, "characterIndex": 0}, "list": [{"code": 111, "indent": 0, "parameters": [2, "A", 1]}, {"code": 122, "indent": 1, "parameters": [47, 47, 1, 0, 1]}, {"code": 123, "indent": 1, "parameters": ["A", 0]}, {"code": 0, "indent": 1, "parameters": []}, {"code": 412, "indent": 0, "parameters": []}, {"code": 250, "indent": 0, "parameters": [{"name": "Book2", "volume": 90, "pitch": 100, "pan": 0}]}, {"code": 231, "indent": 0, "parameters": [1, "01", 0, 0, 0, 0, 100, 100, 255, 0]}, {"code": 101, "indent": 0, "parameters": ["", 0, 2, 2]}, {"code": 401, "indent": 0, "parameters": [""]}, {"code": 235, "indent": 0, "parameters": [1]}, {"code": 101, "indent": 0, "parameters": ["", 0, 0, 2]}, {"code": 401, "indent": 0, "parameters": ["The obsession with \"slaughtering people\" never left me.\\!"]}, {"code": 401, "indent": 0, "parameters": ["It was burned into my mind like a brand, following"]}, {"code": 401, "indent": 0, "parameters": ["me wherever I went."]}, {"code": 101, "indent": 0, "parameters": ["", 0, 0, 2]}, {"code": 401, "indent": 0, "parameters": ["While everyone took me for a "]}, {"code": 401, "indent": 0, "parameters": ["\"quiet kid\", \"gloomy kid\", \"innocent kid\"—"]}, {"code": 101, "indent": 0, "parameters": ["", 0, 0, 2]}, {"code": 401, "indent": 0, "parameters": ["I butchered them over and over in my imagination."]}, {"code": 101, "indent": 0, "parameters": ["", 0, 0, 2]}, {"code": 401, "indent": 0, "parameters": ["Nobody noticed my homicidal urges.\\!"]}, {"code": 401, "indent": 0, "parameters": ["Not a single soul.\\!"]}, {"code": 401, "indent": 0, "parameters": ["Even though they had every warning sign and opportunity"]}, {"code": 401, "indent": 0, "parameters": ["to see it."]}, {"code": 0, "indent": 0, "parameters": []}], "moveFrequency": 5, "moveRoute": {"list": [{"code": 16, "indent": null}, {"code": 15, "parameters": [20], "indent": null}, {"code": 17, "indent": null}, {"code": 15, "parameters": [20], "indent": null}, {"code": 18, "indent": null}, {"code": 15, "parameters": [20], "indent": null}, {"code": 19, "indent": null}, {"code": 15, "parameters": [20], "indent": null}, {"code": 0, "parameters": []}], "repeat": true, "skippable": false, "wait": false}, "moveSpeed": 4, "moveType": 3, "priorityType": 0, "stepAnime": false, "through": false, "trigger": 0, "walkAnime": true}], "x": 11, "y": 7}, {"id": 13, "name": "EV013", "note": "", "pages": [{"conditions": {"actorId": 1, "actorValid": false, "itemId": 1, "itemValid": false, "selfSwitchCh": "A", "selfSwitchValid": false, "switch1Id": 1, "switch1Valid": false, "switch2Id": 1, "switch2Valid": false, "variableId": 1, "variableValid": false, "variableValue": 0}, "directionFix": false, "image": {"tileId": 0, "characterName": "!$Flashing02", "direction": 2, "pattern": 1, "characterIndex": 0}, "list": [{"code": 111, "indent": 0, "parameters": [2, "A", 1]}, {"code": 122, "indent": 1, "parameters": [47, 47, 1, 0, 1]}, {"code": 123, "indent": 1, "parameters": ["A", 0]}, {"code": 0, "indent": 1, "parameters": []}, {"code": 412, "indent": 0, "parameters": []}, {"code": 250, "indent": 0, "parameters": [{"name": "Book2", "volume": 90, "pitch": 100, "pan": 0}]}, {"code": 231, "indent": 0, "parameters": [1, "06", 0, 0, 0, 0, 100, 100, 255, 0]}, {"code": 101, "indent": 0, "parameters": ["", 0, 2, 2]}, {"code": 401, "indent": 0, "parameters": [""]}, {"code": 235, "indent": 0, "parameters": [1]}, {"code": 101, "indent": 0, "parameters": ["", 0, 0, 2]}, {"code": 401, "indent": 0, "parameters": ["I knew I was losing my sanity.\\!"]}, {"code": 401, "indent": 0, "parameters": ["Blinded by malice and hatred,"]}, {"code": 401, "indent": 0, "parameters": ["I spiraled into a cycle of endless self-destruction."]}, {"code": 101, "indent": 0, "parameters": ["", 0, 0, 2]}, {"code": 401, "indent": 0, "parameters": ["Even if I massacre the entire school,"]}, {"code": 401, "indent": 0, "parameters": ["things won't get any better."]}, {"code": 101, "indent": 0, "parameters": ["", 0, 0, 2]}, {"code": 401, "indent": 0, "parameters": ["Yet knowing full well, I never stopped planning."]}, {"code": 101, "indent": 0, "parameters": ["", 0, 0, 2]}, {"code": 401, "indent": 0, "parameters": ["In order to kill everyone,"]}, {"code": 401, "indent": 0, "parameters": ["I studied past mass shootings and terror attacks,"]}, {"code": 401, "indent": 0, "parameters": ["planned every detail, gathered gear, and trained."]}, {"code": 101, "indent": 0, "parameters": ["", 0, 0, 2]}, {"code": 401, "indent": 0, "parameters": ["————If my mind were still lucid..."]}, {"code": 101, "indent": 0, "parameters": ["", 0, 0, 2]}, {"code": 401, "indent": 0, "parameters": ["Would I continue dragging out this miserable, empty"]}, {"code": 401, "indent": 0, "parameters": ["existence, clinging to a naive fairy tale that"]}, {"code": 401, "indent": 0, "parameters": ["someday a knight in shining armor will rescue me?"]}, {"code": 101, "indent": 0, "parameters": ["", 0, 0, 2]}, {"code": 401, "indent": 0, "parameters": ["Or, for everyone's peace of mind,\\!"]}, {"code": 401, "indent": 0, "parameters": ["would I choose to harm no one and quietly kill myself?"]}, {"code": 101, "indent": 0, "parameters": ["", 0, 0, 2]}, {"code": 401, "indent": 0, "parameters": ["...If that is how a sane person would act,\\!"]}, {"code": 401, "indent": 0, "parameters": ["then I no longer harbor the slightest doubt about"]}, {"code": 401, "indent": 0, "parameters": ["carrying out this school shooting."]}, {"code": 0, "indent": 0, "parameters": []}], "moveFrequency": 5, "moveRoute": {"list": [{"code": 16, "indent": null}, {"code": 15, "parameters": [20], "indent": null}, {"code": 17, "indent": null}, {"code": 15, "parameters": [20], "indent": null}, {"code": 18, "indent": null}, {"code": 15, "parameters": [20], "indent": null}, {"code": 19, "indent": null}, {"code": 15, "parameters": [20], "indent": null}, {"code": 0, "parameters": []}], "repeat": true, "skippable": false, "wait": false}, "moveSpeed": 4, "moveType": 3, "priorityType": 0, "stepAnime": false, "through": false, "trigger": 0, "walkAnime": true}], "x": 7, "y": 5}, {"id": 14, "name": "EV014", "note": "", "pages": [{"conditions": {"actorId": 1, "actorValid": false, "itemId": 1, "itemValid": false, "selfSwitchCh": "A", "selfSwitchValid": false, "switch1Id": 1, "switch1Valid": false, "switch2Id": 1, "switch2Valid": false, "variableId": 1, "variableValid": false, "variableValue": 0}, "directionFix": false, "image": {"tileId": 0, "characterName": "!$Flashing02", "direction": 2, "pattern": 1, "characterIndex": 0}, "list": [{"code": 111, "indent": 0, "parameters": [2, "A", 1]}, {"code": 122, "indent": 1, "parameters": [47, 47, 1, 0, 1]}, {"code": 123, "indent": 1, "parameters": ["A", 0]}, {"code": 0, "indent": 1, "parameters": []}, {"code": 412, "indent": 0, "parameters": []}, {"code": 250, "indent": 0, "parameters": [{"name": "Book2", "volume": 90, "pitch": 100, "pan": 0}]}, {"code": 231, "indent": 0, "parameters": [1, "02", 0, 0, 0, 0, 100, 100, 255, 0]}, {"code": 101, "indent": 0, "parameters": ["", 0, 2, 2]}, {"code": 401, "indent": 0, "parameters": [""]}, {"code": 235, "indent": 0, "parameters": [1]}, {"code": 101, "indent": 0, "parameters": ["", 0, 0, 2]}, {"code": 401, "indent": 0, "parameters": ["People extinguish every ounce of happiness in me.\\!"]}, {"code": 401, "indent": 0, "parameters": ["Even my own existence is pitch-black despair.\\!"]}, {"code": 401, "indent": 0, "parameters": ["Everything is completely and utterly ruined."]}, {"code": 101, "indent": 0, "parameters": ["", 0, 0, 2]}, {"code": 401, "indent": 0, "parameters": ["All I ever wanted was a quiet, peaceful life."]}, {"code": 401, "indent": 0, "parameters": ["Yet even that..."]}, {"code": 101, "indent": 0, "parameters": ["", 0, 0, 2]}, {"code": 401, "indent": 0, "parameters": ["Nobody seemed to give a damn,"]}, {"code": 401, "indent": 0, "parameters": ["which only tore at my heart even more."]}, {"code": 101, "indent": 0, "parameters": ["", 0, 0, 2]}, {"code": 401, "indent": 0, "parameters": ["Even when I lie down in bed,"]}, {"code": 401, "indent": 0, "parameters": ["tormenting thoughts refuse to leave my head.\\!"]}, {"code": 401, "indent": 0, "parameters": ["And if I do fall asleep, nightmares inevitably wake me..."]}, {"code": 101, "indent": 0, "parameters": ["", 0, 0, 2]}, {"code": 401, "indent": 0, "parameters": ["Only death could ever awaken me from this"]}, {"code": 401, "indent": 0, "parameters": ["nightmare. Only death will put an end to it all.\\!"]}, {"code": 401, "indent": 0, "parameters": ["...I can't remember when I started thinking like this."]}, {"code": 101, "indent": 0, "parameters": ["", 0, 0, 2]}, {"code": 401, "indent": 0, "parameters": ["...However,\\! that thought didn't deceive me for long.\\!"]}, {"code": 401, "indent": 0, "parameters": ["Witnessing my mother's death filled me with doubt about"]}, {"code": 401, "indent": 0, "parameters": ["everything."]}, {"code": 101, "indent": 0, "parameters": ["", 0, 0, 2]}, {"code": 401, "indent": 0, "parameters": ["...Even if I die, everyone else remains.\\!"]}, {"code": 401, "indent": 0, "parameters": ["The ones responsible for all my torment would never face"]}, {"code": 401, "indent": 0, "parameters": ["their rightful punishment."]}, {"code": 101, "indent": 0, "parameters": ["", 0, 0, 2]}, {"code": 401, "indent": 0, "parameters": ["Even if I die, the nightmare won't end."]}, {"code": 101, "indent": 0, "parameters": ["", 0, 0, 2]}, {"code": 401, "indent": 0, "parameters": ["Therefore, before I die, there is something I must do."]}, {"code": 101, "indent": 0, "parameters": ["", 0, 0, 2]}, {"code": 401, "indent": 0, "parameters": ["Those who inflicted this agony upon me,\\!"]}, {"code": 401, "indent": 0, "parameters": ["will die by my hands, no matter what it takes."]}, {"code": 0, "indent": 0, "parameters": []}], "moveFrequency": 5, "moveRoute": {"list": [{"code": 16, "indent": null}, {"code": 15, "parameters": [20], "indent": null}, {"code": 17, "indent": null}, {"code": 15, "parameters": [20], "indent": null}, {"code": 18, "indent": null}, {"code": 15, "parameters": [20], "indent": null}, {"code": 19, "indent": null}, {"code": 15, "parameters": [20], "indent": null}, {"code": 0, "parameters": []}], "repeat": true, "skippable": false, "wait": false}, "moveSpeed": 4, "moveType": 3, "priorityType": 0, "stepAnime": false, "through": false, "trigger": 0, "walkAnime": true}], "x": 9, "y": 8}, {"id": 15, "name": "EV015", "note": "", "pages": [{"conditions": {"actorId": 1, "actorValid": false, "itemId": 1, "itemValid": false, "selfSwitchCh": "A", "selfSwitchValid": false, "switch1Id": 1, "switch1Valid": false, "switch2Id": 1, "switch2Valid": false, "variableId": 47, "variableValid": true, "variableValue": 6}, "directionFix": false, "image": {"characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0}, "list": [{"code": 117, "indent": 0, "parameters": [57]}, {"code": 0, "indent": 0, "parameters": []}], "moveFrequency": 3, "moveRoute": {"list": [{"code": 0, "parameters": []}], "repeat": true, "skippable": false, "wait": false}, "moveSpeed": 3, "moveType": 0, "priorityType": 0, "stepAnime": false, "through": false, "trigger": 3, "walkAnime": true}, {"conditions": {"actorId": 1, "actorValid": false, "itemId": 1, "itemValid": false, "selfSwitchCh": "A", "selfSwitchValid": false, "switch1Id": 1, "switch1Valid": false, "switch2Id": 1, "switch2Valid": false, "variableId": 47, "variableValid": true, "variableValue": 10}, "directionFix": false, "image": {"characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0}, "list": [{"code": 0, "indent": 0, "parameters": []}], "moveFrequency": 3, "moveRoute": {"list": [{"code": 0, "parameters": []}], "repeat": true, "skippable": false, "wait": false}, "moveSpeed": 3, "moveType": 0, "priorityType": 0, "stepAnime": false, "through": false, "trigger": 0, "walkAnime": true}], "x": 0, "y": 0}, {"id": 16, "name": "EV016", "note": "", "pages": [{"conditions": {"actorId": 1, "actorValid": false, "itemId": 1, "itemValid": false, "selfSwitchCh": "A", "selfSwitchValid": false, "switch1Id": 1, "switch1Valid": false, "switch2Id": 1, "switch2Valid": false, "variableId": 1, "variableValid": false, "variableValue": 0}, "directionFix": false, "image": {"characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0}, "list": [{"code": 250, "indent": 0, "parameters": [{"name": "kacha", "volume": 90, "pitch": 100, "pan": 0}]}, {"code": 117, "indent": 0, "parameters": [28]}, {"code": 111, "indent": 0, "parameters": [1, 24, 0, 0, 0]}, {"code": 101, "indent": 1, "parameters": ["", 0, 0, 2]}, {"code": 401, "indent": 1, "parameters": ["\\C[6]Target Practice\\C[0]"]}, {"code": 401, "indent": 1, "parameters": ["Hit all the empty cans placed around the room!"]}, {"code": 401, "indent": 1, "parameters": [""]}, {"code": 401, "indent": 1, "parameters": ["\\>\\C[8]Incomplete: Clear in under 12 seconds\\C[0]"]}, {"code": 102, "indent": 1, "parameters": [["\\I[120] Start Practice", "Do nothing"], 1, 0, 2, 0]}, {"code": 402, "indent": 1, "parameters": [0, "\\I[120] Start Practice"]}, {"code": 0, "indent": 2, "parameters": []}, {"code": 402, "indent": 1, "parameters": [1, "Do nothing"]}, {"code": 117, "indent": 2, "parameters": [29]}, {"code": 115, "indent": 2, "parameters": []}, {"code": 0, "indent": 2, "parameters": []}, {"code": 404, "indent": 1, "parameters": []}, {"code": 0, "indent": 1, "parameters": []}, {"code": 411, "indent": 0, "parameters": []}, {"code": 111, "indent": 1, "parameters": [4, 1, 3, 15]}, {"code": 101, "indent": 2, "parameters": ["", 0, 0, 2]}, {"code": 401, "indent": 2, "parameters": ["\\C[6]Target Practice\\C[0]"]}, {"code": 401, "indent": 2, "parameters": ["Hit all the empty cans placed around the room!"]}, {"code": 401, "indent": 2, "parameters": ["\\>Record: \\V[24] second(s)."]}, {"code": 102, "indent": 2, "parameters": [["\\I[120] Start Practice", "Do nothing"], 1, 0, 2, 0]}, {"code": 402, "indent": 2, "parameters": [0, "\\I[120] Start Practice"]}, {"code": 0, "indent": 3, "parameters": []}, {"code": 402, "indent": 2, "parameters": [1, "Do nothing"]}, {"code": 117, "indent": 3, "parameters": [29]}, {"code": 115, "indent": 3, "parameters": []}, {"code": 0, "indent": 3, "parameters": []}, {"code": 404, "indent": 2, "parameters": []}, {"code": 0, "indent": 2, "parameters": []}, {"code": 411, "indent": 1, "parameters": []}, {"code": 101, "indent": 2, "parameters": ["", 0, 0, 2]}, {"code": 401, "indent": 2, "parameters": ["\\C[6]Target Practice\\C[0]"]}, {"code": 401, "indent": 2, "parameters": ["Hit all the empty cans placed around the room!"]}, {"code": 401, "indent": 2, "parameters": ["\\>Record: \\V[24] second(s)."]}, {"code": 401, "indent": 2, "parameters": ["\\>\\C[8]Incomplete: Clear in under 12 seconds\\C[0]"]}, {"code": 102, "indent": 2, "parameters": [["\\I[120] Start Practice", "Do nothing"], 1, 0, 2, 0]}, {"code": 402, "indent": 2, "parameters": [0, "\\I[120] Start Practice"]}, {"code": 0, "indent": 3, "parameters": []}, {"code": 402, "indent": 2, "parameters": [1, "Do nothing"]}, {"code": 117, "indent": 3, "parameters": [29]}, {"code": 115, "indent": 3, "parameters": []}, {"code": 0, "indent": 3, "parameters": []}, {"code": 404, "indent": 2, "parameters": []}, {"code": 0, "indent": 2, "parameters": []}, {"code": 412, "indent": 1, "parameters": []}, {"code": 0, "indent": 1, "parameters": []}, {"code": 412, "indent": 0, "parameters": []}, {"code": 111, "indent": 0, "parameters": [0, 40, 0]}, {"code": 121, "indent": 1, "parameters": [41, 41, 0]}, {"code": 121, "indent": 1, "parameters": [40, 40, 1]}, {"code": 0, "indent": 1, "parameters": []}, {"code": 412, "indent": 0, "parameters": []}, {"code": 117, "indent": 0, "parameters": [29]}, {"code": 242, "indent": 0, "parameters": [1]}, {"code": 355, "indent": 0, "parameters": ["$gameVariables._data[1] = [];"]}, {"code": 655, "indent": 0, "parameters": ["$gameVariables._data[45] = [];"]}, {"code": 655, "indent": 0, "parameters": ["$gameVariables._data[45][0] = $gameParty.leader()._equips[0]._itemId;"]}, {"code": 655, "indent": 0, "parameters": ["$gameVariables._data[45][1] = $gameParty.leader()._equips[1]._itemId;"]}, {"code": 127, "indent": 0, "parameters": [13, 0, 0, 1, false]}, {"code": 127, "indent": 0, "parameters": [14, 0, 0, 1, false]}, {"code": 319, "indent": 0, "parameters": [1, 1, 13]}, {"code": 319, "indent": 0, "parameters": [1, 2, 14]}, {"code": 201, "indent": 0, "parameters": [0, 52, 31, 15, 4, 0]}, {"code": 322, "indent": 0, "parameters": [1, "shooter", 2, "shooter", 0, ""]}, {"code": 355, "indent": 0, "parameters": ["resetMagazine();"]}, {"code": 655, "indent": 0, "parameters": ["Scene_Map.prototype.reloading();"]}, {"code": 655, "indent": 0, "parameters": ["Scene_Map.prototype.reloading2();"]}, {"code": 655, "indent": 0, "parameters": ["$gamePlayer.resetFireMode();"]}, {"code": 122, "indent": 0, "parameters": [20, 20, 0, 0, 0]}, {"code": 122, "indent": 0, "parameters": [2, 2, 0, 0, 0]}, {"code": 111, "indent": 0, "parameters": [4, 1, 3, 18]}, {"code": 122, "indent": 1, "parameters": [35, 35, 0, 0, 100]}, {"code": 0, "indent": 1, "parameters": []}, {"code": 411, "indent": 0, "parameters": []}, {"code": 122, "indent": 1, "parameters": [35, 35, 0, 0, 50]}, {"code": 0, "indent": 1, "parameters": []}, {"code": 412, "indent": 0, "parameters": []}, {"code": 121, "indent": 0, "parameters": [8, 8, 0]}, {"code": 121, "indent": 0, "parameters": [5, 5, 0]}, {"code": 121, "indent": 0, "parameters": [25, 25, 0]}, {"code": 108, "indent": 0, "parameters": ["ストップウォッチ作動"]}, {"code": 121, "indent": 0, "parameters": [60, 60, 0]}, {"code": 124, "indent": 0, "parameters": [0, 0]}, {"code": 0, "indent": 0, "parameters": []}], "moveFrequency": 3, "moveRoute": {"list": [{"code": 0, "parameters": []}], "repeat": true, "skippable": false, "wait": false}, "moveSpeed": 3, "moveType": 0, "priorityType": 1, "stepAnime": false, "through": false, "trigger": 0, "walkAnime": true}], "x": 6, "y": 4}, null, {"id": 18, "name": "EV018", "note": "", "pages": [{"conditions": {"actorId": 1, "actorValid": false, "itemId": 1, "itemValid": false, "selfSwitchCh": "A", "selfSwitchValid": false, "switch1Id": 1, "switch1Valid": false, "switch2Id": 1, "switch2Valid": false, "variableId": 1, "variableValid": false, "variableValue": 0}, "directionFix": false, "image": {"characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0}, "list": [{"code": 355, "indent": 0, "parameters": ["var distance = $gameMap.distance($gamePlayer.x, $gamePlayer.y, $gameMap._events[this._eventId]._x, $gameMap._events[this._eventId]._y);"]}, {"code": 655, "indent": 0, "parameters": ["var volume = 50 - (distance * 5);"]}, {"code": 655, "indent": 0, "parameters": ["if (volume < 0) volume = 0;"]}, {"code": 655, "indent": 0, "parameters": ["AudioManager.playBgs({\"name\":\"town\",\"volume\":volume,\"pitch\":100,\"pan\":0});"]}, {"code": 230, "indent": 0, "parameters": [10]}, {"code": 0, "indent": 0, "parameters": []}], "moveFrequency": 3, "moveRoute": {"list": [{"code": 0, "parameters": []}], "repeat": true, "skippable": false, "wait": false}, "moveSpeed": 3, "moveType": 0, "priorityType": 0, "stepAnime": false, "through": false, "trigger": 4, "walkAnime": true}], "x": 8, "y": 3}, null]}
+{
+  "autoplayBgm": true,
+  "autoplayBgs": false,
+  "battleback1Name": "",
+  "battleback2Name": "",
+  "bgm": {
+    "name": "Test02",
+    "pan": 0,
+    "pitch": 100,
+    "volume": 60
+  },
+  "bgs": {
+    "name": "terror_clock",
+    "pan": 0,
+    "pitch": 80,
+    "volume": 10
+  },
+  "disableDashing": false,
+  "displayName": "",
+  "encounterList": [],
+  "encounterStep": 30,
+  "height": 12,
+  "note": "<fgName:!Room_fg>\n<stepSE:0>",
+  "parallaxLoopX": false,
+  "parallaxLoopY": false,
+  "parallaxName": "!Room",
+  "parallaxShow": true,
+  "parallaxSx": 0,
+  "parallaxSy": 0,
+  "scrollType": 0,
+  "specifyBattleback": false,
+  "tilesetId": 6,
+  "width": 17,
+  "data": [
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    1544,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1544,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1544,
+    1544,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    1,
+    1,
+    1,
+    0,
+    1,
+    1,
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "events": [
+    null,
+    {
+      "id": 1,
+      "name": "EV001",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 122,
+              "indent": 0,
+              "parameters": [
+                46,
+                46,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 250,
+              "indent": 0,
+              "parameters": [
+                {
+                  "name": "Move1",
+                  "pan": 0,
+                  "pitch": 100,
+                  "volume": 90
+                }
+              ]
+            },
+            {
+              "code": 201,
+              "indent": 0,
+              "parameters": [
+                0,
+                49,
+                31,
+                15,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 1,
+          "walkAnime": true
+        }
+      ],
+      "x": 8,
+      "y": 9
+    },
+    {
+      "id": 2,
+      "name": "EV002",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                4,
+                1,
+                3,
+                19
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "Nothing is simpler than making a bomb at home.\\!"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "You search for the recipe on the internet,"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "follow the steps one by one, and the bomb is done."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "Strictly speaking, however, when you have firearms,"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "there's no reason to stop at basic firepower."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "So I started looking into creating something far more"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "destructive. \\!Researching past bombing incidents, I"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "wanted explosives that could rival the effectiveness"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "of any firearm."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "Even after getting into chemical explosive synthesis,"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "I had no intention of stopping there."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "To be honest, I didn't really enjoy using nail polish"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "remover and cleaning detergent to craft bombs."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "After several experiments, I produced three types of bombs.\\!"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "Will their destructive power justify my efforts?\\!"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "I can hardly wait to find out."
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "I crafted several homemade pipe bombs.\\!"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "Though guns are enough for what I need,\\!"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "leaving without bringing a few would be a waste."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "I gathered all the necessary instructions from the"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "internet. \\!At the same time, numerous articles and"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "documentaries about terrorists proved useful."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "I cannot fathom killing others in the name of religion.\\!"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "God? Paradise? Souls?"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "What is the point of any of that."
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 5,
+      "y": 7
+    },
+    {
+      "id": 3,
+      "name": "EV003",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "The school can be seen from here.\\!"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "The school I despise so deeply."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "It's tragic: while my life crumbled away,"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "this view remained utterly unchanged."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Every school bell heralded the crowd of students,"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "laughing loudly at my misery."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "...Yet sooner or later, everything comes to an end.\\!"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Starting today, we will become true friends.\\!"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "And suffer together as one."
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 8,
+      "y": 4
+    },
+    {
+      "id": 4,
+      "name": "EV004",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 231,
+              "indent": 0,
+              "parameters": [
+                1,
+                "Rouka",
+                0,
+                0,
+                0,
+                0,
+                100,
+                100,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Over the past few months, I read endlessly about"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "terrorist attacks and mass murder incidents."
+              ]
+            },
+            {
+              "code": 232,
+              "indent": 0,
+              "parameters": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                100,
+                100,
+                255,
+                0,
+                30,
+                false
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Among them all, what captivated me most was"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "the mass murder where 20 students lost their lives"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "right in the school hallway.\\!"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "The perpetrator was Yumi Tojo."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "I still remember the public outcry. Back then, I was"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "only in elementary school."
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Everyone gasped that \"something horrifying occurred\","
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "sparking a massive sensation across the city."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Now, in the present, I find myself plotting a mass"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "shooting of my own, perhaps even taking"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "inspiration from that very incident.\\!"
+              ]
+            },
+            {
+              "code": 232,
+              "indent": 0,
+              "parameters": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                100,
+                100,
+                0,
+                0,
+                30,
+                false
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Obnoxious classmates, meddlesome teachers.\\!"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "I wonder what it will feel like to kill them."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "For the first time in my short life,"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "I look forward to tomorrow with excitement."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "I genuinely cannot wait to wipe them all out."
+              ]
+            },
+            {
+              "code": 235,
+              "indent": 0,
+              "parameters": [
+                1
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 10,
+      "y": 4
+    },
+    {
+      "id": 5,
+      "name": "EV005",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 117,
+              "indent": 0,
+              "parameters": [
+                28
+              ]
+            },
+            {
+              "code": 250,
+              "indent": 0,
+              "parameters": [
+                {
+                  "name": "Computer",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\C[6]Computer\\C[0]"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Here you can adjust settings and view"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "various game information."
+              ]
+            },
+            {
+              "code": 102,
+              "indent": 0,
+              "parameters": [
+                [
+                  "\\I[29] Game Manual",
+                  "\\I[30] Records",
+                  "\\I[12] Achievements",
+                  "\\I[31] Settings",
+                  "\\I[125] Cheat: +9,999,999 SP",
+                  "Do nothing"
+                ],
+                5,
+                0,
+                2,
+                0
+              ]
+            },
+            {
+              "code": 402,
+              "indent": 0,
+              "parameters": [
+                0,
+                "\\I[29] Game Manual"
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 1,
+              "parameters": [
+                "SceneManager.push(Scene_Tips);"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 402,
+              "indent": 0,
+              "parameters": [
+                1,
+                "\\I[30] Records"
+              ]
+            },
+            {
+              "code": 231,
+              "indent": 1,
+              "parameters": [
+                1,
+                "total_score",
+                0,
+                0,
+                0,
+                0,
+                100,
+                100,
+                255,
+                0
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 1,
+              "parameters": [
+                "Scene_Map.prototype.totalScore();"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "",
+                0,
+                2,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                ""
+              ]
+            },
+            {
+              "code": 201,
+              "indent": 1,
+              "parameters": [
+                0,
+                45,
+                9,
+                5,
+                8,
+                2
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 402,
+              "indent": 0,
+              "parameters": [
+                2,
+                "\\I[12] Achievements"
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 1,
+              "parameters": [
+                "SceneManager.push(Scene_Achievement);"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 402,
+              "indent": 0,
+              "parameters": [
+                3,
+                "\\I[31] Settings"
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 1,
+              "parameters": [
+                "SceneManager.push(Scene_Options);"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 402,
+              "indent": 0,
+              "parameters": [
+                4,
+                "\\I[125] Cheat: +9,999,999 SP"
+              ]
+            },
+            {
+              "code": 125,
+              "indent": 1,
+              "parameters": [
+                0,
+                0,
+                9999999
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 1,
+              "parameters": [
+                "$gameParty._gold = 9999999; SoundManager.playShop();"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "",
+                0,
+                0,
+                1
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\C[6]Cheat Activated!\\C[0]\\. Received 9,999,999 SP!"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 402,
+              "indent": 0,
+              "parameters": [
+                4,
+                "\\I[125] Cheat: +9,999,999 SP"
+              ]
+            },
+            {
+              "code": 125,
+              "indent": 1,
+              "parameters": [
+                0,
+                0,
+                9999999
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 1,
+              "parameters": [
+                "$gameParty._gold = 9999999; SoundManager.playShop();"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "",
+                0,
+                0,
+                1
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\C[6]Cheat Activated!\\C[0]\\. Received 9,999,999 SP!"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 402,
+              "indent": 0,
+              "parameters": [
+                5,
+                "Do nothing"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 404,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 246,
+              "indent": 0,
+              "parameters": [
+                1
+              ]
+            },
+            {
+              "code": 117,
+              "indent": 0,
+              "parameters": [
+                29
+              ]
+            },
+            {
+              "code": 235,
+              "indent": 0,
+              "parameters": [
+                1
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 9,
+      "y": 4
+    },
+    null,
+    {
+      "id": 7,
+      "name": "EV007",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 117,
+              "indent": 0,
+              "parameters": [
+                28
+              ]
+            },
+            {
+              "code": 250,
+              "indent": 0,
+              "parameters": [
+                {
+                  "name": "Equip2",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\C[6]Bed\\C[0]"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "You can save your game here."
+              ]
+            },
+            {
+              "code": 102,
+              "indent": 0,
+              "parameters": [
+                [
+                  "\\I[245] Save Game",
+                  "Do nothing"
+                ],
+                1,
+                0,
+                2,
+                0
+              ]
+            },
+            {
+              "code": 402,
+              "indent": 0,
+              "parameters": [
+                0,
+                "\\I[245] Save Game"
+              ]
+            },
+            {
+              "code": 352,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 402,
+              "indent": 0,
+              "parameters": [
+                1,
+                "Do nothing"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 404,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 117,
+              "indent": 0,
+              "parameters": [
+                29
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 11,
+      "y": 5
+    },
+    {
+      "id": 8,
+      "name": "EV008",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                4,
+                1,
+                3,
+                19
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "Nothing is simpler than making a bomb at home.\\!"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "You search for the recipe on the internet,"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "follow the steps one by one, and the bomb is done."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "Strictly speaking, however, when you have firearms,"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "there's no reason to stop at basic firepower."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "So I started looking into creating something far more"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "destructive. \\!Researching past bombing incidents, I"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "wanted explosives that could rival the effectiveness"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "of any firearm."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "Even after getting into chemical explosive synthesis,"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "I had no intention of stopping there."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "To be honest, I didn't really enjoy using nail polish"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "remover and cleaning detergent to craft bombs."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "After several experiments, I produced three types of bombs.\\!"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "Will their destructive power justify my efforts?\\!"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "I can hardly wait to find out."
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "I crafted several homemade pipe bombs.\\!"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "Though guns are enough for what I need,\\!"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "leaving without bringing a few would be a waste."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "I gathered all the necessary instructions from the"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "internet. \\!At the same time, numerous articles and"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "documentaries about terrorists proved useful."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "I cannot fathom killing others in the name of religion.\\!"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "God? Paradise? Souls?"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "What is the point of any of that."
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 6,
+      "y": 7
+    },
+    null,
+    {
+      "id": 10,
+      "name": "EV010",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                6,
+                -1,
+                8
+              ]
+            },
+            {
+              "code": 231,
+              "indent": 1,
+              "parameters": [
+                1,
+                "Locker",
+                0,
+                0,
+                0,
+                0,
+                100,
+                100,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 232,
+              "indent": 1,
+              "parameters": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                100,
+                100,
+                255,
+                0,
+                30,
+                false
+              ]
+            },
+            {
+              "code": 117,
+              "indent": 1,
+              "parameters": [
+                28
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\C[6]Gun Locker\\C[0]"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "Here you can purchase and equip weapons and skills. "
+              ]
+            },
+            {
+              "code": 102,
+              "indent": 1,
+              "parameters": [
+                [
+                  "\\I[120] Buy Weapons",
+                  "\\I[120] Equip Weapons",
+                  "\\I[77] Buy Skills",
+                  "\\I[77] View Skills",
+                  "Do nothing"
+                ],
+                4,
+                0,
+                2,
+                0
+              ]
+            },
+            {
+              "code": 402,
+              "indent": 1,
+              "parameters": [
+                0,
+                "\\I[120] Buy Weapons"
+              ]
+            },
+            {
+              "code": 232,
+              "indent": 2,
+              "parameters": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                100,
+                100,
+                0,
+                0,
+                10,
+                false
+              ]
+            },
+            {
+              "code": 250,
+              "indent": 2,
+              "parameters": [
+                {
+                  "name": "Open3",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 2,
+              "parameters": [
+                "SceneManager._scene._mapStatusWindow.drawFace(\"guns1\", -1, 0, 30, 144, 144);"
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 2,
+              "parameters": [
+                "SceneManager._scene._mapStatusWindow.drawFace(\"guns2\", -1, 0, 30, 144, 144);"
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 2,
+              "parameters": [
+                "SceneManager._scene._mapStatusWindow.drawFace(\"guns3\", -1, 0, 30, 144, 144);"
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 2,
+              "parameters": [
+                "SceneManager._scene._mapStatusWindow.drawFace(\"guns4\", -1, 0, 30, 144, 144);"
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 2,
+              "parameters": [
+                "SceneManager._scene._mapStatusWindow.drawFace(\"bomb\", -1, 0, 30, 144, 144);"
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 2,
+              "parameters": [
+                "SceneManager._scene._mapStatusWindow.drawFace(\"knife\", -1, 0, 30, 144, 144);"
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 2,
+              "parameters": [
+                "SceneManager._scene._mapStatusWindow.refresh();"
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 2,
+              "parameters": [
+                10
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 2,
+              "parameters": [
+                4,
+                1,
+                3,
+                21
+              ]
+            },
+            {
+              "code": 302,
+              "indent": 3,
+              "parameters": [
+                2,
+                9,
+                0,
+                0,
+                true
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 3,
+              "parameters": [
+                2,
+                10,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 3,
+              "parameters": [
+                1,
+                2,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 3,
+              "parameters": [
+                1,
+                28,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 3,
+              "parameters": [
+                1,
+                19,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 3,
+              "parameters": [
+                1,
+                7,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 3,
+              "parameters": [
+                1,
+                27,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 3,
+              "parameters": [
+                2,
+                11,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 3,
+              "parameters": [
+                1,
+                26,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 3,
+              "parameters": [
+                1,
+                15,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 3,
+              "parameters": [
+                1,
+                31,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 3,
+              "parameters": [
+                1,
+                10,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 3,
+              "parameters": [
+                1,
+                30,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 3,
+              "parameters": [
+                2,
+                12,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 3,
+              "parameters": [
+                2,
+                13,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 3,
+              "parameters": [
+                1,
+                22,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 3,
+              "parameters": [
+                1,
+                4,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 3,
+              "parameters": [
+                1,
+                20,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 3,
+              "parameters": [
+                1,
+                17,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 3,
+              "parameters": [
+                1,
+                8,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 3,
+              "parameters": [
+                1,
+                12,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 3,
+              "parameters": [
+                1,
+                11,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 3,
+              "parameters": [
+                1,
+                5,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 3,
+              "parameters": [
+                1,
+                3,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 3,
+              "parameters": [
+                1,
+                21,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 3,
+              "parameters": [
+                1,
+                32,
+                1,
+                50000
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 3,
+              "parameters": [
+                1,
+                23,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 302,
+              "indent": 3,
+              "parameters": [
+                2,
+                9,
+                0,
+                0,
+                true
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 3,
+              "parameters": [
+                2,
+                10,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 3,
+              "parameters": [
+                1,
+                2,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 3,
+              "parameters": [
+                1,
+                28,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 3,
+              "parameters": [
+                1,
+                19,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 3,
+              "parameters": [
+                1,
+                7,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 3,
+              "parameters": [
+                1,
+                27,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 3,
+              "parameters": [
+                2,
+                11,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 3,
+              "parameters": [
+                1,
+                26,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 3,
+              "parameters": [
+                1,
+                15,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 3,
+              "parameters": [
+                1,
+                31,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 3,
+              "parameters": [
+                1,
+                10,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 3,
+              "parameters": [
+                1,
+                30,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 3,
+              "parameters": [
+                2,
+                12,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 3,
+              "parameters": [
+                2,
+                13,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 3,
+              "parameters": [
+                1,
+                22,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 3,
+              "parameters": [
+                1,
+                4,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 3,
+              "parameters": [
+                1,
+                17,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 3,
+              "parameters": [
+                1,
+                8,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 3,
+              "parameters": [
+                1,
+                12,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 3,
+              "parameters": [
+                1,
+                11,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 3,
+              "parameters": [
+                1,
+                5,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 3,
+              "parameters": [
+                1,
+                32,
+                1,
+                50000
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 3,
+              "parameters": [
+                1,
+                23,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 402,
+              "indent": 1,
+              "parameters": [
+                1,
+                "\\I[120] Equip Weapons"
+              ]
+            },
+            {
+              "code": 232,
+              "indent": 2,
+              "parameters": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                100,
+                100,
+                0,
+                0,
+                10,
+                false
+              ]
+            },
+            {
+              "code": 250,
+              "indent": 2,
+              "parameters": [
+                {
+                  "name": "Open3",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 2,
+              "parameters": [
+                "SceneManager._scene._mapStatusWindow.drawFace(\"guns1\", -1, 0, 30, 144, 144);"
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 2,
+              "parameters": [
+                "SceneManager._scene._mapStatusWindow.drawFace(\"guns2\", -1, 0, 30, 144, 144);"
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 2,
+              "parameters": [
+                "SceneManager._scene._mapStatusWindow.drawFace(\"guns3\", -1, 0, 30, 144, 144);"
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 2,
+              "parameters": [
+                "SceneManager._scene._mapStatusWindow.drawFace(\"guns4\", -1, 0, 30, 144, 144);"
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 2,
+              "parameters": [
+                "SceneManager._scene._mapStatusWindow.drawFace(\"bomb\", -1, 0, 30, 144, 144);"
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 2,
+              "parameters": [
+                "SceneManager._scene._mapStatusWindow.drawFace(\"knife\", -1, 0, 30, 144, 144);"
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 2,
+              "parameters": [
+                "SceneManager._scene._mapStatusWindow.refresh();"
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 2,
+              "parameters": [
+                10
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 2,
+              "parameters": [
+                "SceneManager.push(Scene_Equip);"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 402,
+              "indent": 1,
+              "parameters": [
+                2,
+                "\\I[77] Buy Skills"
+              ]
+            },
+            {
+              "code": 232,
+              "indent": 2,
+              "parameters": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                100,
+                100,
+                0,
+                0,
+                10,
+                false
+              ]
+            },
+            {
+              "code": 121,
+              "indent": 2,
+              "parameters": [
+                17,
+                17,
+                0
+              ]
+            },
+            {
+              "code": 302,
+              "indent": 2,
+              "parameters": [
+                0,
+                6,
+                0,
+                0,
+                true
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 2,
+              "parameters": [
+                0,
+                7,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 2,
+              "parameters": [
+                0,
+                10,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 2,
+              "parameters": [
+                0,
+                11,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 2,
+              "parameters": [
+                0,
+                3,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 2,
+              "parameters": [
+                0,
+                12,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 2,
+              "parameters": [
+                0,
+                19,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 2,
+              "parameters": [
+                0,
+                4,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 2,
+              "parameters": [
+                0,
+                2,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 2,
+              "parameters": [
+                0,
+                15,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 2,
+              "parameters": [
+                0,
+                17,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 2,
+              "parameters": [
+                0,
+                14,
+                1,
+                50000
+              ]
+            },
+            {
+              "code": 121,
+              "indent": 2,
+              "parameters": [
+                17,
+                17,
+                1
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 402,
+              "indent": 1,
+              "parameters": [
+                3,
+                "\\I[77] View Skills"
+              ]
+            },
+            {
+              "code": 232,
+              "indent": 2,
+              "parameters": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                100,
+                100,
+                0,
+                0,
+                10,
+                false
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 2,
+              "parameters": [
+                "SceneManager.push(Scene_Skill);"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 402,
+              "indent": 1,
+              "parameters": [
+                4,
+                "Do nothing"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 404,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 235,
+              "indent": 1,
+              "parameters": [
+                1
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 1,
+              "parameters": [
+                4,
+                1,
+                3,
+                16
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 2,
+              "parameters": [
+                0,
+                33,
+                1
+              ]
+            },
+            {
+              "code": 128,
+              "indent": 3,
+              "parameters": [
+                14,
+                0,
+                0,
+                1,
+                false
+              ]
+            },
+            {
+              "code": 231,
+              "indent": 3,
+              "parameters": [
+                1,
+                "Tips_yuumi",
+                0,
+                0,
+                0,
+                0,
+                100,
+                100,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 232,
+              "indent": 3,
+              "parameters": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                100,
+                100,
+                255,
+                0,
+                60,
+                true
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 3,
+              "parameters": [
+                "",
+                0,
+                2,
+                1
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 3,
+              "parameters": [
+                ""
+              ]
+            },
+            {
+              "code": 235,
+              "indent": 3,
+              "parameters": [
+                1
+              ]
+            },
+            {
+              "code": 121,
+              "indent": 3,
+              "parameters": [
+                33,
+                33,
+                0
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 111,
+              "indent": 1,
+              "parameters": [
+                1,
+                36,
+                0,
+                1,
+                0
+              ]
+            },
+            {
+              "code": 231,
+              "indent": 2,
+              "parameters": [
+                1,
+                "Tips_shotgun",
+                0,
+                0,
+                0,
+                0,
+                100,
+                100,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 232,
+              "indent": 2,
+              "parameters": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                100,
+                100,
+                255,
+                0,
+                60,
+                true
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 2,
+              "parameters": [
+                "",
+                0,
+                2,
+                1
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                ""
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 2,
+              "parameters": [
+                36,
+                36,
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 235,
+              "indent": 2,
+              "parameters": [
+                1
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 250,
+              "indent": 1,
+              "parameters": [
+                {
+                  "name": "Close2",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
+            },
+            {
+              "code": 117,
+              "indent": 1,
+              "parameters": [
+                29
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 5,
+      "y": 5
+    },
+    {
+      "id": 11,
+      "name": "EV011",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 122,
+              "indent": 0,
+              "parameters": [
+                46,
+                46,
+                1,
+                0,
+                1
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                1,
+                46,
+                0,
+                10,
+                1
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "",
+                0,
+                0,
+                1
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\C[6]Cheat Code\\C[0]"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "Would you like to receive 9,999,999 SP?"
+              ]
+            },
+            {
+              "code": 102,
+              "indent": 1,
+              "parameters": [
+                [
+                  "Yes",
+                  "No"
+                ],
+                1,
+                0,
+                1,
+                0
+              ]
+            },
+            {
+              "code": 402,
+              "indent": 1,
+              "parameters": [
+                0,
+                "Yes"
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 2,
+              "parameters": [
+                0,
+                37,
+                1
+              ]
+            },
+            {
+              "code": 250,
+              "indent": 3,
+              "parameters": [
+                {
+                  "name": "Coin",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 3,
+              "parameters": [
+                "",
+                0,
+                0,
+                1
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 3,
+              "parameters": [
+                "You are now the proud owner of 9,999,999 SP!!!"
+              ]
+            },
+            {
+              "code": 125,
+              "indent": 3,
+              "parameters": [
+                0,
+                0,
+                9999999
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 402,
+              "indent": 1,
+              "parameters": [
+                1,
+                "No"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 404,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 4,
+      "y": 6
+    },
+    {
+      "id": 12,
+      "name": "EV012",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "!$Flashing02",
+            "direction": 2,
+            "pattern": 1,
+            "characterIndex": 0
+          },
+          "list": [
+            {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                2,
+                "A",
+                1
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 1,
+              "parameters": [
+                47,
+                47,
+                1,
+                0,
+                1
+              ]
+            },
+            {
+              "code": 123,
+              "indent": 1,
+              "parameters": [
+                "A",
+                0
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 250,
+              "indent": 0,
+              "parameters": [
+                {
+                  "name": "Book2",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
+            },
+            {
+              "code": 231,
+              "indent": 0,
+              "parameters": [
+                1,
+                "01",
+                0,
+                0,
+                0,
+                0,
+                100,
+                100,
+                255,
+                0
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "",
+                0,
+                2,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                ""
+              ]
+            },
+            {
+              "code": 235,
+              "indent": 0,
+              "parameters": [
+                1
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "The obsession with \"slaughtering people\" never left me.\\!"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "It was burned into my mind like a brand, following"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "me wherever I went."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "While everyone took me for a "
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\"quiet kid\", \"gloomy kid\", \"innocent kid\"—"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "I butchered them over and over in my imagination."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Nobody noticed my homicidal urges.\\!"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Not a single soul.\\!"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Even though they had every warning sign and opportunity"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "to see it."
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 5,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 16,
+                "indent": null
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  20
+                ],
+                "indent": null
+              },
+              {
+                "code": 17,
+                "indent": null
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  20
+                ],
+                "indent": null
+              },
+              {
+                "code": 18,
+                "indent": null
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  20
+                ],
+                "indent": null
+              },
+              {
+                "code": 19,
+                "indent": null
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  20
+                ],
+                "indent": null
+              },
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 4,
+          "moveType": 3,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 11,
+      "y": 7
+    },
+    {
+      "id": 13,
+      "name": "EV013",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "!$Flashing02",
+            "direction": 2,
+            "pattern": 1,
+            "characterIndex": 0
+          },
+          "list": [
+            {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                2,
+                "A",
+                1
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 1,
+              "parameters": [
+                47,
+                47,
+                1,
+                0,
+                1
+              ]
+            },
+            {
+              "code": 123,
+              "indent": 1,
+              "parameters": [
+                "A",
+                0
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 250,
+              "indent": 0,
+              "parameters": [
+                {
+                  "name": "Book2",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
+            },
+            {
+              "code": 231,
+              "indent": 0,
+              "parameters": [
+                1,
+                "06",
+                0,
+                0,
+                0,
+                0,
+                100,
+                100,
+                255,
+                0
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "",
+                0,
+                2,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                ""
+              ]
+            },
+            {
+              "code": 235,
+              "indent": 0,
+              "parameters": [
+                1
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "I knew I was losing my sanity.\\!"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Blinded by malice and hatred,"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "I spiraled into a cycle of endless self-destruction."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Even if I massacre the entire school,"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "things won't get any better."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Yet knowing full well, I never stopped planning."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "In order to kill everyone,"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "I studied past mass shootings and terror attacks,"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "planned every detail, gathered gear, and trained."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "————If my mind were still lucid..."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Would I continue dragging out this miserable, empty"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "existence, clinging to a naive fairy tale that"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "someday a knight in shining armor will rescue me?"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Or, for everyone's peace of mind,\\!"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "would I choose to harm no one and quietly kill myself?"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "...If that is how a sane person would act,\\!"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "then I no longer harbor the slightest doubt about"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "carrying out this school shooting."
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 5,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 16,
+                "indent": null
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  20
+                ],
+                "indent": null
+              },
+              {
+                "code": 17,
+                "indent": null
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  20
+                ],
+                "indent": null
+              },
+              {
+                "code": 18,
+                "indent": null
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  20
+                ],
+                "indent": null
+              },
+              {
+                "code": 19,
+                "indent": null
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  20
+                ],
+                "indent": null
+              },
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 4,
+          "moveType": 3,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 7,
+      "y": 5
+    },
+    {
+      "id": 14,
+      "name": "EV014",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "!$Flashing02",
+            "direction": 2,
+            "pattern": 1,
+            "characterIndex": 0
+          },
+          "list": [
+            {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                2,
+                "A",
+                1
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 1,
+              "parameters": [
+                47,
+                47,
+                1,
+                0,
+                1
+              ]
+            },
+            {
+              "code": 123,
+              "indent": 1,
+              "parameters": [
+                "A",
+                0
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 250,
+              "indent": 0,
+              "parameters": [
+                {
+                  "name": "Book2",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
+            },
+            {
+              "code": 231,
+              "indent": 0,
+              "parameters": [
+                1,
+                "02",
+                0,
+                0,
+                0,
+                0,
+                100,
+                100,
+                255,
+                0
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "",
+                0,
+                2,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                ""
+              ]
+            },
+            {
+              "code": 235,
+              "indent": 0,
+              "parameters": [
+                1
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "People extinguish every ounce of happiness in me.\\!"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Even my own existence is pitch-black despair.\\!"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Everything is completely and utterly ruined."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "All I ever wanted was a quiet, peaceful life."
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Yet even that..."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Nobody seemed to give a damn,"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "which only tore at my heart even more."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Even when I lie down in bed,"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "tormenting thoughts refuse to leave my head.\\!"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "And if I do fall asleep, nightmares inevitably wake me..."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Only death could ever awaken me from this"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "nightmare. Only death will put an end to it all.\\!"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "...I can't remember when I started thinking like this."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "...However,\\! that thought didn't deceive me for long.\\!"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Witnessing my mother's death filled me with doubt about"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "everything."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "...Even if I die, everyone else remains.\\!"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "The ones responsible for all my torment would never face"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "their rightful punishment."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Even if I die, the nightmare won't end."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Therefore, before I die, there is something I must do."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Those who inflicted this agony upon me,\\!"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "will die by my hands, no matter what it takes."
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 5,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 16,
+                "indent": null
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  20
+                ],
+                "indent": null
+              },
+              {
+                "code": 17,
+                "indent": null
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  20
+                ],
+                "indent": null
+              },
+              {
+                "code": 18,
+                "indent": null
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  20
+                ],
+                "indent": null
+              },
+              {
+                "code": 19,
+                "indent": null
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  20
+                ],
+                "indent": null
+              },
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 4,
+          "moveType": 3,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 9,
+      "y": 8
+    },
+    {
+      "id": 15,
+      "name": "EV015",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 47,
+            "variableValid": true,
+            "variableValue": 6
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 117,
+              "indent": 0,
+              "parameters": [
+                57
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 3,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 47,
+            "variableValid": true,
+            "variableValue": 10
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 0,
+      "y": 0
+    },
+    {
+      "id": 16,
+      "name": "EV016",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 250,
+              "indent": 0,
+              "parameters": [
+                {
+                  "name": "kacha",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
+            },
+            {
+              "code": 117,
+              "indent": 0,
+              "parameters": [
+                28
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                1,
+                24,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\C[6]Target Practice\\C[0]"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "Hit all the empty cans placed around the room!"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                ""
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\>\\C[8]Incomplete: Clear in under 12 seconds\\C[0]"
+              ]
+            },
+            {
+              "code": 102,
+              "indent": 1,
+              "parameters": [
+                [
+                  "\\I[120] Start Practice",
+                  "Do nothing"
+                ],
+                1,
+                0,
+                2,
+                0
+              ]
+            },
+            {
+              "code": 402,
+              "indent": 1,
+              "parameters": [
+                0,
+                "\\I[120] Start Practice"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 402,
+              "indent": 1,
+              "parameters": [
+                1,
+                "Do nothing"
+              ]
+            },
+            {
+              "code": 117,
+              "indent": 2,
+              "parameters": [
+                29
+              ]
+            },
+            {
+              "code": 115,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 404,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 111,
+              "indent": 1,
+              "parameters": [
+                4,
+                1,
+                3,
+                15
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 2,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "\\C[6]Target Practice\\C[0]"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "Hit all the empty cans placed around the room!"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "\\>Record: \\V[24] second(s)."
+              ]
+            },
+            {
+              "code": 102,
+              "indent": 2,
+              "parameters": [
+                [
+                  "\\I[120] Start Practice",
+                  "Do nothing"
+                ],
+                1,
+                0,
+                2,
+                0
+              ]
+            },
+            {
+              "code": 402,
+              "indent": 2,
+              "parameters": [
+                0,
+                "\\I[120] Start Practice"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 402,
+              "indent": 2,
+              "parameters": [
+                1,
+                "Do nothing"
+              ]
+            },
+            {
+              "code": 117,
+              "indent": 3,
+              "parameters": [
+                29
+              ]
+            },
+            {
+              "code": 115,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 404,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 101,
+              "indent": 2,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "\\C[6]Target Practice\\C[0]"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "Hit all the empty cans placed around the room!"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "\\>Record: \\V[24] second(s)."
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "\\>\\C[8]Incomplete: Clear in under 12 seconds\\C[0]"
+              ]
+            },
+            {
+              "code": 102,
+              "indent": 2,
+              "parameters": [
+                [
+                  "\\I[120] Start Practice",
+                  "Do nothing"
+                ],
+                1,
+                0,
+                2,
+                0
+              ]
+            },
+            {
+              "code": 402,
+              "indent": 2,
+              "parameters": [
+                0,
+                "\\I[120] Start Practice"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 402,
+              "indent": 2,
+              "parameters": [
+                1,
+                "Do nothing"
+              ]
+            },
+            {
+              "code": 117,
+              "indent": 3,
+              "parameters": [
+                29
+              ]
+            },
+            {
+              "code": 115,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 404,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                0,
+                40,
+                0
+              ]
+            },
+            {
+              "code": 121,
+              "indent": 1,
+              "parameters": [
+                41,
+                41,
+                0
+              ]
+            },
+            {
+              "code": 121,
+              "indent": 1,
+              "parameters": [
+                40,
+                40,
+                1
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 117,
+              "indent": 0,
+              "parameters": [
+                29
+              ]
+            },
+            {
+              "code": 242,
+              "indent": 0,
+              "parameters": [
+                1
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 0,
+              "parameters": [
+                "$gameVariables._data[1] = [];"
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 0,
+              "parameters": [
+                "$gameVariables._data[45] = [];"
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 0,
+              "parameters": [
+                "$gameVariables._data[45][0] = $gameParty.leader()._equips[0]._itemId;"
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 0,
+              "parameters": [
+                "$gameVariables._data[45][1] = $gameParty.leader()._equips[1]._itemId;"
+              ]
+            },
+            {
+              "code": 127,
+              "indent": 0,
+              "parameters": [
+                13,
+                0,
+                0,
+                1,
+                false
+              ]
+            },
+            {
+              "code": 127,
+              "indent": 0,
+              "parameters": [
+                14,
+                0,
+                0,
+                1,
+                false
+              ]
+            },
+            {
+              "code": 319,
+              "indent": 0,
+              "parameters": [
+                1,
+                1,
+                13
+              ]
+            },
+            {
+              "code": 319,
+              "indent": 0,
+              "parameters": [
+                1,
+                2,
+                14
+              ]
+            },
+            {
+              "code": 201,
+              "indent": 0,
+              "parameters": [
+                0,
+                52,
+                31,
+                15,
+                4,
+                0
+              ]
+            },
+            {
+              "code": 322,
+              "indent": 0,
+              "parameters": [
+                1,
+                "shooter",
+                2,
+                "shooter",
+                0,
+                ""
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 0,
+              "parameters": [
+                "resetMagazine();"
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 0,
+              "parameters": [
+                "Scene_Map.prototype.reloading();"
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 0,
+              "parameters": [
+                "Scene_Map.prototype.reloading2();"
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 0,
+              "parameters": [
+                "$gamePlayer.resetFireMode();"
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 0,
+              "parameters": [
+                20,
+                20,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 0,
+              "parameters": [
+                2,
+                2,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                4,
+                1,
+                3,
+                18
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 1,
+              "parameters": [
+                35,
+                35,
+                0,
+                0,
+                100
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 122,
+              "indent": 1,
+              "parameters": [
+                35,
+                35,
+                0,
+                0,
+                50
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 121,
+              "indent": 0,
+              "parameters": [
+                8,
+                8,
+                0
+              ]
+            },
+            {
+              "code": 121,
+              "indent": 0,
+              "parameters": [
+                5,
+                5,
+                0
+              ]
+            },
+            {
+              "code": 121,
+              "indent": 0,
+              "parameters": [
+                25,
+                25,
+                0
+              ]
+            },
+            {
+              "code": 108,
+              "indent": 0,
+              "parameters": [
+                "ストップウォッチ作動"
+              ]
+            },
+            {
+              "code": 121,
+              "indent": 0,
+              "parameters": [
+                60,
+                60,
+                0
+              ]
+            },
+            {
+              "code": 124,
+              "indent": 0,
+              "parameters": [
+                0,
+                0
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 6,
+      "y": 4
+    },
+    null,
+    {
+      "id": 18,
+      "name": "EV018",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 355,
+              "indent": 0,
+              "parameters": [
+                "var distance = $gameMap.distance($gamePlayer.x, $gamePlayer.y, $gameMap._events[this._eventId]._x, $gameMap._events[this._eventId]._y);"
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 0,
+              "parameters": [
+                "var volume = 50 - (distance * 5);"
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 0,
+              "parameters": [
+                "if (volume < 0) volume = 0;"
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 0,
+              "parameters": [
+                "AudioManager.playBgs({\"name\":\"town\",\"volume\":volume,\"pitch\":100,\"pan\":0});"
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 0,
+              "parameters": [
+                10
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 4,
+          "walkAnime": true
+        }
+      ],
+      "x": 8,
+      "y": 3
+    },
+    null
+  ]
+}

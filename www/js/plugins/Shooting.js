@@ -128,7 +128,8 @@
 		17: 'debugMenu',	// control
 		48: 'debugMode',	// 0
 		56: 'BotMode',		// 8
-		57: 'cheatMode'		// 9
+		57: 'cheatMode',
+		119: 'cheatMode'		// 9
 	};
 	Input.gamepadMapper = {
 		0: 'cancel',    // A
@@ -3803,9 +3804,9 @@
 	//ヤンデレ位置を返す（教室湧きは廃止）
 	Game_Map.prototype.yanderePosition = function() {
 		var position = [
-			"未定義","体育館前","防災倉庫前","保健室前","職員室前","2F南側廊下",
-			"2F南側階段","3F南側廊下","多目的室","食堂","プール",
-			"図書室","体育館","1-1","1-2","1-3",
+			"Undefined","Gym Front","Storage Front","Infirmary Front","Staff Room Front","2F South Hallway",
+			"2F South Stairs","3F South Hallway","Multipurpose Room","Cafeteria","Swimming Pool",
+			"Library","Gymnasium","1-1","1-2","1-3",
 			"2-1","2-2","2-3","3-1","3-2",
 			"3-3"
 		];
@@ -3815,7 +3816,7 @@
 	//警察官位置を返す（増援に変更したため現在は不使用）
 	Game_Map.prototype.policePosition = function() {
 		var position = [
-			"未定義","保健室前","職員室前","2F南側廊下","2F南側階段"
+			"Undefined","Infirmary Front","Staff Room Front","2F South Hallway","2F South Stairs"
 		];
 		return position[$gameVariables._data[60]];
 	};
@@ -4109,7 +4110,7 @@
 			this._shootingResult = [];
 			return;
 		}
-		var result = "命中率 " + acc + " 乱数結果 " + rand + " 命中 " + hit + " クリティカル " + critical + " ダメージ " + dmg + " 体力 " + hp;
+		var result = "Hit Rate " + acc + " RNG " + rand + " Hit " + hit + " Crit " + critical + " Damage " + dmg + " HP " + hp;
 		if (this._shootingResult.length >= 10) {
 			this._shootingResult.splice(0, 1);
 		}
@@ -5178,18 +5179,26 @@
 		_Scene_Map_updateScene.call(this);
 
 		//デバッグ用（公開時は不使用）
-		if (false) {
+		if (true) {
 			if (Input.isTriggered('debugMenu')) $gameSwitches.setValue(39, !$gameSwitches.value(39));
 			if (Input.isTriggered('debugMode')) $gameSwitches.setValue(36, !$gameSwitches.value(36));
 			if (Input.isTriggered('BotMode')) $gameSwitches.setValue(53, !$gameSwitches.value(53));
 			if (Input.isTriggered('cheatMode')) {
-				if (false) { //脱出地点デバッグ用
-					var exit = $gamePlayer.nearestExit();
-					$gamePlayer._moveSpeed = 7;
-					$gamePlayer._x = exit[0];
-					$gamePlayer._y = exit[1];
-				}
 				$gameSwitches.setValue(58, !$gameSwitches.value(58)); //チートモード
+				$gameParty.gainGold(9999999);
+				$gameParty._gold = 9999999;
+				if ($gameVariables && $gameVariables._data) {
+					$gameVariables._data[4] = 100;
+				}
+				SoundManager.playShop();
+				var isGod = $gameSwitches.value(58);
+				var isId = (typeof ConfigManager !== 'undefined' && ConfigManager.language === 'id');
+				var msg = isGod ? 
+					(isId ? "CHEAT: +9.999.999 SP & Mode Dewa AKTIF!" : "CHEAT: +9,999,999 SP & God Mode ON!") : 
+					(isId ? "CHEAT: Mode Dewa NONAKTIF" : "CHEAT: God Mode OFF");
+				if (SceneManager._scene && SceneManager._scene.createSpeakWindow) {
+					SceneManager._scene.createSpeakWindow(msg);
+				}
 			}
 		}
 		//シーン切り替え中でない、かつ襲撃中かトレーニング中である。
@@ -5849,37 +5858,37 @@
 			var bombId = $gameParty.leader()._equips[2]._itemId;
 			var meleeId = $gamePlayer.isYuumi() ? 14 : $gameParty.leader()._equips[3]._itemId;
 
-			this.drawText("発言カウント " + $gamePlayer._speakTimer, x, y + height * 25, width, 'left');
-			this.drawText("獲得SP " + $gameVariables._data[17] + " 合計SP " + $gameParty.gold(), x, y + height * 24, width, 'left');
+			this.drawText("Voice Timer " + $gamePlayer._speakTimer, x, y + height * 25, width, 'left');
+			this.drawText("Earned SP " + $gameVariables._data[17] + " Total SP " + $gameParty.gold(), x, y + height * 24, width, 'left');
 
 			if (!$gamePlayer.isYuumi()) {
-				this.drawText("銃使用回数 " + $gameSystem._data.gunRecord[gunId].useCount + " 発砲回数 " 
-				+ $gameSystem._data.gunRecord[gunId].shotCount + " 殺害数 " + $gameSystem._data.gunRecord[gunId].killCount, x, y + height * 23, 230, 'right'); 
+				this.drawText("Gun Uses " + $gameSystem._data.gunRecord[gunId].useCount + " Shots " 
+				+ $gameSystem._data.gunRecord[gunId].shotCount + " Kills " + $gameSystem._data.gunRecord[gunId].killCount, x, y + height * 23, 230, 'right'); 
 				
-				this.drawText("爆弾使用回数 " + $gameSystem._data.bombRecord[bombId].useCount + " 投擲回数 " 
-				+ $gameSystem._data.bombRecord[bombId].shotCount + " 殺害数 " + $gameSystem._data.bombRecord[bombId].killCount, x, y + height * 22, 230, 'right'); 
+				this.drawText("Bomb Uses " + $gameSystem._data.bombRecord[bombId].useCount + " Throws " 
+				+ $gameSystem._data.bombRecord[bombId].shotCount + " Kills " + $gameSystem._data.bombRecord[bombId].killCount, x, y + height * 22, 230, 'right'); 
 			}
 
-			this.drawText("近接武器使用回数 " + $gameSystem._data.meleeRecord[meleeId].useCount + " 攻撃回数 " 
-				+ $gameSystem._data.meleeRecord[meleeId].shotCount + " 殺害数 " + $gameSystem._data.meleeRecord[meleeId].killCount, x, y + height * 21, 230, 'right'); 
+			this.drawText("Melee Uses " + $gameSystem._data.meleeRecord[meleeId].useCount + " Attacks " 
+				+ $gameSystem._data.meleeRecord[meleeId].shotCount + " Kills " + $gameSystem._data.meleeRecord[meleeId].killCount, x, y + height * 21, 230, 'right'); 
 
-			this.drawText("殺害合計 " + $gameVariables._data[33] + " 発砲合計 " + $gameVariables._data[34], x, y + height * 20, width, 'left');
-			this.drawText("散弾キル " + $gameVariables._data[83], x, y + height * 19, width, 'left');
-			this.drawText("職員室殺害 " + $gameVariables._data[78], x, y + height * 18, width, 'left');
+			this.drawText("Total Kills " + $gameVariables._data[33] + " Total Shots " + $gameVariables._data[34], x, y + height * 20, width, 'left');
+			this.drawText("Shotgun Kills " + $gameVariables._data[83], x, y + height * 19, width, 'left');
+			this.drawText("Staff Room Kills " + $gameVariables._data[78], x, y + height * 18, width, 'left');
 
-			this.drawText("付近の生存生徒数 " + $gameMap.numberOfStudents(true), x, y + height * 16, width, 'left');
-			this.drawText("女性教師が存在 " + $gameMap.existFemaleTeacher(), x, y + height * 15, width, 'left');
-			this.drawText("増援時間 " + $gameVariables._data[13] +  " 乗数 " + $gameVariables._data[75] + " 特殊施設？ " + $gameMap.isSpaciousMap(), x, y + height * 14, width, 'left');
-			this.drawText("増援済 " + reinforcedMapList.indexOf($gameMap._mapId), x, y + height * 13, width, 'left');
-			this.drawText("ヤンデレ位置 " + $gameMap.yanderePosition(), x, y + height * 12, width, 'left');
+			this.drawText("Nearby Living Students " + $gameMap.numberOfStudents(true), x, y + height * 16, width, 'left');
+			this.drawText("Female Teacher Present " + $gameMap.existFemaleTeacher(), x, y + height * 15, width, 'left');
+			this.drawText("Reinforce Time " + $gameVariables._data[13] +  " Multiplier " + $gameVariables._data[75] + " Spacious Map? " + $gameMap.isSpaciousMap(), x, y + height * 14, width, 'left');
+			this.drawText("Reinforced " + reinforcedMapList.indexOf($gameMap._mapId), x, y + height * 13, width, 'left');
+			this.drawText("Yandere Pos " + $gameMap.yanderePosition(), x, y + height * 12, width, 'left');
 
-			this.drawText("発砲回数 " + $gameVariables._data[26] + " 命中回数 " + $gameVariables._data[27], x, y + height * 10, width, 'left');
-			this.drawText("命中率 " +  $gamePlayer.accuracy() + " CQC? " + $gamePlayer.isCQC(), x, y + height * 9, width, 'left');
-			this.drawText("主弾倉 " + $gameVariables._data[50], x, y + height * 8, width, 'left');
-			this.drawText("副弾倉 " + $gameVariables._data[51], x, y + height * 7, width, 'left');
-			if ($gameVariables._data[77]) this.drawText("射撃モード " + $gameVariables._data[77][0], x, y + height * 6, width, 'left');
+			this.drawText("Shots " + $gameVariables._data[26] + " Hits " + $gameVariables._data[27], x, y + height * 10, width, 'left');
+			this.drawText("Hit Rate " +  $gamePlayer.accuracy() + " CQC? " + $gamePlayer.isCQC(), x, y + height * 9, width, 'left');
+			this.drawText("Main Mag " + $gameVariables._data[50], x, y + height * 8, width, 'left');
+			this.drawText("Side Mag " + $gameVariables._data[51], x, y + height * 7, width, 'left');
+			if ($gameVariables._data[77]) this.drawText("Fire Mode " + $gameVariables._data[77][0], x, y + height * 6, width, 'left');
 
-			this.drawText("スタミナ " + $gameVariables._data[4] + " 反動値 " + $gameVariables._data[8], x, y + height * 4, width, 'left');
+			this.drawText("Stamina " + $gameVariables._data[4] + " Recoil " + $gameVariables._data[8], x, y + height * 4, width, 'left');
 			this.drawText("realMoveSpeed " + $gamePlayer.realMoveSpeed(), x, y + height * 3, width, 'left');
 			this.drawText("isDashing " + $gamePlayer.isDashing(), x, y + height * 2, width, 'left');
 			this.drawText("isKeepMoving " + $gamePlayer.isKeepMoving(), x, y + height * 1, width, 'left');
@@ -9488,7 +9497,7 @@
 			var hp = $gameVariables._data[1][$gameMap._mapId][this._eventId].hp;
 			var courage = $gameVariables._data[1][$gameMap._mapId][this._eventId].courage;
 			textA = "ID " + this._eventId + " " + status;
-			textB = "体力 " + hp + " 勇敢 " + courage + " 危険 " + $gameMap._events[this._eventId].riskLevel();
+			textB = "HP " + hp + " Courage " + courage + " Danger " + $gameMap._events[this._eventId].riskLevel();
 		}
 		var width = this.bitmap.width;
 		var height = this.bitmap.height;
