@@ -76,7 +76,7 @@
 		this.addChild(version);
 		version.bitmap = new Bitmap(Graphics.boxWidth, 100);
 		version.bitmap.fontSize = 20;
-		version.bitmap.drawText("Version 1.2b by Erikku @eric806359 | English Translation", 0, 0, version.width, version.height, "left");
+		version.bitmap.drawText(window.t("Version 1.2b by Erikku @eric806359 | English Translation"), 0, 0, version.width, version.height, "left");
 		version.x = 5;
 		version.y = 555;
 	}
@@ -7816,7 +7816,7 @@
 			$gameVariables._data[18] = SceneManager._scene._announcement._showCount;
 		} else {
 			if ($gameVariables._data[18] > 0){
-				this.text = announcement[$gameVariables._data[11] - 1];
+				this.text = window.t(announcement[$gameVariables._data[11] - 1]);
 				this.textX = $gameVariables._data[18] - this.textWidth(this.text);
 				this._showCount = $gameVariables._data[18];
 			}else if(this.contentsOpacity > 0) {
@@ -7826,7 +7826,7 @@
 	};
 	Window_Announcement.prototype.open = function(text) {
 		AudioManager.playSe({"name":"call_up","volume":50,"pitch":100,"pan":0});
-		this.text = announcement[text];
+		this.text = window.t(announcement[text]);
 		this.textX = 600;
 		this._showCount = this.textWidth(this.text) + 600;
 		this.refresh();
@@ -8001,7 +8001,7 @@
 				}
 			}
 			if ($gameVariables._data[15] != 0) { //プレイ済みなら描画
-				this.drawText(primary + "  " + sidearm, 510, 145, 270, "right");
+				this.drawText((primary ? window.t(primary) : "") + (primary && sidearm ? "  " : "") + (sidearm ? window.t(sidearm) : ""), 510, 145, 270, "right");
 			}
 
 			//ハードモード
@@ -8014,7 +8014,7 @@
 				}
 			}
 			if ($gameVariables._data[65] != 0) { //プレイ済みなら描画
-				this.drawText(primary + "  " + sidearm, 510, 270, 270, "right");
+				this.drawText((primary ? window.t(primary) : "") + (primary && sidearm ? "  " : "") + (sidearm ? window.t(sidearm) : ""), 510, 270, 270, "right");
 			}
 
 		}
@@ -8777,8 +8777,8 @@
 		if (rect.width >= 420) {
 
 			this.contents.fontSize = 22;
-			this.drawText("Kill Record" + " " + kill1 + " " + "" + " " + "Hard Mode" + " " + kill2 + " " + "", rect.x, rect.y - 5 + (lineHeight * 1), rect.width, 'right');
-			this.drawText("Total Kills" + " " + kill3 + " " + "", rect.x, rect.y - 5 + (lineHeight * 2), rect.width, 'right');
+			this.drawText(window.t("Kill Record") + " " + kill1 + " " + window.t("Hard Mode") + " " + kill2, rect.x, rect.y - 5 + (lineHeight * 1), rect.width, 'right');
+			this.drawText(window.t("Total Kills") + " " + kill3, rect.x, rect.y - 5 + (lineHeight * 2), rect.width, 'right');
 			this.contents.fontSize = this.standardFontSize();
 
 		}
@@ -9115,7 +9115,7 @@
 		var total = achievementTexts.length - 1;
 		this.contents.fontSize = 26;
 		this.contents.textColor = this.textColor(0);
-		this.drawText("Unlocked" + " " + achieved.length + "/" + total, 0, 0, this.contentsWidth(), 'right');
+		this.drawText(window.t("Unlocked") + " " + achieved.length + "/" + total, 0, 0, this.contentsWidth(), 'right');
 	};
 	//実績ウィンドウ
 	function Window_Achievement() {
@@ -9233,7 +9233,7 @@
 			text = " " + num1 + "/" + num2;
 		}
 
-		this.drawText(item.requirement + text, x - 4, y + 2, width, 'right');
+		this.drawText(window.t(item.requirement) + text, x - 4, y + 2, width, 'right');
 		this.contents.fontSize = this.standardFontSize();
 		this.resetTextColor();
 
@@ -9261,7 +9261,7 @@
 				reward = achievementTexts[index].reward;
 			}
 			this.contents.fontSize = 20;
-			text = "Reward: " + reward;
+			text = window.t("Reward: ") + (achievementTexts[index].rewardType == 1 ? reward : window.t(reward));
 			this.drawText(text, x - 4, y + 4 + this.fittingHeight(0), width, 'right');
 			this.contents.fontSize = 22;
 			
