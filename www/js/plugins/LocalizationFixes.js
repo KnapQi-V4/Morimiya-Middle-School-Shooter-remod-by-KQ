@@ -450,7 +450,8 @@
             do {
                 probe.fontSize = size;
                 lines = wrapWords(text, Math.min(maxContent, 420), measure);
-                if (lines.length <= SPEAK_MAX_LINES) break;
+                var fitsW = Math.max.apply(null, lines.map(measure)) <= maxContent;
+                if (lines.length <= SPEAK_MAX_LINES && fitsW) break;
                 size--;
             } while (size > SPEAK_MIN_FONT);
             if (lines.length > SPEAK_MAX_LINES) lines = wrapWords(text, maxContent, measure);
@@ -461,16 +462,18 @@
             this.text = lines.join(' ');
             var lh = Math.round(size * 1.3);
             var width = Math.min(Graphics.boxWidth - MARGIN * 2, Math.max(100, Math.ceil(widest) + 36));
-            var height = lines.length * lh + this.standardPadding() * 2;
+            var height = Math.min(Graphics.boxHeight - MARGIN * 2, lines.length * lh + this.standardPadding() * 2);
             this._lineH = lh;
             Window_Base.prototype.initialize.call(this, 0, 0, width, height);
             this.opacity = 0;
             this.contentsOpacity = 255;
             this.dimmerOpacity = 255;
 
-            var owner = targetId ? $gameMap._events[targetId] : $gamePlayer;
+            var owner = targetId ? ($gameMap && $gameMap._events ? $gameMap._events[targetId] : null) : $gamePlayer;
             if (owner) {
-                if (owner._speakWindow) SceneManager._scene.removeChild(SceneManager._scene._speakWindow[owner._speakWindowId]);
+                if (owner._speakWindow && SceneManager._scene && SceneManager._scene._speakWindow) {
+                    SceneManager._scene.removeChild(SceneManager._scene._speakWindow[owner._speakWindowId]);
+                }
                 owner._speakWindow = true;
                 owner._speakWindowId = this.windowId;
             }
@@ -483,13 +486,17 @@
 
         Window_Speak.prototype.refresh = function() {
             this.contents.clear();
-            var target = this.targetId == 0 ? $gamePlayer : $gameMap._events[this.targetId];
-            if (target) {
+            var target = this.targetId == 0 ? $gamePlayer : ($gameMap && $gameMap._events ? $gameMap._events[this.targetId] : null);
+            if (target && typeof target.scrolledX === 'function') {
                 var cx = (($gamePlayer.scrolledX() - $gamePlayer._realX + target._realX) * 48) + 24;
                 var cy = (($gamePlayer.scrolledY() - $gamePlayer._realY + target._realY) * 48) - 90;
-                // Screen-boundary clamping: the bubble never leaves the canvas.
+                // Screen-boundary clamping: the bubble never renders outside canvas bounds
                 this.x = Math.max(MARGIN, Math.min(cx - this.width / 2, Graphics.boxWidth - this.width - MARGIN));
                 this.y = Math.max(MARGIN, Math.min(cy - (this.height - this.fittingHeight(1)), Graphics.boxHeight - this.height - MARGIN));
+            } else {
+                // If no target entity, clamp and center in visible canvas
+                this.x = Math.max(MARGIN, Math.min(Math.round((Graphics.boxWidth - this.width) / 2), Graphics.boxWidth - this.width - MARGIN));
+                this.y = Math.max(MARGIN, Math.min(Math.round(Graphics.boxHeight * 0.18), Graphics.boxHeight - this.height - MARGIN));
             }
             this.contents.fontSize = this._fontSize;
             window._lfRaw = true; // already translated
@@ -520,13 +527,14 @@
     //-------------------------------------------------------------------------
     var _Window_Base_drawText = Window_Base.prototype.drawText;
     Window_Base.prototype.drawText = function(text, x, y, maxWidth, align) {
-        if (typeof text === 'string' && maxWidth && this.contents && isId()) {
+        var effMax = maxWidth || (this.contents ? this.contentsWidth() - x : 0);
+        if (typeof text === 'string' && effMax > 0 && this.contents && isId()) {
             var tr = (!window._lfRaw && window.t) ? window.t(text) : text;
             var c = this.contents, old = c.fontSize, min = Math.max(12, Math.floor(old * 0.7));
-            while (c.fontSize > min && c.measureTextWidth(tr) > maxWidth) c.fontSize--;
+            while (c.fontSize > min && c.measureTextWidth(tr) > effMax) c.fontSize--;
             var prevRaw = window._lfRaw;
             window._lfRaw = true;
-            try { _Window_Base_drawText.call(this, tr, x, y, maxWidth, align); }
+            try { _Window_Base_drawText.call(this, tr, x, y, maxWidth || effMax, align); }
             finally { window._lfRaw = prevRaw; c.fontSize = old; }
             return;
         }

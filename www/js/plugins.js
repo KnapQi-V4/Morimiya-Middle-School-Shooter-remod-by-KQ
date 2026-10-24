@@ -33,5 +33,17 @@ var $plugins =
     "status": true,
     "description": "Russian image-text overlays (EN/ID) + long-text wrap/clamp fixes",
     "parameters": {}
+  },
+  {
+    "name": "KQ_BetterFullscreen",
+    "status": true,
+    "description": "Native NW.js Fullscreen with F4/F11 hotkeys, no black bars, and dual-language options",
+    "parameters": {}
+  },
+  {
+    "name": "KQ_GameplayToggles",
+    "status": true,
+    "description": "Modern shooter QoL settings: Toggle Sprint (Hold/Toggle) and Aim Mode (Hold/Toggle)",
+    "parameters": {}
   }
 ];
