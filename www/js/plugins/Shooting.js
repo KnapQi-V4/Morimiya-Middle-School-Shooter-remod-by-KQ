@@ -6218,6 +6218,7 @@
 	
     Window_Speak.prototype = Object.create(Window_Base.prototype);
     Window_Speak.prototype.constructor = Window_Speak;
+	window.Window_Speak = Window_Speak; // exported so LocalizationFixes.js can override (was closure-private)
 	
     Window_Speak.prototype.initialize = function(text, windowId, targetId) {
 		//日本語 12 英語 4

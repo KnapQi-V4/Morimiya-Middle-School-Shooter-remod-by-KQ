@@ -27,5 +27,11 @@ var $plugins =
     "status": true,
     "description": "Dual Language (English/Indonesia) and Cheat System",
     "parameters": {}
+  },
+  {
+    "name": "LocalizationFixes",
+    "status": true,
+    "description": "Russian image-text overlays (EN/ID) + long-text wrap/clamp fixes",
+    "parameters": {}
   }
 ];
