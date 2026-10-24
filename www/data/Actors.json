@@ -1,0 +1,4 @@
+[
+null,
+{"id":1,"battlerName":"","characterIndex":0,"characterName":"shooter","classId":1,"equips":[6,1,1,8],"faceIndex":0,"faceName":"","traits":[{"code":51,"dataId":1,"value":1},{"code":51,"dataId":2,"value":1},{"code":55,"dataId":1,"value":1},{"code":41,"dataId":1,"value":1},{"code":52,"dataId":1,"value":1},{"code":52,"dataId":2,"value":1}],"initialLevel":1,"maxLevel":99,"name":"Виновница","nickname":"","note":"","profile":"Третьегодка средней школы Моримия.\nНе в ладах с головой после череды трагедий, приведших к распаду семьи."}
+]
